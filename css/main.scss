@@ -1,0 +1,88 @@
+$blue: #2671FF;
+$blue-bering: #096BE8;
+$blue-pop: #1792FF;
+$blue-sapphire: #0793E8;
+$blue-seashore: #13BBFF;
+$red-crimson: #f22f2f;
+$red-salmon: #e45d5d;
+
+@mixin transition($time){
+	-webkit-transition: all $time;
+	-moz-transition: all $time;
+	-o-transition: all $time;
+	transition: all $time;
+}
+body{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	background-color:#f5f6f4;
+}
+.main{
+	padding:20px;
+	box-shadow: 0px 3px 3px rgba(0,0,0,.3);
+	border-radius:5px;
+	width:100%;
+	max-width:1200px;
+	overflow:hidden;
+	margin:20px auto;
+	background-color:#fff;
+}
+
+header{
+	font-family: "Fjalla One", sans-serif;
+}
+h1{
+	@extend header;
+	font-size:18px;
+}
+
+/*  Style guide  */
+
+.colors > div{
+	float:left;
+	margin-right:40px;
+}
+.color{
+	display:inline-block;
+	margin:5px;
+	width:40px;
+	height:40px;
+	border-radius:20px;
+	position:relative;
+	@include transition(.3s);
+}
+.color:hover{
+	width:50px;
+	height:50px;
+	border-radius:25px;
+}
+
+.blue{
+	@extend .color;
+	background-color:$blue;
+}
+.blue-bering{
+	@extend .color;
+	background-color:$blue-bering;
+}
+.blue-pop{
+	@extend .color;
+	background-color:$blue-pop;
+}
+.blue-sapphire{
+	@extend .color;
+	background-color:$blue-sapphire;
+}
+.blue-seashore{
+	@extend .color;
+	background-color:$blue-seashore;
+}
+.red-crimson{
+	@extend .color;
+	background-color:$red-crimson;
+}
+.red-salmon{
+	@extend .color;
+	background-color:$red-salmon;
+}
