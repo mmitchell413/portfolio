@@ -1,4 +1,4 @@
-$blue: #2671FF;
+$blue: #276179;
 $blue-bering: #096BE8;
 $blue-pop: #1792FF;
 $blue-sapphire: #0793E8;
@@ -8,9 +8,10 @@ $red-salmon: #e45d5d;
 $red-love: #f7c7c7;
 $green-lush: #5fda68;
 $green-lime: #a5ef9f;
-$gray-granite: #353637;
+$gray-granite: #232323;
 $gray-doom: #5b646c;
 $white-off: #f5f5f5;
+$white: #ffffff;
 
 @mixin transition($time){
 	-webkit-transition: all $time;
@@ -18,11 +19,14 @@ $white-off: #f5f5f5;
 	-o-transition: all $time;
 	transition: all $time;
 }
-@mixin font-raleway(){
-	font-family: "Raleway", sans-serif;
+@mixin font-oxygen(){
+	font-family: "Oxygen", sans-serif;
 }
 @mixin font-roboto(){
 	font-family: "Roboto", sans-serif;
+}
+@mixin font-lato(){
+    font-family: "Lato", sans-serif;
 }
 @mixin color(){
 	width:20px;
@@ -40,10 +44,11 @@ body{
 	margin:0;
 	padding:0;
 	font-weight:400;
+    font-size:1.2em;
 	box-sizing:border-box;
-	background-color:#f5f6f4;
+	background-color:$white;
 	width:100%;
-	@include font-roboto;
+	@include font-lato;
 }
 
 .main{
@@ -58,15 +63,13 @@ body{
 }
 
 header{
-	@include font-raleway;
+	@include font-oxygen;
 }
 h1{
 	@extend header;
 	font-size:2.2em;
 	font-weight:700;
-	letter-spacing:3px;
 	color:$gray-granite;
-	text-transform:uppercase;
 }
 h2{
 	@extend header;
@@ -95,15 +98,18 @@ ul{
     div{
         float:left;
     }
+    .clear{
+        clear:both;
+    }
 	.grid-1-2{
 		width:50%;
 	}
     .grid-1-2:nth-child(odd){
         padding-left:0px;
-        padding-right:10px;
+        padding-right:20px;
     }
     .grid-1-2:nth-child(even){
-        padding-left:10px;
+        padding-left:20px;
         padding-right:0px;
     }
 	.grid-1-3{
@@ -153,9 +159,11 @@ ul{
 .colors > div{
 	float:left;
 	margin-right:40px;
+    overflow:visible;
 }
 .color{
 	display:inline-block;
+    overflow:visible;
 	margin:5px;
 		.blue{
 			background-color:$blue;
@@ -220,7 +228,9 @@ input{
 	width:100%;
 	border:1px solid #ddd;
 	box-shadow:3px 3px 3px rgba(0,0,0,.05) inset;
-	padding:20px;
+	padding:15px;
+    font-size:1em;
+    font-weight:300;
 	display:inline-block;
 	border-radius:3px;
 	@include font-roboto;
@@ -230,7 +240,7 @@ input{
 	width:100%;
 }
 label{
-	@include font-raleway;
+	@include font-oxygen;
 	text-transform:uppercase;
 	font-color:$gray-doom;
 	font-size:10px;
@@ -272,6 +282,18 @@ input[type="text"].error:focus{
 }
 
 
+/* FOOTER STYLES 
+----------------------------------------------------------*/
+
+footer{
+    background-color:#8EA0A3;
+    border-top:5px #7f8f92 solid;
+    margin-top:20px;
+    color:#465254;
+    font-size:.7em;
+}
+
+
 /* IMAGE STYLES 
 -----------------------------------------------------------*/
 
@@ -279,10 +301,10 @@ input[type="text"].error:focus{
 .hero-img{
     background-image:url('../img/hero.png');
     background-size:cover;
-    height:600px;
+    height:423px;
     .hero-img__color-overlay{
-        opacity:.3;
-        background-color:$blue-seashore;
-        height:600px;
+        opacity:.6;
+        background-color:#6F9196;
+        height:423px;
     }
 }
