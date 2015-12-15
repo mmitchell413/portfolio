@@ -6,7 +6,7 @@ $blue-sapphire: #0793E8;
 $blue-seashore: #13BBFF;
 $red-crimson: #f22f2f;
 $red-salmon: #e45d5d;
-$red-love: #f7c7c7;
+$red-love: #fd8d8d;
 $green-lush: #5fda68;
 $green-lime: #a5ef9f;
 $yellow-canary: #FFEEA8;
@@ -368,27 +368,56 @@ footer{
 .btn{
     border-radius:8px;
     padding:10px;
-    background-color:$yellow-canary;
-    border: 5px solid $yellow-canary;
-    display:block;
     width:200px;
+    font-size:1.0em;
+    color:$white;
+    display:inline-block;
+    margin-right:20px;
+    @include font-oxygen;
 }
-.btn__ghost{
-    background-color:transparent;
-    color:$yellow-canary;
-    font-size:1.2em;
-    font-weight:700;
-    text-transform:uppercase;
-    text-shadow:1px 2px 0px rgba(0,0,0,.2);
+.btn:hover{
+    cursor:pointer;
 }
 .btn__yellow{
-    
+    background-color:$yellow-canary;
+    border: 3px solid $yellow-canary;
+    @include transition(.3s);
+}
+.btn__yellow:hover{
+    background-color:$tan;
+    border: 3px solid $tan;
 }
 .btn__submit{
-    
+    background-color:$blue;
+    border: 3px solid $blue;
+    @include transition(.3s);
+}
+.btn__submit:hover{
+    background-color:$blue-shale;
+    border: 3px solid $blue-shale;
 }
 .btn__clear{
-    
+    background-color:$red-salmon;
+    border: 3px solid $red-salmon;
+    @include transition(.3s);
+}
+.btn__clear:hover{
+    background-color:$red-love;
+    border: 3px solid $red-love;
+}
+/* Ghost button styles must be at bottom of button style list */
+.btn__ghost{
+    background-color:transparent;
+}
+.btn__ghost.btn__clear{
+    color:$red-love;
+    border:3px solid $red-love;
+    @include transition(.3s);
+}
+.btn__ghost.btn__clear:hover{
+    background-color:$red-salmon;
+    border:3px solid $red-salmon;
+    color:$white;
 }
 
 
@@ -417,6 +446,9 @@ footer{
         width:100px;
         margin:20px auto 0 auto;
         display:block;
+    }
+    .btn{
+        color:$blue;
     }
 }
 
