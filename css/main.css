@@ -168,7 +168,7 @@ ul {
   .color .gray-doom {
     background-color: #5b646c; }
   .color .white-off {
-    background-color: #f5f5f5; }
+    background-color: #f9f9f9; }
 
 .color div {
   width: 20px;
@@ -193,13 +193,13 @@ input, textarea {
   margin: 5px 0 10px 0px;
   width: 100%;
   color: #ddd;
-  border: 1px solid #ddd;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05) inset;
+  border: 1px solid #eee;
+  box-shadow: 3px 3px 3px rgba(60, 60, 60, 0.02) inset;
   padding: 15px;
   font-size: 1em;
   font-weight: 300;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 3px;
   font-family: "Roboto", sans-serif; }
 
 .inputs {
@@ -207,7 +207,8 @@ input, textarea {
   width: 100%; }
 
 textarea {
-  height: 300px; }
+  height: 300px;
+  resize: none; }
 
 label {
   font-family: "Oxygen", sans-serif;
@@ -217,7 +218,7 @@ label {
   margin-top: 10px; }
 
 input[type="text"], input[type="text"].error, input[type="password"], input[type="email"], textarea {
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   letter-spacing: 1px;
   font-weight: 300;
   -webkit-transition: all 0.3s;
@@ -244,7 +245,7 @@ input[type="text"].error:focus {
 .top-nav {
   width: 100%;
   background-color: #232323;
-  color: #f5f5f5;
+  color: #f9f9f9;
   padding: 10px 0; }
   .top-nav a {
     color: #ffffff;
@@ -278,7 +279,7 @@ footer {
 /* BUTTON STYLES
 -----------------------------------------------------------*/
 .btn {
-  border-radius: 8px;
+  border-radius: 3px;
   padding: 10px;
   width: 200px;
   font-size: 1.0em;
@@ -299,8 +300,8 @@ footer {
   transition: all 0.3s; }
 
 .btn__yellow:hover {
-  background-color: #DBD5BF;
-  border: 3px solid #DBD5BF; }
+  background-color: #fff7d4;
+  border: 3px solid #fff7d4; }
 
 .btn__submit {
   background-color: #6F9196;
