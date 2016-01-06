@@ -68,23 +68,23 @@ body{
 
 header{
 	@include font-oxygen;
+    color:$blue;
     margin:0;
 }
 h1{
 	@extend header;
 	font-size:2.2em;
+    margin-bottom:10px;
 	font-weight:700;
-	color:$gray-granite;
 }
 h2{
 	@extend header;
-	color:$gray-granite;
 	font-size:1.6em;
+    margin-bottom:5px;
 	font-weight:400;
 }
 h3{
     @extend header;
-    color:$gray-granite;
     font-size:1.3em;
     font-weight:400;
 }
@@ -130,6 +130,7 @@ ul{
 -------------------------------------------------------*/
 .grid{
     overflow:hidden;
+    margin:20px auto;
     div{
         float:left;
     }
@@ -328,19 +329,59 @@ input[type="text"].error:focus{
     width:100%;
     background-color: $gray-granite;
     color: $white-off;
-    padding: 10px 0;
     a{
-        color:$white;
+        color:$blue-slate;
         @include transition(.3s);
     }
     a:hover{
-        color:$blue-slate;
+        color:$white;
     }
 }
-.top-nav__list li{
-    display:inline-block;
-    list-style:none;
-    padding: 0 40px 0 0;
+.top-nav__list {
+    .progress-bar{
+        padding:0;
+        margin:0;
+        position:relative;
+        top:5px;
+        display:inline-block;
+        margin:0 20px;
+        li{
+            display:inline;
+            list-style:none;
+            margin-bottom:10px;
+        }
+        li:hover ~ .left-section{
+            width:100%;	
+        }
+        li:hover ~ .right-section{
+            width:0%;	
+        }
+        .left-section{
+            overflow:hidden;
+            height:2px;
+            width:0%;
+            margin-top:5px;
+            display:inline-block;
+            float:left;
+            background-color:$blue-shale;
+            -webkit-transition: width .25s;
+            -moz-transition: width .25s;
+            -o-transition: width .25s;
+            transition: width .25s;
+        }
+        .right-section{
+            height:2px;
+            width:100%;
+            margin-top:5px;
+            display:inline-block;
+            float:left;
+            background-color:$gray-granite;
+            -webkit-transition: width .25s;
+            -moz-transition: width .25s;
+            -o-transition: width .25s;
+            transition: width .25s;
+        }
+    }
 }
 
 
@@ -348,7 +389,7 @@ input[type="text"].error:focus{
 ----------------------------------------------------------*/
 
 footer{
-    background-color:$blue-slate;
+    background-color:$blue-shale;
     border-top:5px $blue-shale solid;
     margin-top:20px;
     padding:20px;
@@ -357,6 +398,9 @@ footer{
     ul{
         list-style:none;
         li{
+            a{
+                color:$white;
+            }
             display:inline-block;
             margin-right:40px;
         }
@@ -395,8 +439,8 @@ footer{
     @include transition(.3s);
 }
 .btn__submit:hover{
-    background-color:$blue-shale;
-    border: 3px solid $blue-shale;
+    background-color:#7db4bc;
+    border: 3px solid #7db4bc;
 }
 .btn__clear{
     background-color:$red-salmon;
@@ -462,6 +506,7 @@ footer{
     }
     h3{
         color:$blue;
+        margin-top:10px;
     }
 }
 
