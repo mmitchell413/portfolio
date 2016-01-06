@@ -49,13 +49,20 @@ p {
   font-size: 1em;
   font-weight: 300; }
 
-a {
-  color: #6F9196;
-  text-decoration: none;
+p a {
+  border-bottom: 2px solid #6F9196;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
+
+p a:hover {
+  border-bottom: 2px solid #B5C4C7; }
+
+a {
+  color: #6F9196;
+  font-weight: 400;
+  text-decoration: none; }
 
 a:hover {
   color: #B5C4C7; }
@@ -66,6 +73,9 @@ ul {
 .container {
   max-width: 1200px;
   margin: 0 auto; }
+
+.container.wide-margins {
+  margin: 80px auto; }
 
 .center {
   margin: 0 auto;
@@ -299,7 +309,6 @@ input[type="text"].error:focus {
 ----------------------------------------------------------*/
 footer {
   background-color: #7f8f92;
-  border-top: 5px #7f8f92 solid;
   margin-top: 20px;
   padding: 20px;
   color: #465254;
@@ -389,29 +398,49 @@ footer {
   height: 423px;
   text-align: center;
   padding: 20px 0 0 0;
-  margin: 0 0 40px 0; }
+  margin: 0 0 0 0; }
   .hero-img h1, .hero-img p {
     color: #ffffff; }
   .hero-img h1 {
-    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
-    padding-top: 40px; }
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 40px;
+    position: relative;
+    left: -50px;
+    opacity: 0.0; }
   .hero-img p {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); }
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    position: relative;
+    left: -50px;
+    opacity: 0.0; }
   .hero-img .logo {
     width: 100px;
     margin: 20px auto 0 auto;
     display: block; }
   .hero-img .btn {
-    color: #6F9196; }
+    color: #6F9196;
+    margin-right: 0; }
+
+.hero-img.contact {
+  height: 175px; }
+  .hero-img.contact h1 {
+    position: relative;
+    display: inline;
+    top: -35px;
+    left: -10px; }
+  .hero-img.contact .logo {
+    display: inline; }
 
 .featured {
-  max-width: 1000px;
-  margin-bottom: 40px; }
+  max-width: 1000px; }
   .featured img {
     width: 150px; }
   .featured h3 {
     color: #6F9196;
     margin-top: 10px; }
+
+.highlight__yellow {
+  background: linear-gradient(to right, #FFEEA8 0%, #FFEEA8 50%, #f2e19d 50%, #f2e19d 100%); }
 
 .about-me__img {
   width: 200px;
