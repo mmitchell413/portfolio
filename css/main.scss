@@ -1,21 +1,26 @@
-$blue: #6F9196;
+$blue: #608798;
 $blue-bering: #8EA0A3;
 $blue-slate: #B5C4C7;
 $blue-shale: #7f8f92;
 $blue-sapphire: #0793E8;
-$blue-seashore: #13BBFF;
+$blue-seashore: #25b7d3;
 $red-crimson: #f22f2f;
-$red-salmon: #e45d5d;
-$red-love: #fd8d8d;
-$green-lush: #5fda68;
-$green-lime: #a5ef9f;
-$yellow-canary: #FFEEA8;
-$yellow-custard: #fff7d4;
+$red-salmon: #e04f5f;
+$red-love: #e85767;
+$green-seafoam: #32bea6;
+$green-pine: #229a85;
+$yellow-canary: #f0ef86;
+$yellow-custard: #f6f595;
 $tan: #DBD5BF;
 $gray-granite: #232323;
-$gray-doom: #5b646c;
+$gray-doom: #444444;
 $white-off: #f9f9f9;
 $white: #ffffff;
+
+@font-face {
+    font-family: 'BaronNeue';
+    src: url("fonts/baron-neue.otf");
+}
 
 @mixin transition($time){
 	-webkit-transition: all $time;
@@ -31,6 +36,9 @@ $white: #ffffff;
 }
 @mixin font-lato(){
     font-family: "Lato", sans-serif;
+}
+@mixin font-baron(){
+    font-family: "BaronNeue", sans-serif;
 }
 @mixin color(){
 	width:20px;
@@ -67,7 +75,7 @@ body{
 }
 
 header{
-	@include font-oxygen;
+	@include font-baron;
     color:$blue;
     margin:0;
 }
@@ -95,15 +103,15 @@ p{
 	font-weight:300;
 }
 p a{
-    border-bottom:2px solid $blue;
+    border-bottom:1px solid $blue;
     @include transition(.3s);
 }
 p a:hover{
-    border-bottom:2px solid $blue-slate;
+    border-bottom:1px solid $blue-slate;
 }
 a{
     color:$blue; 
-    font-weight:400;
+    font-weight:300;
     text-decoration:none;
 }
 a:hover{
@@ -116,12 +124,12 @@ ul{
     max-width:1200px;
     margin:0 auto;
 }
-.container.wide-margins{
-    margin:80px auto;
-}
 .center{
     margin:0 auto;
     display:block;
+}
+.wide-margins{
+    margin:80px auto;
 }
 .text-left{
     text-align:left;
@@ -176,8 +184,22 @@ ul{
 	.grid-1-4{
 		width:25%;
 	}
+    .grid-1-4:nth-child(4n-3){
+        padding-right:20px;
+        padding-left:0px;
+    }
+    .grid-1-4:nth-child(4n){
+        padding-right:0px;
+        padding-left:20px;
+    }
+    .grid-1-4:nth-child(4n-1), .grid-1-4:nth-child(4n-2){
+        padding-right:20px;
+        padding-left:20px;
+    }
 	.grid-1-6{
-		width:16.66666666%;
+		width:(1/6) * 100%;
+        padding-left:10px;
+        padding-right:10px;
 	}
 	.grid-1-8{
 		width:12.5%;
@@ -247,11 +269,11 @@ ul{
 		.red-love{
 			background-color:$red-love;
 		}
-		.green-lush{
-			background-color:$green-lush;
+		.green-seafoam{
+			background-color:$green-seafoam;
 		}
-		.green-lime{
-			background-color:$green-lime;
+		.green-pine{
+			background-color:$green-pine;
 		}
 		.gray-granite{
 			background-color:$gray-granite;
@@ -322,8 +344,8 @@ input[type="text"].error{
 	border:1px solid $red-love;
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus{
-	border:1px solid $blue-shale;
-    color:$blue-shale;
+	border:1px solid $blue;
+    color:$blue;
 }
 input[type="text"].error:focus{
 	color:$red-crimson;
@@ -341,6 +363,7 @@ input[type="text"].error:focus{
     color: $white-off;
     a{
         color:$blue-slate;
+        @include font-baron;
         @include transition(.3s);
     }
     a:hover{
@@ -373,7 +396,7 @@ input[type="text"].error:focus{
             margin-top:5px;
             display:inline-block;
             float:left;
-            background-color:$blue-shale;
+            background-color:$blue;
             -webkit-transition: width .25s;
             -moz-transition: width .25s;
             -o-transition: width .25s;
@@ -399,8 +422,7 @@ input[type="text"].error:focus{
 ----------------------------------------------------------*/
 
 footer{
-    background-color:$blue-shale;
-    margin-top:20px;
+    background-color:$blue;
     padding:20px;
     color:#465254;
     font-size:.7em;
@@ -408,10 +430,33 @@ footer{
         list-style:none;
         li{
             a{
+                color:$blue-slate;
+                @include transition(.3s);
+            }
+            a:hover{
                 color:$white;
             }
             display:inline-block;
             margin-right:40px;
+        }
+    }
+    .footer-menu{
+        float:left;
+        margin-top:21px;
+    }
+    .social-media{
+        float:right;
+        svg{
+            width:25px;
+            height:25px;
+            fill:$blue-slate;
+            @include transition(.3s);
+        }
+        svg:hover{
+            fill:$white;
+        }
+        li{
+            margin-right:10px;
         }
     }
 }
@@ -434,13 +479,24 @@ footer{
     cursor:pointer;
 }
 .btn__yellow{
+    color:$blue;
     background-color:$yellow-canary;
     border: 3px solid $yellow-canary;
     @include transition(.3s);
 }
 .btn__yellow:hover{
+    color:$blue;
     background-color:$yellow-custard;
     border: 3px solid $yellow-custard;
+}
+.btn__green{
+    background-color:$green-seafoam;
+    border: 3px solid $green-seafoam;
+    @include transition(.3s);
+}
+.btn__green:hover{
+    background-color:$green-pine;
+    border: 3px solid $green-pine;
 }
 .btn__submit{
     background-color:$blue;
@@ -492,10 +548,11 @@ footer{
     }
     h1{
         text-shadow: 1px 1px 0px rgba(0,0,0,.25);
-        padding-top:40px;
+        padding-top:20px;
         position:relative;
         left:-50px;
         opacity:0.0;
+        font-family: 'BaronNeue';
     }
     p{
         text-shadow: 1px 1px 0px rgba(0,0,0,.25);
@@ -505,13 +562,35 @@ footer{
         opacity:0.0;
     }
     .logo{
-        width:100px;
+        width:125px;
         margin:20px auto 0 auto;
         display:block;
+        stroke: $yellow-canary;
+        fill: $yellow-canary;
+        @include transition(.3s);
     }
+    .logo__border{
+        @include transition(.3s);
+    }
+    .logo:hover{
+        stroke: $red-salmon;
+        fill: $red-salmon;
+    }
+    .logo:hover .logo__border{
+        stroke: $red-salmon;
+    } 
     .btn{
-        color:$blue;
+        font-weight:400;
         margin-right:0;
+    }
+}
+.featured{
+    img{
+        width:150px;
+    }
+    h3{
+        font-family: 'BaronNeue';
+        margin-top:10px;
     }
 }
 .hero-img.contact{
@@ -524,31 +603,70 @@ footer{
     }
     .logo{
         display:inline;
-    }
-}
-
-.featured{
-    max-width:1000px;
-    img{
-        width:150px;
-    }
-    h3{
-        color:$blue;
-        margin-top:10px;
+        width:100px;
     }
 }
 .highlight__yellow{
+    p, h2, h3{
+       color:$gray-doom; 
+    }
+    h2{
+        border-bottom: 3px solid $gray-doom;
+        padding-bottom:10px;
+        margin-bottom:20px;
+        display:inline-block;
+    }
       background: linear-gradient(
-    to right, 
+    -45deg, 
     $yellow-canary 0%, 
     $yellow-canary 50%, 
-    #f2e19d 50%, 
-    #f2e19d 100%
+    $yellow-custard 50%, 
+    $yellow-custard 100%
           )
 }
-
+.highlight__red{
+    p,h2, h3{color:$white;}
+    h2{
+        border-bottom:3px solid $white;
+        padding-bottom:10px;
+        margin-bottom:20px;
+        display:inline-block;
+    }
+      background: linear-gradient(
+    -45deg, 
+    $red-love 0%, 
+    $red-love 50%, 
+    $red-salmon 50%, 
+    $red-salmon 100%
+          )
+}
+.owl-item{
+    padding:0 30px;
+}
+.owl-theme .owl-controls .owl-buttons div{
+    background-color:$white;
+    color: $gray-doom;
+    opacity:.5;
+    @include transition(.15s);
+}
+.owl-theme .owl-controls .owl-buttons div:hover{
+    opacity:1.0;
+}
+#process{
+    img{
+        width:100px;
+    }
+}
 .about-me__img{
     width:200px;
     float:left;
     margin:0 40px 20px 0;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 1240px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
