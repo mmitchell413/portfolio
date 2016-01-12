@@ -1,10 +1,12 @@
-<? php
+<?php
     
     if (isset($_POST['submit'])){
         $to = "mmitchell413@gmail.com";
-        $subject = $_POST['contact__subject'];
-        $from = $_POST['contact__email'];
-        $message = $_POST['contact__message'];
+        $firstName = $_POST['firstName1'];
+        $lastName = $_POST['lastName1'];
+        $subject = $_POST['subject1'];
+        $from = $_POST['email1'];
+        $message = $_POST['message1'];
         $headers = "From:" . $from;
         
         if (mail($to, $subject, $message, $headers)){

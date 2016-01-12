@@ -19,7 +19,7 @@ $white: #ffffff;
 
 @font-face {
     font-family: 'BaronNeue';
-    src: url("fonts/baron-neue.otf");
+    src: url("fonts/lintel.otf");
 }
 
 @mixin transition($time){
@@ -27,12 +27,6 @@ $white: #ffffff;
 	-moz-transition: all $time;
 	-o-transition: all $time;
 	transition: all $time;
-}
-@mixin font-oxygen(){
-	font-family: "Oxygen", sans-serif;
-}
-@mixin font-roboto(){
-	font-family: "Roboto", sans-serif;
 }
 @mixin font-lato(){
     font-family: "Lato", sans-serif;
@@ -52,17 +46,25 @@ $white: #ffffff;
 div{
     overflow:hidden;
 }
+html{
+    height:100%;
+}
 body{
+      background: url(../img/hero.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	margin:0;
 	padding:0;
-	font-weight:400;
+    height:100%;
+	font-weight:300;
     font-size:1.2em;
 	box-sizing:border-box;
-	background-color:$white;
-	width:100%;
+	/*background-color:$white;*/
 	@include font-lato;
 }
-
+ 
 .main{
 	padding:40px;
 	box-shadow: 0px 3px 3px rgba(0,0,0,.3);
@@ -71,33 +73,35 @@ body{
 	max-width:1200px;
 	overflow:hidden;
 	margin:20px auto;
-	background-color:$white;
+	/*background-color:$white;*/
 }
 
 header{
 	@include font-baron;
-    color:$blue;
+    color:$white;
     margin:0;
 }
 h1{
-	@extend header;
+	@extend header; 
 	font-size:2.2em;
     margin-bottom:10px;
 	font-weight:700;
 }
 h2{
 	@extend header;
+    color:$blue-slate;
 	font-size:1.6em;
     margin-bottom:5px;
 	font-weight:400;
 }
 h3{
     @extend header;
+    color:$blue-slate;
     font-size:1.3em;
     font-weight:400;
 }
 p{
-	color: $gray-doom;
+	color: $white;
 	line-height:1.4em;
 	font-size:1em;
 	font-weight:300;
@@ -307,14 +311,13 @@ input, textarea{
 	margin: 5px 0 10px 0px;
 	width:100%;
     color:#ddd;
-	border:1px solid #eee;
-	box-shadow:3px 3px 3px rgba(60,60,60,.02) inset;
+    border:none;
 	padding:15px;
     font-size:1em;
     font-weight:300;
+    border-radius:3px;
 	display:inline-block;
-	border-radius:3px;
-	@include font-roboto;
+	@include font-baron;
 }
 .inputs{
 	margin-top:20px;
@@ -325,32 +328,33 @@ textarea{
     resize:none;
 }
 label{
-	@include font-oxygen;
+	@include font-lato;
 	text-transform:uppercase;
-	color:$gray-doom;
+	color:$white;
 	font-size:10px;
 	margin-top:10px;
 }
+label.error{
+    color:#eb919b;
+}
 input[type="text"], input[type="password"], input[type="email"], textarea{
-	background-color: $white-off;
+	background: rgba(255,255,255,.4);
     letter-spacing:1px;
     font-weight:300;
 	@include transition(.3s);
 }
-input[type="text"].error{
+textarea.error, input.error{
 	@extend input[type="text"];
-	background-color:#f9eded;
-	color:$red-love;
-	border:1px solid $red-love;
+	background:rgba(235,145,155,.5);
+	color:#eb919b;
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus{
-	border:1px solid $blue;
+    background: rgba(255,255,255,.6);
     color:$blue;
 }
-input[type="text"].error:focus{
-	color:$red-crimson;
-	background-color:$red-love;
-	border:1px solid $red-crimson;
+textarea.error:focus, input.error:focus{
+	color:$white;
+	background:rgba(235,145,155,.8);
 }
 
 
@@ -358,7 +362,10 @@ input[type="text"].error:focus{
 ----------------------------------------------------------*/
 
 .top-nav{
-    width:100%;
+    padding:40px;
+    height:100%;
+    max-width:600px;
+    float:left;
     background-color: $gray-granite;
     color: $white-off;
     a{
@@ -369,53 +376,104 @@ input[type="text"].error:focus{
     a:hover{
         color:$white;
     }
-}
-.top-nav__list {
-    .progress-bar{
-        padding:0;
-        margin:0;
-        position:relative;
-        top:5px;
-        display:inline-block;
-        margin:0 20px;
+    .social-media{
+        margin:0 auto;
+        position:absolute;
+        top:auto;
+        bottom:20px;
+        display:block;
+        list-style:none;
+        svg{
+            width:25px;
+            height:25px;
+            fill:$blue-slate;
+            @include transition(.3s);
+        }
+        svg:hover{
+            fill:$white;
+        }
         li{
-            display:inline;
-            list-style:none;
-            margin-bottom:10px;
+            float:right;
+            margin-right:10px;
         }
-        li:hover ~ .left-section{
-            width:100%;	
-        }
-        li:hover ~ .right-section{
-            width:0%;	
-        }
-        .left-section{
-            overflow:hidden;
-            height:2px;
-            width:0%;
-            margin-top:5px;
+    }
+    .top-nav__list {
+        font-size:24px;
+        .progress-bar{
+            padding:0;
+            
+            margin:0;
+            position:relative;
+            top:5px;
             display:inline-block;
-            float:left;
-            background-color:$blue;
-            -webkit-transition: width .25s;
-            -moz-transition: width .25s;
-            -o-transition: width .25s;
-            transition: width .25s;
-        }
-        .right-section{
-            height:2px;
-            width:100%;
-            margin-top:5px;
-            display:inline-block;
-            float:left;
-            background-color:$gray-granite;
-            -webkit-transition: width .25s;
-            -moz-transition: width .25s;
-            -o-transition: width .25s;
-            transition: width .25s;
+            margin:10px 20px 0 20px;
+            li{
+                display:inline-block;
+                list-style:none;
+                margin-bottom:5px;
+            }
+            li:hover ~ .left-section{
+                width:100%;	
+            }
+            li:hover ~ .right-section{
+                width:0%;	
+            }
+            .left-section{
+                overflow:hidden;
+                height:2px;
+                width:0%;
+                margin-top:0px;
+                display:inline-block;
+                float:left;
+                background-color:$blue;
+                -webkit-transition: width .25s;
+                -moz-transition: width .25s;
+                -o-transition: width .25s;
+                transition: width .25s;
+            }
+            .right-section{
+                height:2px;
+                width:100%;
+                margin-top:0px;
+                display:inline-block;
+                float:left;
+                background-color:$gray-granite;
+                -webkit-transition: width .25s;
+                -moz-transition: width .25s;
+                -o-transition: width .25s;
+                transition: width .25s;
+            }
         }
     }
 }
+
+
+/* PAGE STYLES 
+---------------------------------------------------------*/
+
+.page{
+    height:100%;
+    max-width:900px;
+    min-width:600px;
+    width:100%;
+    background: rgba(55,55,55,.8);
+    overflow-y:auto;
+    .page__container{
+        padding:60px; 
+    }
+}
+.page::-webkit-scrollbar {
+    width: 4px;
+}
+ 
+.page::-webkit-scrollbar-track {
+    background:none;
+}
+ 
+.page::-webkit-scrollbar-thumb {
+    background:#999999;
+}
+
 
 
 /* FOOTER STYLES 
@@ -444,21 +502,6 @@ footer{
         float:left;
         margin-top:21px;
     }
-    .social-media{
-        float:right;
-        svg{
-            width:25px;
-            height:25px;
-            fill:$blue-slate;
-            @include transition(.3s);
-        }
-        svg:hover{
-            fill:$white;
-        }
-        li{
-            margin-right:10px;
-        }
-    }
 }
 
 
@@ -473,7 +516,6 @@ footer{
     color:$white;
     display:inline-block;
     margin-right:20px;
-    @include font-oxygen;
 }
 .btn:hover{
     cursor:pointer;
@@ -537,9 +579,6 @@ footer{
 
 /* hero image */
 .hero-img{
-    background-image:url('../img/hero.png');
-    background-size:cover;
-    height:423px;
     text-align:center;
     padding:20px 0 0 0;
     margin: 0 0 0 0;
@@ -550,23 +589,24 @@ footer{
         text-shadow: 1px 1px 0px rgba(0,0,0,.25);
         padding-top:20px;
         position:relative;
-        left:-50px;
+        top:-25px;
         opacity:0.0;
+        letter-spacing:3px;
         font-family: 'BaronNeue';
     }
     p{
         text-shadow: 1px 1px 0px rgba(0,0,0,.25);
-        font-weight:400;
+        font-weight:300;
         position:relative;
-        left:-50px;
+        top:-25px;
         opacity:0.0;
     }
     .logo{
         width:125px;
         margin:20px auto 0 auto;
         display:block;
-        stroke: $yellow-canary;
-        fill: $yellow-canary;
+        stroke: $blue;
+        fill: $blue;
         @include transition(.3s);
     }
     .logo__border{
@@ -616,13 +656,13 @@ footer{
         margin-bottom:20px;
         display:inline-block;
     }
-      background: linear-gradient(
+      /*background: linear-gradient(
     -45deg, 
     $yellow-canary 0%, 
     $yellow-canary 50%, 
     $yellow-custard 50%, 
     $yellow-custard 100%
-          )
+          )*/
 }
 .highlight__red{
     p,h2, h3{color:$white;}
