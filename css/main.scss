@@ -159,6 +159,9 @@ ul{
     .clear{
         clear:both;
     }
+    .grid-1-1{
+        width:100%;
+    }
 	.grid-1-2{
 		width:50%;
 	}
@@ -347,6 +350,7 @@ textarea.error, input.error{
 	@extend input[type="text"];
 	background:rgba(235,145,155,.5);
 	color:#eb919b;
+    border:none;
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus{
     background: rgba(255,255,255,.6);
@@ -355,6 +359,15 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 textarea.error:focus, input.error:focus{
 	color:$white;
 	background:rgba(235,145,155,.8);
+}
+.contact__error{
+    display:none;
+    clear:both;
+    p{
+        margin-top:0px;
+        font-size:14px;
+        color:#eb919b;
+    }
 }
 
 
@@ -456,7 +469,7 @@ textarea.error:focus, input.error:focus{
     max-width:900px;
     min-width:600px;
     width:100%;
-    background: rgba(55,55,55,.8);
+    background: rgba(55,55,55,.9);
     overflow-y:auto;
     .page__container{
         padding:60px; 
@@ -602,7 +615,7 @@ footer{
         opacity:0.0;
     }
     .logo{
-        width:125px;
+        width:250px;
         margin:20px auto 0 auto;
         display:block;
         stroke: $blue;

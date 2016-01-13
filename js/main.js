@@ -19,12 +19,58 @@ $(function () {
 
     // Contact form real-time verification
     $("#contact__email").focusout(function(){
-        if(isValidEmailAddress(this.val){
-            $("#contact-label__email").removeClass('error');
-            $("#contact__email").removeClass('error');
+        if(isValidEmailAddress($("#contact__email").val())){
+//            $("#contact-label__email").removeClass('error');
+//            $("#contact__email").removeClass('error');
+            $(".contact__emailError").slideUp();
         }else{
-            $("#contact-label__email").addClass('error');
-            $("#contact__email").addClass('error');
+//            $("#contact-label__email").addClass('error');
+//            $("#contact__email").addClass('error');
+            $(".contact__emailError").slideDown();
+        }
+    });
+    $("#contact__firstName").focusout(function(){
+        if($("#contact__firstName").val()){
+//            $("#contact-label__firstName").removeClass('error');
+//            $("#contact__firstName").removeClass('error');
+            $(".contact__firstNameError").slideUp();
+        }else{
+//            $("#contact-label__firstName").addClass('error');
+//            $("#contact__firstName").addClass('error');
+            $(".contact__firstNameError").slideDown();
+        }
+    });
+    $("#contact__lastName").focusout(function(){
+        if($("#contact__lastName").val()){
+//            $("#contact-label__lastName").removeClass('error');
+//            $("#contact__lastName").removeClass('error');
+            $(".contact__lastNameError").slideUp();
+        }else{
+//            $("#contact-label__lastName").addClass('error');
+//            $("#contact__lastName").addClass('error');
+            $(".contact__lastNameError").slideDown();
+        }
+    });
+    $("#contact__subject").focusout(function(){
+        if($("#contact__subject").val()){
+//            $("#contact-label__subject").removeClass('error');
+//            $("#contact__subject").removeClass('error');
+            $(".contact__subjectError").slideUp();
+        }else{
+//            $("#contact-label__subject").addClass('error');
+//            $("#contact__subject").addClass('error');
+            $(".contact__subjectError").slideDown();
+        }
+    });
+    $("#contact__message").focusout(function(){
+        if($("#contact__message").val()){
+//            $("#contact-label__message").removeClass('error');
+//            $("#contact__message").removeClass('error');
+            $(".contact__messageError").slideUp();
+        }else{
+//            $("#contact-label__message").addClass('error');
+//            $("#contact__message").addClass('error');
+            $(".contact__messageError").slideDown();
         }
     });
     
@@ -53,7 +99,7 @@ $(function () {
             $("#contact-label__lastName").removeClass('error');
             $("#contact__lastName").removeClass('error');
         }
-        if(email == ""){
+        if(!isValidEmailAddress(email)){
             $("#contact-label__email").addClass('error');
             $("#contact__email").addClass('error');
             formSubmitError = true;
@@ -91,6 +137,8 @@ $(function () {
                     $('#contact-form')[0].reset();
                 }
             );
+        }else{
+            
         }
     });
     

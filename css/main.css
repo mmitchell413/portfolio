@@ -112,6 +112,8 @@ ul {
     float: left; }
   .grid .clear {
     clear: both; }
+  .grid .grid-1-1 {
+    width: 100%; }
   .grid .grid-1-2 {
     width: 50%; }
   .grid .grid-1-2:nth-child(odd) {
@@ -265,7 +267,8 @@ input[type="text"], textarea.error, input.error, input[type="password"], input[t
 
 textarea.error, input.error {
   background: rgba(235, 145, 155, 0.5);
-  color: #eb919b; }
+  color: #eb919b;
+  border: none; }
 
 input[type="text"]:focus, textarea.error:focus, input.error:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
   background: rgba(255, 255, 255, 0.6);
@@ -274,6 +277,14 @@ input[type="text"]:focus, textarea.error:focus, input.error:focus, input[type="p
 textarea.error:focus, input.error:focus {
   color: #ffffff;
   background: rgba(235, 145, 155, 0.8); }
+
+.contact__error {
+  display: none;
+  clear: both; }
+  .contact__error p {
+    margin-top: 0px;
+    font-size: 14px;
+    color: #eb919b; }
 
 /* NAVIGATION STYLES
 ----------------------------------------------------------*/
@@ -361,7 +372,7 @@ textarea.error:focus, input.error:focus {
   max-width: 900px;
   min-width: 600px;
   width: 100%;
-  background: rgba(55, 55, 55, 0.8);
+  background: rgba(55, 55, 55, 0.9);
   overflow-y: auto; }
   .page .page__container {
     padding: 60px; }
@@ -504,7 +515,7 @@ footer {
     top: -25px;
     opacity: 0.0; }
   .hero-img .logo {
-    width: 125px;
+    width: 250px;
     margin: 20px auto 0 auto;
     display: block;
     stroke: #608798;
