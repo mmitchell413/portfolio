@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio site project json file",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm install grunt --portfolio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmitchell413/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Matt Mitchell",
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/mmitchell413/portfolio/issues"
+  },
+  "homepage": "https://github.com/mmitchell413/portfolio",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-postcss": "^0.7.1"
+  }
+}
