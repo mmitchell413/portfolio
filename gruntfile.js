@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                 dist: {
                 src: [
                     'js/libs/*.js', // All JS in the libs folder
-                    'js/global.js'  // This specific file
+                    'js/main.js'  // This specific file
                 ],
                 dest: 'js/build/production.js',
             }
@@ -19,27 +19,10 @@ module.exports = function(grunt) {
             dynamic: {
                 files: [{
                     expand: true,
-                    cwd: 'images/',
+                    cwd: 'img/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'images/build/'
+                    dest: 'img/build/'
                 }]
-            }
-        },
-        
-        watch: {
-            scripts: {
-                files: ['js/*.js'],
-                tasks: ['concat'],
-                options: {
-                    spawn: false,
-                },
-            },
-            css: {
-                files: ['css/*.scss'],
-                tasks: ['sass'],
-                options: {
-                    spawn: false,
-                }
             }
         },
         
@@ -63,11 +46,42 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'css/build/global.css': 'css/global.scss'
+                    'css/build/global.css': 'css/main.scss'
                 }
             } 
+        },
+        
+          uglify: {
+            my_target: {
+              files: {
+                'js/build/production.min.js': ['js/build/production.js']
+              }
+            }
+          },
+        
+        watch: {
+            scripts: {
+                files: ['js/*.js'],
+                tasks: ['concat'],
+                options: {
+                    spawn: false,
+                },
+            },
+            css: {
+                files: ['css/*.scss'],
+                tasks: ['sass'],
+                options: {
+                    spawn: false,
+                }
+            },
+            minify: {
+                files:  ['js/*.js'], 
+                tasks: ['uglify'],
+                options: {
+                    spawn:false,
+                }
+            }
         }
-
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
@@ -76,8 +90,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['postcss:dist', 'concat', 'imagemin', 'watch']);
+    grunt.registerTask('default', ['postcss:dist', 'concat', 'imagemin', 'uglify']);
 
 };
