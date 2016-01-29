@@ -46,7 +46,7 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'css/build/global.css': 'css/main.scss'
+                    'css/build/main.css': 'css/main.scss'
                 }
             } 
         },

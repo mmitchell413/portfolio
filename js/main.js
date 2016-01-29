@@ -1,7 +1,9 @@
 $(function () {
-
+    
     // Hide pages on initial load
-    $(".page").hide();
+    if($(window).width() > 800){
+        $(".page").hide();
+    }
     
     // Show page on initial load if hash value is given
     if(location.hash){
@@ -122,60 +124,68 @@ $(function () {
     });
     
     $(".top-nav__link#about-link").click(function(){
-        if($("#portfolio").is(':visible')){
-            $("#portfolio").toggle('slide');
+        if($(window).width() > 800){
+            if($("#portfolio").is(':visible')){
+                $("#portfolio").toggle('slide');
+            }
+            if($("#blog").is(':visible')){
+                $("#blog").toggle('slide');
+            }
+            if($("#contact").is(':visible')){
+                $("#contact").toggle('slide');
+            }
+            setTimeout(function(){
+                $("#about").toggle('slide');
+            }, 500);
         }
-        if($("#blog").is(':visible')){
-            $("#blog").toggle('slide');
-        }
-        if($("#contact").is(':visible')){
-            $("#contact").toggle('slide');
-        }
-        setTimeout(function(){
-            $("#about").toggle('slide');
-        }, 500);
     });
     $(".top-nav__link#portfolio-link").click(function(){
-        if($("#about").is(':visible')){
-            $("#about").toggle('slide');
+        if($(window).width() > 800){
+            if($("#about").is(':visible')){
+                $("#about").toggle('slide');
+            }
+            if($("#blog").is(':visible')){
+                $("#blog").toggle('slide');
+            }
+            if($("#contact").is(':visible')){
+                $("#contact").toggle('slide');
+            }
+            setTimeout(function(){
+                $("#portfolio").toggle('slide');
+            }, 500);
         }
-        if($("#blog").is(':visible')){
-            $("#blog").toggle('slide');
-        }
-        if($("#contact").is(':visible')){
-            $("#contact").toggle('slide');
-        }
-        setTimeout(function(){
-            $("#portfolio").toggle('slide');
-        }, 500);
     });
     $(".top-nav__link#blog-link").click(function(){
-        if($("#about").is(':visible')){
-            $("#about").toggle('slide');
+        if($(window).width() > 800){
+            if($("#about").is(':visible')){
+                $("#about").toggle('slide');
+            }
+            if($("#portfolio").is(':visible')){
+                $("#portfolio").toggle('slide');
+            }
+            if($("#contact").is(':visible')){
+                $("#contact").toggle('slide');
+            }
+            setTimeout(function(){
+                $("#blog").toggle('slide');
+            }, 500);
         }
-        if($("#portfolio").is(':visible')){
-            $("#portfolio").toggle('slide');
-        }
-        if($("#contact").is(':visible')){
-            $("#contact").toggle('slide');
-        }
-        setTimeout(function(){
-            $("#blog").toggle('slide');
-        }, 500);
     });
     $(".top-nav__link#contact-link").click(function(){
-        if($("#about").is(':visible')){
-            $("#about").toggle('slide');
+        if($(window).width() > 800){
+            if($("#about").is(':visible')){
+                $("#about").toggle('slide');
+            }
+            if($("#blog").is(':visible')){
+                $("#blog").toggle('slide');
+            }
+            if($("#portfolio").is(':visible')){
+                $("#portfolio").toggle('slide');
+            }
+            setTimeout(function(){
+                $("#contact").toggle('slide');
+            }, 500);
         }
-        if($("#blog").is(':visible')){
-            $("#blog").toggle('slide');
-        }
-        if($("#portfolio").is(':visible')){
-            $("#portfolio").toggle('slide');
-        }
-        setTimeout(function(){
-            $("#contact").toggle('slide');
-        }, 500);
     });
 });
 

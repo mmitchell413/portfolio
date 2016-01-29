@@ -1,5 +1,4 @@
 <?php
-/* Short and sweet */
 define('WP_USE_THEMES', false);
 require('blog/wp-blog-header.php');
 ?>
@@ -17,16 +16,14 @@ require('blog/wp-blog-header.php');
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/production.min.js" type="text/javascript"></script>
         
         <!-- CSS -->
-        <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-        <link rel="stylesheet" href="owl-carousel/owl.theme.css">
         <link rel="stylesheet" href="css/main.css" type="text/css">
         
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-        
+         
         <!-- Google Tag Manager -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MT5WSX"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -282,92 +279,5 @@ require('blog/wp-blog-header.php');
                 </div>
             </div>
         </div>
-        
-        <!--<div class="highlight__yellow" id="what-i-do">
-            <div class="container wide-margins center text-center">
-                <div class="grid featured center">
-                    <div class="grid-1-4 center text-center">
-                        <img src="img/responsive.svg" />
-                        <h3>responsive design</h3>
-                        <p>Clean, simple, and effective responsive design to ensure your site looks incredible on any device</p>
-                    </div>
-                    <div class="grid-1-4 center text-center">
-                        <img src="img/coding.svg" />
-                        <h3>web design</h3>
-                        <p>Using the latest technologies and strictest W3C conventions ensures your site stays up to date and accessible </p>
-                    </div>
-                    <div class="grid-1-4 center text-center">
-                        <img src="img/application.svg" />
-                        <h3>ui / ux</h3>
-                        <p>Incorporate an amazing interface and make sure your users get the best experience possible</p>
-                    </div>
-                    <div class="grid-1-4 center text-center">
-                        <img src="img/analytics.svg" />
-                        <h3>analytics and seo</h3>
-                        <p>Incorporate an amazing interface and make sure your users get the best experience possible</p>
-                    </div>
-                </div>
-            </div>   
-        </div>
-        
-        <div class="container wide-margins">
-            <div class="grid">
-                <div class="grid-1-1">
-                    <img src="img/matt-mitchell.png" class="about-me__img">
-                    <h2>About Me</h2>
-                    <p>My name is Matt Mitchell and I'm a front-end web developer / designer by trade, but dabble in back-end development and graphic design. I live, work and play in the great city of Dallas, Texas. When I'm not tinkering away trying to make pixels look pretty, I spend my free time making music, playing video games, and spending time with friends and family. </p>
-                    <p>Some of my other interests include action-packed movies, gut-wrenching TV dramas, fast cars, mixed martial arts, hiking, and building custom computers.</p>
-                    <br>
-                    <h3>My Background</h3>
-                    <p>While attending the University of Texas at Dallas, I studied under some of the top professors in the field. I gained a vast array of knowledge and experience during my time there and owe a lot to the magnificent staff and student body of the university. I graduated in December of 2014 with a degree in Arts and Technology.</p>
-                    <p>As a student, I also worked full-time at the technology help desk as a support technician before moving to an internship at <a href="http://www.visualapp.com" target="_blank">Visual App</a>, a small web design company based in Richardson.</p>
-                    <p>I now work full-time as a front-end developer for <a href="https://www.gmfinancial.com" target="_blank">GM Financial</a>, helping them redefine their web presence. We are trying to make the company the industry leader in user experience and satisfaction. </p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="highlight__red" id="process">
-            <div class="container wide-margins center text-center">
-                <h2>the process</h2>
-                <br>
-                <div id="owl-process" class="owl-carousel featured center">
-                    <div class="center text-center">
-                        <img src="img/shop.svg" />
-                        <p>You decide you need a website or refresh on your current site for your business, hobby, etc. </p>
-                    </div>
-                    <div class="center text-center">
-                        <img src="img/checklist.svg" />
-                        <p>Collaborate to put together a list of features you want it to have: eCommerce, content management, etc.</p>
-                    </div>
-                    <div class="center text-center">
-                        <img src="img/graph-magnifier.svg" />
-                        <p>Review options for style choices and layout for your site - it can be helpful to look over others for ideas</p>
-                    </div>
-                    <div class="center text-center">
-                        <img src="img/content.svg" />
-                        <p>Put together the "meat" of the site: content, images, videos, etc.</p>
-                    </div>
-                    <div class="center text-center">
-                        <img src="img/designer.svg" />
-                        <p>Send the content to me and let me do my thing, reviewing the design with you on major milestones</p>
-                    </div>
-                    <div class="center text-center">
-                        <img src="img/money.svg" />
-                        <p>Rejoice in your new, amazing, totally awesome website</p>
-                    </div>
-                </div>
-            </div>   
-        </div>
-        
-        <footer>
-            <div class="container">
-                <ul class="footer-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">See My Work</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                
-            </div>
-        </footer>-->
     </body>
 </html>
