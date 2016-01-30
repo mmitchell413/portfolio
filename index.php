@@ -12,18 +12,18 @@ require('blog/wp-blog-header.php');
 <html>
     <head>
         <title>Matt Mitchell - Home</title>
-        <!-- Javascript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-        <script src="js/production.min.js" type="text/javascript"></script>
-        
+
         <!-- CSS -->
         <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
         
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
          
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        
         <!-- Google Tag Manager -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MT5WSX"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -38,36 +38,6 @@ require('blog/wp-blog-header.php');
     <body>
         
         <div class="top-nav center text-center">
-                <ul class="top-nav__list">
-                    <div class="progress-bar">
-                        <li>
-                            <a class="top-nav__link" href="#about" id="about-link">About</a>
-                        </li>
-                        <div class="left-section"></div>
-                        <div class="right-section"></div>
-                    </div>
-                    <div class="progress-bar">
-                        <li>
-                            <a class="top-nav__link" href="#portfolio" id="portfolio-link">See My Work</a>
-                        </li>
-                        <div class="left-section"></div>
-                        <div class="right-section"></div>
-                    </div>
-                    <div class="progress-bar">
-                        <li>
-                            <a class="top-nav__link" href="#blog" id="blog-link">Blog</a>
-                        </li>
-                        <div class="left-section"></div>
-                        <div class="right-section"></div>
-                    </div>
-                    <div class="progress-bar">
-                        <li>
-                            <a class="top-nav__link" href="#contact" id="contact-link">Contact</a>
-                        </li>
-                        <div class="left-section"></div>
-                        <div class="right-section"></div>
-                    </div>
-                </ul>
                 <div class="hero-img">
                     <div class="container">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -137,9 +107,38 @@ require('blog/wp-blog-header.php');
 </g>
 </svg>
                         <h1>Matt Mitchell</h1>
-                        <p>I pride myself in the highest quality websites, designed exactly to specification, and delivered on time. Whether you need a refresh on your current site or a brand-new site, we can make some magic happen.</p>
                     </div>
                 </div>
+                            <ul class="top-nav__list">
+                    <div class="progress-bar">
+                        <li>
+                            <a class="top-nav__link" href="#about" id="about-link">About</a>
+                        </li>
+                        
+                        <div class="right-section"></div>
+                    </div>
+                    <div class="progress-bar">
+                        <li>
+                            <a class="top-nav__link" href="#portfolio" id="portfolio-link">See My Work</a>
+                        </li>
+                        
+                        <div class="right-section"></div>
+                    </div>
+                    <div class="progress-bar">
+                        <li>
+                            <a class="top-nav__link" href="#blog" id="blog-link">Blog</a>
+                        </li>
+                        
+                        <div class="right-section"></div>
+                    </div>
+                    <div class="progress-bar">
+                        <li>
+                            <a class="top-nav__link" href="#contact" id="contact-link">Contact</a>
+                        </li>
+                        
+                        <div class="right-section"></div>
+                    </div>
+                </ul>
                 <div class="container">
                     <ul class="social-media">
                         <li><a href="https://www.facebook.com/matt.mitchell2" target="_blank"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -245,39 +244,59 @@ require('blog/wp-blog-header.php');
                 <div class="grid featured center">
                     <h2>Let's talk!</h2>
                     <p>Whether you're ready to get your site going or just have a question, drop me a line day or night and I'll get back to you!</p>
-                    <form id="contact-form" action="">
+                    <form id="contact-form" action="contact.php" method="post">
                         <div class="grid-1-2">
                             <label id="contact-label__firstName" for="contact__firstName">First Name</label>
-                            <input id="contact__firstName" type="text">
+                            <input id="contact__firstName" name="contact__firstName" type="text">
                             <div class="contact__error contact__firstNameError"><p>Please enter your first name</p></div>
                         </div>
                         <div class="grid-1-2">
                             <label id="contact-label__lastName" for="contact__lastName">Last Name</label>
-                            <input id="contact__lastName" type="text">
+                            <input id="contact__lastName" name="contact__lastName" type="text">
                             <div class="contact__error contact__lastNameError"><p>Please enter your last name</p></div>
                         </div>
                         <div class="grid-1-1">
                             <label id="contact-label__email" for="contact__email">Email Address</label>
-                            <input id="contact__email" type="email" />
+                            <input id="contact__email" name="contact__email" type="email" />
                             <div class="contact__error contact__emailError"><p>Please enter a valid email address</p></div>
                         </div>
                         <div class="grid-1-1">
                             <label id="contact-label__subject" for="contact__subject">Subject</label>
-                            <input id="contact__subject" type="text" />
+                            <input id="contact__subject" name="contact__subject" type="text" />
                             <div class="contact__error contact__subjectError"><p>Please enter a subject</p></div>
                         </div>
                         <div class="grid-1-1">
                             <label id="contact-label__message" for="contact__message">Message</label>
-                            <textarea id="contact__message"></textarea>
+                            <textarea id="contact__message" name="contact__message"></textarea>
                             <div class="contact__error contact__messageError"><p>Please enter a message</p></div>
                         </div>
                         
-                        <button type="submit" class="btn btn__submit" id="contact__submit">Submit</button>
+                        <button type="submit" class="btn btn__submit" id="contact__submit" disabled>Submit</button>
                         <button type="reset" class="btn btn__clear btn__ghost">Clear</button>
                     </form>
                     
                 </div>
             </div>
         </div>
+        
+        <div class="page" id="contact-success">
+            <div class="page__container">
+                <h2>Message sent successfully</h2>
+                <p>Thank you for contacting me! I'll get back to you shortly!</p>
+            </div>
+        </div>
+        
+        <div class="page" id="contact-failed">
+            <div class="page__container">
+                <h2>Message failed</h2>
+                <p>Something went wrong! Please try again.</p>
+            </div>
+        </div>
     </body>
+    
+    <!-- Javascript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/production.min.js" type="text/javascript"></script>
+        
 </html>

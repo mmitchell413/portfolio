@@ -1,20 +1,20 @@
 <?php
     
-    if (isset($_POST['submit'])){
-        $to = "mmitchell413@gmail.com";
-        $firstName = $_POST['firstName1'];
-        $lastName = $_POST['lastName1'];
-        $subject = $_POST['subject1'];
-        $from = $_POST['email1'];
-        $message = $_POST['message1'];
-        $headers = "From:" . $from;
+        $to = "matt@mattmitchell.org";
+        $firstName = $_POST['contact__firstName'];
+        $lastName = $_POST['contact__lastName'];
+        $subject = $_POST['contact__subject'];
+        $from = $_POST['contact__email'];
+        $message = "First Name: " . $firstName . "<br>Last Name: " . $lastName . "<br>" . $_POST['contact__message'];
+        $headers = "From: " . $from;
         
         if (mail($to, $subject, $message, $headers)){
-            echo "Mail sent.";
+            header("Location: http://www.mattmitchell.org/#contact-success");
+            exit();
         }
         else{
-            echo "failed";
+            header("Location: http://www.mattmitchell.org/#contact-failed");
+            exit();
         }
-    }
     
 ?>

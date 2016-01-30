@@ -125,7 +125,7 @@ ul{
 }
 date{ 
     color:$white-off;
-    font-size:14px;
+    font-size:1em;
     @include font-baron;
 }
 .container{
@@ -369,7 +369,7 @@ textarea.error:focus, input.error:focus{
     clear:both;
     p{
         margin-top:0px;
-        font-size:14px;
+        font-size:.8em;
         color:#eb919b;
     }
 }
@@ -382,6 +382,7 @@ textarea.error:focus, input.error:focus{
     padding:40px;
     height:100%;
     max-width:600px;
+    width:400px;
     float:left;
     background-color: $gray-granite;
     color: $white-off;
@@ -415,45 +416,30 @@ textarea.error:focus, input.error:focus{
         }
     }
     .top-nav__list {
-        font-size:24px;
+        font-size:1.3em;
         .progress-bar{
             padding:0;
-            
-            margin:0;
+            margin:0 auto;
             position:relative;
             top:5px;
-            display:inline-block;
+            display:block;
             margin:10px 20px 0 20px;
             li{
-                display:inline-block;
+                display:block;
+                clear:both;
                 list-style:none;
                 margin-bottom:5px;
             }
-            li:hover ~ .left-section{
-                width:100%;	
-            }
             li:hover ~ .right-section{
                 width:0%;	
-            }
-            .left-section{
-                overflow:hidden;
-                height:2px;
-                width:0%;
-                margin-top:0px;
-                display:inline-block;
-                float:left;
-                background-color:$blue;
-                -webkit-transition: width .25s;
-                -moz-transition: width .25s;
-                -o-transition: width .25s;
-                transition: width .25s;
+                margin:0 auto;
             }
             .right-section{
                 height:2px;
-                width:100%;
+                width:50%;
+                margin:0 auto;
                 margin-top:0px;
-                display:inline-block;
-                float:left;
+                display:block;
                 background-color:$gray-granite;
                 -webkit-transition: width .25s;
                 -moz-transition: width .25s;
@@ -531,6 +517,11 @@ footer{
     display:inline-block;
     margin-right:20px;
 }
+.btn:disabled{
+    background:#aaaaaa;
+    border: #aaaaaa;
+    opacity:.7;
+}
 .btn:hover{
     cursor:pointer;
 }
@@ -594,15 +585,15 @@ footer{
 /* hero image */
 .hero-img{
     text-align:center;
-    padding:20px 0 0 0;
+    padding: 0 0 0 0;
     margin: 0 0 0 0;
     h1, p{
         color:$white;
     }
     h1{
         text-shadow: 1px 1px 0px rgba(0,0,0,.25);
-        padding-top:20px;
-        position:relative;
+        padding-bottom:20px;
+        position:relative; 
         top:-25px;
         opacity:0.0;
         letter-spacing:3px;
@@ -617,7 +608,7 @@ footer{
     }
     .logo{
         width:250px;
-        margin:20px auto 0 auto;
+        margin:0 auto 0 auto;
         display:block;
         stroke: $blue;
         fill: $blue;
@@ -669,12 +660,12 @@ footer{
 /* RESPONSIVE STYLES */
 @media screen and (max-width:3200px){
     body{
-        background: url(../img/hero.png) no-repeat center center fixed; 
+        background: url(../img/bg1.jpg) no-repeat center center fixed; 
     }
 }
 @media screen and (max-width:1920px){
     body{
-        background: url(../img/hero-1920x1080.png) no-repeat center center fixed;
+        background: url(../img/bg1.jpg) no-repeat center center fixed;
     }
 }
 @media screen and (max-width: 1240px){
@@ -703,5 +694,7 @@ footer{
     }
     .top-nav{
         height:auto;
+        width:100%;
+        min-width:100%;
     }
 }

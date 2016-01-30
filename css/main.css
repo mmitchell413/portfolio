@@ -11,9 +11,6 @@ html {
   height: 100%; }
 
 body {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -63,9 +60,6 @@ p {
 
 p a {
   border-bottom: 1px solid #608798;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s; }
 
 p a:hover {
@@ -211,15 +205,10 @@ ul {
   height: 20px;
   border-radius: 10px;
   position: relative;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s; }
 
 .color div:hover {
   -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -o-transform: scale(1.5);
   transform: scale(1.5); }
 
 /* INPUT STYLES 
@@ -259,9 +248,6 @@ input[type="text"], textarea.error, input.error, input[type="password"], input[t
   background: rgba(255, 255, 255, 0.4);
   letter-spacing: 1px;
   font-weight: 300;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s; }
 
 textarea.error, input.error {
@@ -297,9 +283,6 @@ textarea.error:focus, input.error:focus {
   .top-nav a {
     color: #B5C4C7;
     font-family: "BaronNeue", sans-serif;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s; }
   .top-nav a:hover {
     color: #ffffff; }
@@ -314,9 +297,6 @@ textarea.error:focus, input.error:focus {
       width: 25px;
       height: 25px;
       fill: #B5C4C7;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      -o-transition: all 0.3s;
       transition: all 0.3s; }
     .top-nav .social-media svg:hover {
       fill: #ffffff; }
@@ -348,9 +328,6 @@ textarea.error:focus, input.error:focus {
         display: inline-block;
         float: left;
         background-color: #608798;
-        -webkit-transition: width .25s;
-        -moz-transition: width .25s;
-        -o-transition: width .25s;
         transition: width .25s; }
       .top-nav .top-nav__list .progress-bar .right-section {
         height: 2px;
@@ -359,9 +336,6 @@ textarea.error:focus, input.error:focus {
         display: inline-block;
         float: left;
         background-color: #232323;
-        -webkit-transition: width .25s;
-        -moz-transition: width .25s;
-        -o-transition: width .25s;
         transition: width .25s; }
 
 /* PAGE STYLES 
@@ -399,9 +373,6 @@ footer {
       margin-right: 40px; }
       footer ul li a {
         color: #B5C4C7;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -o-transition: all 0.3s;
         transition: all 0.3s; }
       footer ul li a:hover {
         color: #ffffff; }
@@ -427,9 +398,6 @@ footer {
   color: #608798;
   background-color: #f0ef86;
   border: 3px solid #f0ef86;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s; }
 
 .btn__yellow:hover {
@@ -440,9 +408,6 @@ footer {
 .btn__green {
   background-color: #32bea6;
   border: 3px solid #32bea6;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s; }
 
 .btn__green:hover {
@@ -452,9 +417,6 @@ footer {
 .btn__submit {
   background-color: #608798;
   border: 3px solid #608798;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s; }
 
 .btn__submit:hover {
@@ -464,9 +426,6 @@ footer {
 .btn__clear {
   background-color: #e04f5f;
   border: 3px solid #e04f5f;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s; }
 
 .btn__clear:hover {
@@ -480,9 +439,6 @@ footer {
 .btn__ghost.btn__clear {
   color: #e85767;
   border: 3px solid #e85767;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s; }
 
 .btn__ghost.btn__clear:hover {
@@ -519,14 +475,8 @@ footer {
     display: block;
     stroke: #608798;
     fill: #608798;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s; }
   .hero-img .logo__border {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s; }
   .hero-img .logo:hover {
     stroke: #e04f5f;
@@ -587,9 +537,6 @@ $yellow-custard 100%
   background-color: #ffffff;
   color: #444444;
   opacity: .5;
-  -webkit-transition: all 0.15s;
-  -moz-transition: all 0.15s;
-  -o-transition: all 0.15s;
   transition: all 0.15s; }
 
 .owl-theme .owl-controls .owl-buttons div:hover {

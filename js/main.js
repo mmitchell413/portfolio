@@ -1,5 +1,28 @@
 $(function () {
     
+    // Window resize functions
+    // set initial window width
+    var width = $(window).width();
+    
+    $(window).resize(function(){
+        // Hide pages on resize if over 800
+        if(($(window).width() > 800) && (width < 800)){
+            $(".page").hide();
+            // Reshow correct page on resize
+            if(location.hash){
+                $(".page" + location.hash).toggle('slide');
+            }
+        }else if(($(window).width() < 800 && (width > 800))){
+            $("#about").show();
+            $("#portfolio").show();
+            $("#blog").show();
+            $("#contact").show();
+        }
+        
+        // reset width to new window width
+        width = $(window).width();
+    });
+    
     // Hide pages on initial load
     if($(window).width() > 800){
         $(".page").hide();
@@ -19,11 +42,18 @@ $(function () {
     });
 
     // Contact form real-time verification
+    $("#contact__submit").prop('disabled', true);
+    
     $("#contact__email").focusout(function(){
         if(isValidEmailAddress($("#contact__email").val())){
             $(".contact__emailError").slideUp();
         }else{
             $(".contact__emailError").slideDown();
+        }
+        if(validateContact()){
+            $("#contact__submit").prop('disabled', false);
+        }else{
+            $("#contact__submit").prop('disabled', true);
         }
     });
     $("#contact__firstName").focusout(function(){
@@ -32,12 +62,22 @@ $(function () {
         }else{
             $(".contact__firstNameError").slideDown();
         }
+        if(validateContact()){
+            $("#contact__submit").prop('disabled', false);
+        }else{
+            $("#contact__submit").prop('disabled', true);
+        }
     });
     $("#contact__lastName").focusout(function(){
         if($("#contact__lastName").val()){
             $(".contact__lastNameError").slideUp();
         }else{
             $(".contact__lastNameError").slideDown();
+        }
+        if(validateContact()){
+            $("#contact__submit").prop('disabled', false);
+        }else{
+            $("#contact__submit").prop('disabled', true);
         }
     });
     $("#contact__subject").focusout(function(){
@@ -46,6 +86,11 @@ $(function () {
         }else{
             $(".contact__subjectError").slideDown();
         }
+        if(validateContact()){
+            $("#contact__submit").prop('disabled', false);
+        }else{
+            $("#contact__submit").prop('disabled', true);
+        }
     });
     $("#contact__message").focusout(function(){
         if($("#contact__message").val()){
@@ -53,73 +98,30 @@ $(function () {
         }else{
             $(".contact__messageError").slideDown();
         }
-    });
+        if(validateContact()){
+            $("#contact__submit").prop('disabled', false);
+        }else{
+            $("#contact__submit").prop('disabled', true);
+        }
+    }); 
     
-    // Contact form submit
-    $("#contact__submit").click(function(){
-        var firstName = $("#contact__firstName").val();
-        var lastName = $("#contact__lastName").val();
-        var email = $("#contact__email").val();
-        var subject = $("#contact__subject").val();
-        var message = $("#contact__message").val();
-        var formSubmitError = false;
-        
-        if(firstName == ""){
-            $("#contact-label__firstName").addClass('error');
-            $("#contact__firstName").addClass('error');
-            formSubmitError = true;
-        }else{
-            $("#contact-label__firstName").removeClass('error');
-            $("#contact__firstName").removeClass('error');
+    // Contact form disable submit unless validated
+    function validateContact(){
+        var validContact = true;
+        if(!($("#contact__lastName").val() && $("#contact__firstName").val() && $("#contact__subject").val() && $("#contact__message").val() && isValidEmailAddress($("#contact__email").val()))){
+            validContact = false;
+        } 
+        return validContact;
+    }
+    
+    
+    // Top navigation pagination scripts
+    $(".top-nav__link").click(function(){
+        if($("#contact-success").is(':visible')){
+            $("#contact-success").toggle('slide');
         }
-        if(lastName == ""){
-            $("#contact-label__lastName").addClass('error');
-            $("#contact__lastName").addClass('error');
-            formSubmitError = true;
-        }else{
-            $("#contact-label__lastName").removeClass('error');
-            $("#contact__lastName").removeClass('error');
-        }
-        if(!isValidEmailAddress(email)){
-            $("#contact-label__email").addClass('error');
-            $("#contact__email").addClass('error');
-            formSubmitError = true;
-        }else{
-            $("#contact-label__email").removeClass('error');
-            $("#contact__email").removeClass('error');
-        }
-        if(subject == ""){
-            $("#contact-label__subject").addClass('error');
-            $("#contact__subject").addClass('error');
-            formSubmitError = true;
-        }else{
-            $("#contact-label__subject").removeClass('error');
-            $("#contact__subject").removeClass('error');
-        }
-        if(message == ""){
-            $("#contact-label__message").addClass('error');
-            $("#contact__message").addClass('error');
-            formSubmitError = true; 
-        }else{
-            $("#contact-label__message").removeClass('error');
-            $("#contact__message").removeClass('error');
-        }
-         
-        if(!formSubmitError){
-            $.post("contact.php", {
-                firstName1: firstName,
-                lastName1: lastName,
-                email1: email,
-                subject1: subject,
-                message1: message
-                },
-                function(data){
-                    alert(data);
-                    $('#contact-form')[0].reset();
-                }
-            );
-        }else{
-              
+        if($("#contact-failed").is(':visible')){
+            $("#contact-failed").toggle('slide');
         }
     });
     
