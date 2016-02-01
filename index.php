@@ -1,12 +1,3 @@
-<?php
-define('WP_USE_THEMES', false);
-require('blog/wp-blog-header.php');
-?>
-
-<?php
-require('blog/wp-blog-header.php');
-?>
-
 <!DOCTYPE html>
 
 <html>
@@ -126,7 +117,7 @@ require('blog/wp-blog-header.php');
                     </div>
                     <div class="progress-bar">
                         <li>
-                            <a class="top-nav__link" href="#blog" id="blog-link">Blog</a>
+                            <a class="top-nav__link" href="/blog/" id="blog-link">Blog</a>
                         </li>
                         
                         <div class="right-section"></div>
@@ -220,22 +211,6 @@ require('blog/wp-blog-header.php');
                     
                     
                 </div>
-            </div>
-        </div>
-        <div class="page" id="blog">
-            <div class="page__container">
-                <?php
-                // Get the last 3 posts.
-                global $post;
-                $args = array( 'posts_per_page' => 3 );
-                $myposts = get_posts( $args );
-
-                foreach( $myposts as $post ) :	setup_postdata($post); ?>
-                <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-                <date><?php the_date() ?></date>
-                <p><?php the_excerpt() ?></p>
-                <br />
-                <?php endforeach; ?>
             </div>
         </div>
         

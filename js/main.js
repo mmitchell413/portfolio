@@ -15,7 +15,6 @@ $(function () {
         }else if(($(window).width() < 800 && (width > 800))){
             $("#about").show();
             $("#portfolio").show();
-            $("#blog").show();
             $("#contact").show();
         }
         
@@ -130,9 +129,6 @@ $(function () {
             if($("#portfolio").is(':visible')){
                 $("#portfolio").toggle('slide');
             }
-            if($("#blog").is(':visible')){
-                $("#blog").toggle('slide');
-            }
             if($("#contact").is(':visible')){
                 $("#contact").toggle('slide');
             }
@@ -146,30 +142,11 @@ $(function () {
             if($("#about").is(':visible')){
                 $("#about").toggle('slide');
             }
-            if($("#blog").is(':visible')){
-                $("#blog").toggle('slide');
-            }
             if($("#contact").is(':visible')){
                 $("#contact").toggle('slide');
             }
             setTimeout(function(){
                 $("#portfolio").toggle('slide');
-            }, 500);
-        }
-    });
-    $(".top-nav__link#blog-link").click(function(){
-        if($(window).width() > 800){
-            if($("#about").is(':visible')){
-                $("#about").toggle('slide');
-            }
-            if($("#portfolio").is(':visible')){
-                $("#portfolio").toggle('slide');
-            }
-            if($("#contact").is(':visible')){
-                $("#contact").toggle('slide');
-            }
-            setTimeout(function(){
-                $("#blog").toggle('slide');
             }, 500);
         }
     });
@@ -177,9 +154,6 @@ $(function () {
         if($(window).width() > 800){
             if($("#about").is(':visible')){
                 $("#about").toggle('slide');
-            }
-            if($("#blog").is(':visible')){
-                $("#blog").toggle('slide');
             }
             if($("#portfolio").is(':visible')){
                 $("#portfolio").toggle('slide');
