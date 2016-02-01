@@ -128,6 +128,9 @@ date{
     font-size:1em;
     @include font-baron;
 }
+.sd-title{
+    font-size:.8em;
+}
 .container{
     max-width:1200px;
     margin:0 auto;
@@ -519,8 +522,12 @@ footer{
 }
 .btn:disabled{
     background:#aaaaaa;
-    border: #aaaaaa;
-    opacity:.7;
+    border: 3px solid #aaaaaa;
+    opacity:.3;
+}
+.btn:disabled:hover{
+    background:#aaaaaa;
+    border: 3px solid #aaaaaa;
 }
 .btn:hover{
     cursor:pointer;
@@ -688,13 +695,28 @@ footer{
         height:auto;
         width:100%;
         min-width:100%;
+        margin-bottom:30px;
         .page__container{
-            padding:20px;
+            padding:30px;
         }
     }
     .top-nav{
         height:auto;
         width:100%;
         min-width:100%;
+        margin-bottom:30px;
+        .social-media{
+            position:relative;
+        }
+    }
+    .btn{
+        width:100%;
+        margin-bottom:15px;
+    }
+    .grid{
+        .grid-1-2{
+            width:100%;
+            padding: auto 0px;
+        }
     }
 }
