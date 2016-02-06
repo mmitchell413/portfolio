@@ -6,6 +6,7 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/lightbox.css" type="text/css">
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
         
         <!-- Fonts -->
@@ -199,17 +200,14 @@
         <div class="page" id="portfolio">
             <div class="page__container">
                 <div class="page__portfolio">
-                    <h2>GM Financial</h2>
-                    <p>During my time with GM Financial, I have worked on numerous projects that have increased my talents immensely. Probably the most challenging was the full site redesign we undertook shortly after I started. The challenge came with the sheer size of the project: we were tasked with redesigning all five customer facing websites that GM Financial utilized... and we had to complete it in two months. Not only that, but due to the short timeframe, we couldn't start over from a clean code-base and had to make do with the old, decripit, and terribly outdated CSS and HTML that was already in place.</p>
-                    
-                    
-                    <h2>Fixy</h2>
-                    
-                    <h2>Lok-Mor</h2>
-                    
-                    <h2>Other Projects</h2>
-                    
-                    
+                    <div class="grid">
+                        <div class="portfolio-item grid-1-2">
+                            <a href="img/gmf-portfolio.jpg" data-lightbox="gm-financial" data-title="GM Financial"><img src="img/gmf-portfolio.jpg" /></a>
+                        </div>
+                        <div class="portfolio-item grid-1-2">
+                            <a href="img/gmf-portfolio-mobile.jpg" data-lightbox="gm-financial" data-title="GM Financial Mobile View"><img src="img/gmf-portfolio-mobile.jpg" /></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
