@@ -1,13 +1,14 @@
-$black: #000000;
-$primary-color: #ffe86a;
-$dark-gray: #101010;
-$granite: #595959;
-$white:#ffffff;
+@import "partials/grid";
+@import "partials/mixins";
+@import "partials/navigation";
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/typography";
 
 
 @font-face {
     font-family: 'BebasNeue';
-    src: url("../fonts/BebasNeue Regular.otf");
+    src: url("../fonts/adam.otf");
 }
 @font-face {
     font-family: 'Open';
@@ -52,24 +53,25 @@ body{
     @include font-open;
 }
 h1,h2,h3,h4,h5,h6{
+    margin: 10px 0 15px 0;
     @include font-bebas;
 }
 h1{
-    font-size:2.0em;
-    letter-spacing:.1em;
+    font-size:1.8em;
     
 }
 h2{
-    font-size:1.6em;
-    letter-spacing:.1em;
+    margin-top:2em;
+    font-size:1.4em;
 }
 h3{
-    font-size:1.4em;
-    letter-spacing:.1em;
+    margin-top:2em;
+    font-size:1.2em;
 }
 p{
+    margin:1em 0;
     font-size:1.0em;
-    line-height:1.5em;
+    line-height:2em;
     color:$granite;
 }
 
@@ -192,7 +194,7 @@ p{
 
 
 .faux-column{
-    max-width:1600px;
+    max-width:1200px;
     width:100%;
     margin:0 auto;
 }
@@ -210,31 +212,35 @@ footer{
     max-width:1200px;
     width:100%;
     background-color:$white;
-    padding:40px;
+    padding:40px 60px;
     margin:0 auto;
+    border-radius:10px;
     border-bottom: $primary-color solid 10px;
 }
 .page{
     display:block;
     background:url('../../img/hero-bg.jpg') no-repeat;
-    background-position: 0 100px;
     padding-top:100px;
 }
 
 /* Heading styles */
 .heading{
     text-align:center;
-    margin: 120px 0;
+    margin: 100px 0;
+    img{
+        width:150px;
+        border-radius:80px;
+        border:5px solid $white;
+    }
     h1{
-        font-size:3em; 
-        color:$primary-color;
-        text-shadow: 1px 3px 0px rgba(0,0,0,.75);
-        margin:0;
-        letter-spacing:.1em;
+        font-size:2.2em; 
+        color:$secondary-color;
+        text-shadow: 2px 2px 1px rgba(0,0,0,.70);
+        margin:.5em 0 0 0;
     }
     p{
         color:$white;
-        text-shadow: 1px 2px 0 rgba(0,0,0,.75);
+        text-shadow: 1px 1px 0 rgba(0,0,0,.50);
     }
 }
 
@@ -242,18 +248,20 @@ footer{
 /* Top navigation styles */
 .top-nav{
     width:100%;
-    height: 100px;
+    height: 70px;
     position:fixed;
-    background-color:$white;
-    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+    background-color:none;
+    color:$white;
+    
+    @include transition(.2s);
     .logo{
         float:left;
-        width:50%;
         svg{
             float:left;
-            width:80px;
-            height:80px;
+            width:50px;
+            height:50px;
             margin:10px 10px;
+            stroke:$white;  
         }
         .logo-hover{
             @include transition(.3s);
@@ -274,7 +282,7 @@ footer{
             color:$black;
         }
     }
-    .logo:hover{
+    .logo a:hover{
         cursor:pointer;
         .logo-hover{
             stroke:$primary-color;
@@ -284,43 +292,72 @@ footer{
         }
     }
     .top-nav__menu{
-        width:50%;
-        float:left;
+        float:right;
         ul{
             float:right;
             display:flex;
             width:600px;
-            height:100px;
-            line-height:100px;
+            height:70px;
+            line-height:70px;
             margin:0;
             li{
                 @include font-bebas;
-                font-size:1.4em;
-                letter-spacing:.1em;
+                margin:0 10px;
+                font-size:1.0em;
                 display:inline-flex;
                 flex-wrap:wrap;
                 flex-grow:1;
                 a{
                     text-decoration:none;
-                    color:$black;
+                    color:$white;
+                    display:block;
+                    width:100%;
+                    text-align:center;
                     @include transition(.3s);
+                    .top-nav__menu-highlight{
+                        position:relative;
+                        top:-3px;
+                        height:3px;
+                        width:0%;
+                        @include transition(.3s);
+                        background-color:$primary-color;
+                    }
                 }
                 a:hover{
                     color:$primary-color;
+                    .top-nav__menu-highlight{
+                        width:100%;
+                    }
                 }
             }
         }
     }
     /* Common styles for all menus */
-
+}
+.top-nav__scrolled{
+    background-color:$white;
+    color:$black;
+    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+    border-bottom:none;
+    .logo{
+        svg{
+            stroke:$black;
+        }
+    }
+    .top-nav__menu{
+        ul{
+            li{
+                a{
+                    color:$black;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:1150px){
     .top-nav{
         height:auto;
-        .logo, .top-nav__menu{
-            width:100%;
-        }
         .top-nav__menu{
             .menu{
                  margin-top:0;
