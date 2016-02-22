@@ -197,14 +197,30 @@ p{
     max-width:1200px;
     width:100%;
     margin:0 auto;
+    overflow:visible;
 }
 
 /* footer styles */
 footer{
-    margin-top:120px;
+    margin:120px 0 0 0;
+    padding:100px;
     background-color: $dark-gray;
-    height:200px;
-}
+    ul{
+        float:left;
+        li{
+            display:inline-block;
+            padding-right:60px;
+            a{
+                text-decoration:none;
+                color:$granite;
+                @include transition(.3s);
+            }
+            a:hover{
+                color:$secondary-color;
+            }
+        }
+    }
+} 
 
 
 /* Main container styles */
