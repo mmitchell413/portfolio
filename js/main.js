@@ -9,5 +9,13 @@ $(document).ready(function(){
         }else if(height == 0){
             $(".top-nav").removeClass("top-nav__scrolled");
         }
-    });
+    }); 
+    
+    // typed.js functionality 
+  $(function(){
+      $(".rotating_text").typed({
+        strings: ["a designer^1000", "a developer^1000", "an artist^1000", "Matt^1000"],
+        typeSpeed: 100
+      });
+  });
 }); 

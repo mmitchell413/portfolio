@@ -4,14 +4,29 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        copy:{
+            main:{
+                files: [
+                    {expand: true, cwd: 'dev/', src: ['*.php', 'img/*', 'css/fonts/*'], dest: 'prod/'},
+                ]
+            }
+        },
+        
         concat: {
             // 2. Configuration for concatinating files goes here.
-                dist: {
+            devDist: {
                 src: [
-                    'js/libs/*.js', // All JS in the libs folder
-                    'js/main.js'  // This specific file
+                    'dev/js/libs/*.js', // All JS in the libs folder
+                    'dev/js/main.js'  // This specific file
                 ],
-                dest: 'js/build/production.js',
+                dest: 'dev/js/production.js',
+            }, 
+            prodDist: {
+                src: [
+                    'dev/js/libs/*.js',
+                    'dev/js/main.js'
+                ], 
+                dest: 'prod/js/production.js'
             }
         },
         
@@ -19,9 +34,9 @@ module.exports = function(grunt) {
             dynamic: {
                 files: [{
                     expand: true,
-                    cwd: 'img/',
+                    cwd: 'dev/img/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'img/build/'
+                    dest: 'prod/img/'
                 }]
             }
         },
@@ -46,7 +61,8 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'css/build/main.css': 'css/main.scss'
+                    'prod/css/main.css': 'dev/css/main.scss',
+                    'dev/css/main.css': 'dev/css/main.scss'
                 }
             } 
         },
@@ -54,31 +70,38 @@ module.exports = function(grunt) {
           uglify: {
             my_target: {
               files: {
-                'js/build/production.min.js': ['js/build/production.js']
+                'prod/js/production.min.js': ['prod/js/production.js']
               }
             }
           },
         
         watch: {
             scripts: {
-                files: ['js/*.js'],
+                files: ['dev/js/*.js'],
                 tasks: ['concat'],
                 options: {
                     spawn: false,
                 },
             },
             css: {
-                files: ['css/*.scss'],
+                files: ['dev/css/*.scss', 'dev/css/partials/*.scss'],
                 tasks: ['sass'],
                 options: {
                     spawn: false,
                 }
             },
             minify: {
-                files:  ['js/*.js'], 
+                files:  ['dev/js/*.js'], 
                 tasks: ['uglify'],
                 options: {
                     spawn:false,
+                }
+            },
+            copyfiles: {
+                files: ['dev/*.php', 'dev/img/*'],
+                tasks: ['copy'],
+                options: {
+                    spawn: false,   
                 }
             }
         }
@@ -91,8 +114,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['postcss:dist', 'concat', 'imagemin', 'uglify']);
+    grunt.registerTask('default', ['postcss:dist', 'concat', 'sass', 'imagemin', 'uglify', 'copy']);
 
 };
