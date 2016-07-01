@@ -136,6 +136,7 @@ footer{
 
 /* Main container styles */
 .container{
+    display:none; 
     max-width:1200px;
     width:100%;
     background-color:$white;

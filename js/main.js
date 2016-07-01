@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $(window).scroll(function() {
         var height = $(window).scrollTop();
+        var containerPosition = $(".container").position();
         console.log(height);
         
         
@@ -9,8 +10,12 @@ $(document).ready(function(){
         }else if(height == 0){
             $(".top-nav").removeClass("top-nav__scrolled");
         }
+        
+        if(height < containerPosition.top - 500){
+            $(".container").show();
+        }
     }); 
-    
+     
     // typed.js functionality 
   $(function(){
       $(".rotating_text").typed({

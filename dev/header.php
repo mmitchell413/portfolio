@@ -6,7 +6,6 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/main.css" type="text/css">
-        <link rel="stylesheet" href="css/lightbox.css" type="text/css">
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
         
         <!-- Fonts -->

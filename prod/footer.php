@@ -8,7 +8,7 @@
                     <li><a href="index.html">Contact</a></li>
                 </ul>
                 <ul class="social-media">
-                     <li><a href="http://www.linkedin.com"><svg class="svg__linkedin" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     <li><a target="_blank" href="https://www.linkedin.com/in/matthew-mitchell-40b10096?trk=nav_responsive_tab_profile_pic"><svg class="svg__linkedin" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 <g id="LinkedIn_1_">
 	<rect x="8.418" y="35.749" width="17.151" height="54.346"/>
@@ -19,7 +19,7 @@
 		c6.447,0,10.462-4.169,10.462-9.436C26.895,14.152,23.004,10.095,16.676,10.095z"/>
 </g>
 </svg></a></li>
-                    <li><a href="http://www.github.com"><svg class="svg__github" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <li><a target="_blank" href="https://github.com/mmitchell413"><svg class="svg__github" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 <g>
 	<path d="M50.196,3.095c-26.506,0-47.997,21.574-47.997,48.193c0,21.288,13.752,39.351,32.829,45.724
@@ -35,7 +35,7 @@
 </svg></a></li>
                    
                     
-                    <li><a href="http://www.twitter.com"><svg class="svg__twitter" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <li><a target="_blank" href="http://www.twitter.com/mmitchell413"><svg class="svg__twitter" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 <path id="Twitter_1_" d="M95.551,11.574c-3.811,2.312-8.02,3.993-12.516,4.895
 	c-3.584-3.924-8.705-6.374-14.375-6.374c-10.869,0-19.687,9.043-19.687,20.195c0,1.583,0.169,3.121,0.507,4.6
@@ -47,7 +47,7 @@
 	C90.957,20.247,94.08,16.29,95.551,11.574z"/>
 </svg></a></li>
                   
-                    <li><a href="http://www.facebook.com"><svg class="svg__facebook" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <li><a target="_blank" href="https://www.facebook.com/matt.mitchell2"><svg class="svg__facebook" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 <path id="Facebook_1_" d="M98.199,92.797c0,2.926-2.373,5.298-5.299,5.298H68.438V60.918h12.479l1.867-14.488H68.438
 	v-9.25c0-4.194,1.164-7.053,7.181-7.053l7.672-0.003V17.166c-1.326-0.177-5.881-0.571-11.181-0.571

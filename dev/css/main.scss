@@ -136,6 +136,9 @@ footer{
 
 /* Main container styles */
 .container{
+    position:relative;
+    top:50px;
+    opacity:0;
     max-width:1200px;
     width:100%;
     background-color:$white;
@@ -150,6 +153,7 @@ footer{
     background:url('../../img/hero-bg.jpg') no-repeat fixed;
 }
 .page{
+    min-height:1000px;
     display:block;
     padding-top:100px;
 }
