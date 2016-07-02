@@ -21,11 +21,11 @@
 
 <?php include 'header.php' ?>
 
-        <div class="page contact">
+        <div class="page" id="contact">
             <div class="heading">
                 <h1>Let's <span class="red-highlight">chat</span></h1>
             </div>
-            <div class="container" id="contact">
+            <div class="container">
                 <div class="container--padding">
                     <div class="med-text grid">
                         <div class="grid-1-2">

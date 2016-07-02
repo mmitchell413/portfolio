@@ -57,7 +57,6 @@
                 </ul>
             </div>
         </footer>
-</div>
     </body>
     
     <!-- Javascript Libraries -->

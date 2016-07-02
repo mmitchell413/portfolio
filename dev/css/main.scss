@@ -96,7 +96,7 @@ p{
 footer{
     padding:100px;
     background-color: $dark-gray;
-    margin:120px 0 0 0;
+    background-color: $dark-gray;
     .footer__menu{
         float:left;
         width:75%;
@@ -149,13 +149,36 @@ footer{
         width:100%;
     }
 }
-.bg-img{
-    background:url('../img/hero-bg.jpg') no-repeat fixed;
-}
 .page{
     min-height:1000px;
     display:block;
-    padding-top:100px;
+    padding:100px 0;
+}
+.page#about,
+.page#contact{
+    background-size:cover;
+    
+}
+@media screen and (min-width: 1920px){
+    .page#about,
+    .page#contact{
+        background:url('../img/hero-bg-2880-1920.png') no-repeat fixed;
+        background-position: 0 -200px;
+    }
+}
+@media screen and (max-width: 1920px){
+    .page#about,
+    .page#contact{
+        background:url('../img/hero-bg-1920-1280.png') no-repeat fixed;
+        background-position: 0 -200px;
+    }
+}
+@media screen and (max-width: 1280px){
+    .page#about,
+    .page#contact{
+        background:url('../img/hero-bg-1024-683.png') no-repeat fixed;
+        background-position: 0 -200px;
+    }
 }
 
 .arrow-down{
