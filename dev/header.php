@@ -28,7 +28,6 @@
     </head>
     
     <body>
-        <div class="bg-img">
         <div class="top-nav">
             <div class="faux-column">
                 <div class="logo">
