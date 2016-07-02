@@ -1,4 +1,3 @@
-
         <footer>
             <div class="faux-column">
                 <ul class="footer__menu">

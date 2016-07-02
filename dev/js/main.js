@@ -11,12 +11,13 @@ $(document).ready(function(){
             $(".top-nav").removeClass("top-nav__scrolled");
         }
     
-            if(height > (containerPosition - 450)){
-                $(".container").animate({
-                    opacity: 1.0,
-                    top: "0"
-                }, 300);
-            }
+        if(height > (containerPosition - 450)){
+            $(".arrow-down").fadeOut();
+            $(".container").animate({
+                opacity: 1.0,
+                top: "0"
+            }, 300);
+        }
     }); 
     
     // typed.js functionality 

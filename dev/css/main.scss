@@ -150,12 +150,29 @@ footer{
     }
 }
 .bg-img{
-    background:url('../../img/hero-bg.jpg') no-repeat fixed;
+    background:url('../img/hero-bg.jpg') no-repeat fixed;
 }
 .page{
     min-height:1000px;
     display:block;
     padding-top:100px;
+}
+
+.arrow-down{
+    position:fixed;
+    width:100px;
+    bottom:30px;
+    left:50%;
+    margin-left:-50px;
+    text-align:center;
+    img{
+        width:50px;
+    }
+    p{
+        font-size:.8em;
+        opacity:.5;
+        margin:0;
+    }
 }
 
 /* Heading styles */

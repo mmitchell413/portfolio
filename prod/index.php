@@ -19,5 +19,10 @@
                 </div>
             </div>  
         </div>
+
+        <div class="arrow-down">
+            <img src="img/arrow-down.svg" alt="Scroll Down" />
+            <p>Scroll</p>
+        </div>
         
 <?php include 'footer.php' ?>
