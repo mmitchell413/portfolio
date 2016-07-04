@@ -1,10 +1,10 @@
         <footer>
             <div class="faux-column">
                 <ul class="footer__menu">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="index.html">Portfolio</a></li>
-                    <li><a href="index.html">Blog</a></li>
-                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="index.php">About</a></li>
+                    <li><a href="portfolio.php">Portfolio</a></li>
+                    <li><a href="blog/">Blog</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
                 <ul class="social-media">
                      <li><a target="_blank" href="https://www.linkedin.com/in/matthew-mitchell-40b10096?trk=nav_responsive_tab_profile_pic"><svg class="svg__linkedin" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

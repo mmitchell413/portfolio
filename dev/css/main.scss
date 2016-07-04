@@ -4,6 +4,7 @@
 @import "partials/reset";
 @import "partials/variables";
 @import "partials/typography";
+@import "partials/buttons";
 
 @mixin color(){
 	width:20px;
@@ -95,9 +96,9 @@ p{
 
 /* footer styles */
 footer{
-    padding:100px;
+    padding:50px;
     background-color: $dark-gray;
-    background-color: $dark-gray;
+    overflow:hidden;
     .footer__menu{
         float:left;
         width:75%;
@@ -138,6 +139,7 @@ footer{
 /* Main container styles */
 .container{
     position:relative;
+    overflow:visible;
     top:50px;
     opacity:0;
     max-width:1200px;
@@ -157,7 +159,8 @@ footer{
             color:$white;
         }
     }
-    &#portfolio-gmf{
+    &#portfolio-gmf,
+    &#portfolio-lokmor{
         border-radius:0px;
         background:none;
         color:$white;
@@ -180,6 +183,18 @@ footer{
             top:-75px;
         }
     }
+    &#portfolio-lokmor{
+        text-align:right;
+        h1{
+            @include rotate(10);
+            top:100px;
+        }
+    }
+    &#portfolio-gmf{
+        .btn-ghost:hover{
+            color:$gmf-blue;
+        }
+    }
 }
 
 .page{
@@ -189,6 +204,9 @@ footer{
     padding:100px 0;
     &#portfolio{
         padding-top:70px;
+    }
+    &#lokmor{
+        background-color:$lokmor-red
     }
     &#about,
     &#contact{

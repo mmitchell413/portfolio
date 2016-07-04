@@ -10,10 +10,8 @@ $(document).ready(function(){
         $(".container").each(function(index){
             //get top position of container at index
             containerPosition[index] = $(this).offset().top;
-            console.log("Container " + index + ": " + containerPosition[index])
             if(height > (containerPosition[index] - screenOffset)){
                 $(".arrow-down").fadeOut();
-                console.log(".container:nth-child(" + index + ")");
                 $(".container").eq(index).animate({
                     opacity: 1.0,
                     top: "0"
@@ -36,4 +34,6 @@ $(document).ready(function(){
         typeSpeed: 100 
       });
   });
+    
+    console.log("Hello there! I see you are taking a look at my code. If you have any comments or suggestions, feel free to drop me a line.");
 }); 

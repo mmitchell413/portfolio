@@ -11,6 +11,15 @@
             <h1>GM Financial</h1>
             <img src="img/case-gmf/gmf-home.png" alt="GM Financial Homepage" />
             <p>The GM Financial redesign was a great experience and provided a lot of knowledge.</p>
+            <a class="btn btn-ghost" href="case-gmf.php">View Case Study</a>
+        </div>
+    </div>
+
+    <div class="page" id="lokmor">
+        <div class="container" id="portfolio-lokmor">
+            <h1>Lok Mor</h1>
+            <img src="img/lokmor.png" alt="Lok Mor" />
+            <p>The GM Financial redesign was a great experience and provided a lot of knowledge.</p>
         </div>
     </div>
 
