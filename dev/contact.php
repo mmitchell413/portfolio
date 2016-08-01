@@ -1,11 +1,10 @@
 <?php
     /*
         $to = "matt@mattmitchell.org";
-        $firstName = $_POST['contact__firstName'];
-        $lastName = $_POST['contact__lastName'];
-        $subject = $_POST['contact__subject'];
-        $from = $_POST['contact__email'];
-        $message = "First Name: " . $firstName . "<br>Last Name: " . $lastName . "<br>" . $_POST['contact__message'];
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
+        $from = $_POST['email'];
+        $message = "First Name: " . $firstName . "<br>Last Name: " . $lastName . "<br>" . $_POST['message'];
         $headers = "From: " . $from;
         
         if (mail($to, $subject, $message, $headers)){
@@ -21,22 +20,31 @@
 
 <?php include 'header.php' ?>
 
+        <script>
+            $("input").onfocus(this.placeholder = null);
+        </script>
+
         <div class="page" id="contact">
             <div class="heading">
                 <h1>Let's <span class="red-highlight">chat</span></h1>
             </div>
-            <div class="container">
+            <div class="container" id="contact">
                 <div class="container--padding">
-                    <div class="med-text grid">
-                        <div class="grid-1-2">
-                           <input type="text" id="firstName" name="firstName" placeholder="First name"/>
+                    <form id="contact-form" name="contact-form" action="contact.php" method="post">
+                        <div class="med-text grid">
+                            <div class="grid-1-2">
+                               <input type="text" id="firstName" name="firstName" placeholder="First name"/>
+                            </div>
+                            <div class="grid-1-2">
+                                <input type="text" id="lastName" name="lastName" placeholder="Last name"/>
+                            </div>
+                            <input type="email" id="email" name="email" placeholder="Email (example@gmail.com)" />
+                            <textarea id="message" name="message" placeholder="Message"></textarea>
+                            <div class="grid-1-2">
+                                <input type="submit" class="btn btn-primary full-width" name="submit" />
+                            </div>
                         </div>
-                        <div class="grid-1-2">
-                            <input type="text" id="lastName" name="lastName" placeholder="Last name"/>
-                        </div>
-                        <input type="email" id="email" name="email" placeholder="Email (example@gmail.com)" />
-                        <textarea id="message" name="message" placeholder="Message"></textarea>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

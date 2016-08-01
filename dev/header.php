@@ -28,7 +28,14 @@
     </head>
     
     <body>
-        <div class="top-nav">
+        <div class="<?php 
+                    $current_page = basename($_SERVER['PHP_SELF']);
+                    if($current_page == "portfolio.php"){
+                        echo "top-nav top-nav__portfolio";
+                    }else{
+                        echo "top-nav";
+                    }
+                ?>">
             <div class="faux-column">
                 <div class="logo">
                     <a href="index.php">
@@ -55,6 +62,7 @@
                     
                         </a>
                 </div>
+                
                 <div class="top-nav__menu">
                         <ul>
                             <li><a href="index.php" class="menu__link" id="about">About<div class="top-nav__menu-highlight"></div></a></li>
