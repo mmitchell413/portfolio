@@ -1,12 +1,10 @@
 <?php include "header.php" ?>
 
-    <div class="page" id="portfolio">
+    <!--<div class="page" id="portfolio">
         <div class="container" id="portfolio-intro">
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris orci quam, scelerisque eu suscipit ac, dapibus non ex. Morbi a pretium turpis. Vivamus aliquam elit ligula, commodo consequat neque tristique sit amet. Etiam convallis rhoncus eros eu finibus. Aliquam erat volutpat. Pellentesque id nunc iaculis, pellentesque metus eget, pellentesque nunc. Nulla laoreet quam consectetur quam euismod luctus. Quisque molestie leo ipsum, nec faucibus arcu tempor vel.</p>
-
-            <p>Nulla massa libero, vestibulum et aliquam vitae, fermentum pulvinar arcu. Suspendisse fermentum blandit nunc eu viverra. Duis non laoreet leo, eu blandit tortor. Nam at viverra elit, sit amet sagittis leo. Ut nec rhoncus augue. Quisque risus diam, interdum sit amet felis et, laoreet tincidunt magna. Mauris tortor felis, efficitur eget imperdiet ac, egestas et metus. Donec maximus ornare metus vel suscipit. Phasellus ut nisl at ligula consectetur commodo vel vel turpis. Nam at ullamcorper purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas pretium congue elit, ac consectetur nibh congue a. Fusce non tempus magna.</p>
+           <p>Design is not just what it looks and feels like. Design is how it works.</p>
         </div>
-    </div>
+    </div>-->
 
     <div class="page" id="gmf">
         <div class="container" id="portfolio-gmf">
@@ -23,6 +21,12 @@
             <h1>Lok-Mor</h1>
             <img src="img/lokmor.png" alt="Lok Mor" />
             <p>The Lok-Mor site was one of my first professional projects to go live so it has a special significance to me. </p>
+        </div>
+    </div>
+
+    <div class="page" id="misc">
+        <div class="container" id="portfolio-misc">
+            <h1>Other Projects</h1>
         </div>
     </div>
 

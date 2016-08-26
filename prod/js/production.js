@@ -450,7 +450,7 @@ $(document).ready(function(){
                 $(".container").eq(index).animate({
                     opacity: 1.0,
                     top: "0"
-                }, 300);
+                }, 500);
             }
         });
         //var containerPosition = $(".container").offset().top;

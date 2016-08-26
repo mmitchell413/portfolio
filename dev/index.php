@@ -5,7 +5,7 @@
                 <h1>Hi, I'm <span class="rotating_text" id="rotating_text"></span></h1>
                 <br>
             </div>
-            <div class="container">
+            <div class="container" id="container__about">
                 <div class="container--padding">
                     <div class="med-text">
                         <p>My name is Matt Mitchell and I’m a front-end web developer / designer by trade, but dabble in back-end development and graphic design. When I’m not tinkering away trying to make pixels look pretty, I spend my free time making music, playing video games, and spending time with friends and family.</p>
