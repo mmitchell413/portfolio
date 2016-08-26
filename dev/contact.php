@@ -41,7 +41,10 @@
                             <input type="email" id="email" name="email" placeholder="Email (example@gmail.com)" />
                             <textarea id="message" name="message" placeholder="Message"></textarea>
                             <div class="grid-1-2">
-                                <input type="submit" class="btn btn-primary full-width" name="submit" />
+                                <button type="submit" class="btn btn-primary full-width" name="submit">Submit</button>
+                            </div>
+                            <div class="grid-1-2">
+                                <button type="reset" class="btn btn-ghost btn-cancel full-width" name="cancel">Cancel</button>
                             </div>
                         </div>
                     </form>
