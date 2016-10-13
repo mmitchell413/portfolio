@@ -243,7 +243,7 @@ footer{
 @media screen and (min-width: 1920px){
     .page#about,
     .page#contact{
-        background:url('../img/hero-bg-2880-1920.png') no-repeat fixed;
+        //background:url('../img/hero-bg-2880-1920.png') no-repeat fixed;
         background-position: 0 0;
         background-size:cover;
     }
@@ -251,7 +251,7 @@ footer{
 @media screen and (max-width: 1920px){
     .page#about,
     .page#contact{
-        background:url('../img/hero-bg-1920-1280.png') no-repeat fixed;
+        //background:url('../img/hero-bg-1920-1280.png') no-repeat fixed;
         background-position: 0 -200px;
         background-size:cover;
     }
@@ -259,7 +259,7 @@ footer{
 @media screen and (max-width: 1280px){
     .page#about,
     .page#contact{
-        background:url('../img/hero-bg-1024-683.png') no-repeat fixed;
+        //background:url('../img/hero-bg-1024-683.png') no-repeat fixed;
         background-position: 0 0px;
         background-size:cover;
     }
