@@ -9,6 +9,28 @@
             <div class="container" id="container__about">
                 <div class="container--padding">
                     <div class="faux-column">
+                        <div class="grid tech">
+                            <div class="grid-1-3">
+                                <img src="img/tech-logos/html.svg">
+                            </div>
+                            <div class="grid-1-3">
+                                <img src="img/tech-logos/css.svg">
+                            </div>
+                            <div class="grid-1-3">
+                                <img src="img/tech-logos/javascript.svg">
+                            </div>
+                            <div class="grid-1-3">
+                                <img src="img/tech-logos/jquery.svg">
+                            </div>
+                            <div class="grid-1-3">
+                                <img src="img/tech-logos/angular.svg">
+                            </div>  
+                            <div class="grid-1-3">
+                                <img src="img/tech-logos/php.svg">
+                            </div>
+                        </div>
+                        
+                        
                         <div class="col-left">
                             <p>My name is Matt Mitchell and I’m a front-end web developer / designer by trade, but dabble in back-end development and graphic design. When I’m not tinkering away trying to make pixels look pretty, I spend my free time making music, playing video games, and spending time with friends and family.</p>
                             <p>Some of my other interests include action-packed movies, gut-wrenching TV dramas, fast cars, mixed martial arts, hiking, and building custom computers.</p>

@@ -171,6 +171,12 @@ footer{
     &#container__about{
         background:rgba(250,250,250,100);
         max-width:100%;
+        .tech{
+            text-align:center;
+            img{
+                width:100px;
+            }
+        }
     }
     &#portfolio-intro{
         margin-top:150px;
@@ -317,7 +323,7 @@ footer{
     img{
         width:200px;
         border-radius:100px;
-        border:5px solid $tertiary-color;
+        //border:5px solid $tertiary-color;
         opacity:0.0;
     }
     h1{
