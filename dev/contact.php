@@ -21,7 +21,7 @@
 <?php include 'header.php' ?>
 
         <script>
-            $("input").onfocus(this.placeholder = null);
+
         </script>
 
         <div class="page" id="contact">
@@ -33,13 +33,17 @@
                     <form id="contact-form" name="contact-form" action="contact.php" method="post">
                         <div class="med-text grid">
                             <div class="grid-1-2">
-                               <input type="text" id="firstName" name="firstName" placeholder="First name"/>
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" />
                             </div>
                             <div class="grid-1-2">
-                                <input type="text" id="lastName" name="lastName" placeholder="Last name"/>
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" />
                             </div>
-                            <input type="email" id="email" name="email" placeholder="Email (example@gmail.com)" />
-                            <textarea id="message" name="message" placeholder="Message"></textarea>
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" />
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" ></textarea>
                             <div class="grid-1-2">
                                 <button type="submit" class="btn btn-primary full-width" name="submit">Submit</button>
                             </div>

@@ -41,5 +41,19 @@ $(document).ready(function(){
         $(".heading img").animate({opacity:1.0}, 1500);
     }, 10500);
     
+    // contact input label manipulation code
+    $("input, textarea").focusin(function(){
+        console.log("hello");
+        $("label[for='"+$(this).attr('id')+"']").addClass("label-focus");
+    });
+    $("input, textarea").focusout(function(){
+        console.log($("label[for='"+$(this).attr('id')+"']").val());
+        if( !$(this).val() ){
+            $("label[for='"+$(this).attr('id')+"']").removeClass("label-focus");
+        } else {
+            $("label[for='"+$(this).attr('id')+"']").addClass("label-focus-filled");
+        }
+    });
+    
     console.log("Hello there! I see you are taking a look at my code. If you have any comments or suggestions, feel free to drop me a line.");
 }); 

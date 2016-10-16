@@ -8,6 +8,7 @@
             </div>
             <div class="container" id="container__about">
                 <div class="container--padding">
+                    <div class="faux-column">
                         <div class="col-left">
                             <p>My name is Matt Mitchell and I’m a front-end web developer / designer by trade, but dabble in back-end development and graphic design. When I’m not tinkering away trying to make pixels look pretty, I spend my free time making music, playing video games, and spending time with friends and family.</p>
                             <p>Some of my other interests include action-packed movies, gut-wrenching TV dramas, fast cars, mixed martial arts, hiking, and building custom computers.</p>
@@ -19,6 +20,7 @@
                             <p>As a student, I also worked full-time at the technology help desk as a support technician before moving to an internship at Visual App, a small web design company based in Richardson.</p>
                             <p>I now work full-time as a front-end developer for GM Financial, helping them redefine their web presence. We are trying to make the company the industry leader in user experience and satisfaction.</p>
                         </div>
+                    </div>
                 </div>
             </div>  
         </div>

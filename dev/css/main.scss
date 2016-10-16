@@ -452,6 +452,22 @@ footer{
 
 /* Input Styles */
 
+label{
+    color: $secondary-color-light;
+    position:relative;
+    top:52px;
+    font-size:.8em;
+    font-weight:700;
+    @include transition(.3s);
+}
+.label-focus{
+    top:25px;
+    font-size:.6em;
+    color:$primary-color;
+}
+.label-focus-filled{
+    color:$secondary-color-light;
+}
 input, textarea{
     @include font-open;
     @include transition(".3s");
@@ -460,7 +476,7 @@ input, textarea{
     color:$secondary-color;
     margin: 0 0 40px 0;
     &[type=text], &[type=password], &[type=email]{
-        padding:30px 15px 15px 0px;
+        padding:30px 15px 10px 0px;
         font-size:1.0em;
         font-weight:bold;
         width:100%;
@@ -469,54 +485,10 @@ input, textarea{
        
         &:focus{
             border-bottom: 1px solid $primary-color;
-            &::-webkit-input-placeholder{
-                top:-30px;
-                font-size:.8em;
-                color:$primary-color;
-            }
-            &::-moz-placeholder{
-                top:-30px;
-                font-size:.8em;
-                color:$primary-color;
-            }
-            &:-ms-input-placeholder{
-                top:-30px;
-                font-size:.8em;
-                color:$primary-color;
-            }
-            &:-moz-placeholder{
-                top:-30px;
-                font-size:.8em;
-                color:$primary-color;
-            }
         }
     }
     &:focus{
         color:$primary-color;
-    }
-    &::-webkit-input-placeholder {
-        color: $secondary-color-light;
-        position:relative;
-        top:0;
-        @include transition(.3s);
-    }
-    &:-moz-placeholder {  /*Firefox 18- */
-       color: $secondary-color-light;  
-        position:relative;
-        top:0;
-        @include transition(.3s);
-    }
-    &::-moz-placeholder {   /*Firefox 19+*/ 
-       color: $secondary-color-light; 
-        position:relative;
-        top:0;
-        @include transition(.3s);
-    }
-    &:-ms-input-placeholder {  
-       color: $secondary-color-light;  
-        position:relative;
-        top:0;
-        @include transition(.3s);
     }
 }
 textarea{
