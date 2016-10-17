@@ -11,6 +11,10 @@
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
          
         <!-- Meta Tags -->
         <meta charset="UTF-8"> 
@@ -28,7 +32,14 @@
     </head>
     
     <body>
-        <div class="top-nav">
+        <div class="<?php 
+                    $current_page = basename($_SERVER['PHP_SELF']);
+                    if($current_page == "portfolio.php" || $current_page == "case-gmf.php"){
+                        echo "top-nav top-nav__portfolio";
+                    }else{
+                        echo "top-nav";
+                    }
+                ?>">
             <div class="faux-column">
                 <div class="logo">
                     <a href="index.php">
@@ -55,11 +66,11 @@
                     
                         </a>
                 </div>
+                
                 <div class="top-nav__menu">
                         <ul>
                             <li><a href="index.php" class="menu__link" id="about">About<div class="top-nav__menu-highlight"></div></a></li>
                             <li><a href="portfolio.php" class="menu__link" id="portfolio">Portfolio<div class="top-nav__menu-highlight"></div></a></li>
-                            <li><a href="blog" class="menu__link" id="blog">Blog<div class="top-nav__menu-highlight"></div></a></li>
                             <li><a href="contact.php" class="menu__link" id="contact">Contact<div class="top-nav__menu-highlight"></div></a></li>
                         </ul>
                 </div>

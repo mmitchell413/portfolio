@@ -1,0 +1,41 @@
+.btn{
+    @include font-open;
+    @include box-sizing("border-box");
+    font-weight:700;
+    font-size:1.0em;
+    text-decoration:none; 
+    letter-spacing:2px;
+    cursor:pointer;
+    padding:20px 50px;
+    border-radius: 5px;
+    border:none;
+    &.btn-primary{
+        background-color:$primary-color;
+        color:$white;
+        border:3px solid $primary-color;
+        @include transition(.2s);
+    }
+    &.btn-primary:hover{
+        background-color:$primary-color-hover;
+        border-color:$primary-color-hover;
+    }
+    &.btn-ghost{
+        border: 3px solid $white;
+        color:$white;
+        background:transparent;
+        @include transition(.2s);
+        &:hover{
+            background:$white;
+        }
+        &.btn-cancel{
+            color:$tertiary-color;
+            &:hover{
+                background:$tertiary-color;
+                color:$white;
+            }
+        }
+    }
+    &.btn-cancel{
+        border-color:$tertiary-color;
+    }
+}
