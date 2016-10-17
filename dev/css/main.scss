@@ -54,6 +54,13 @@ p{
     line-height:2em;
     color:$granite;
 }
+hr{
+    margin:0 auto;
+    width:70%;
+    opacity:.5;
+    border:none;
+    border-bottom: 1px solid $secondary-color-light;
+}
 
 /* Typography */ 
 
@@ -161,7 +168,7 @@ footer{
     max-width:1200px;
     width:100%;
     margin:0 auto;
-    .container--padding{
+    .container--padding{ 
         padding:40px 60px; 
         width:100%;
     }
@@ -173,8 +180,20 @@ footer{
         max-width:100%;
         .tech{
             text-align:center;
+            padding-top:30px;
             img{
                 width:100px;
+                -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+                filter: grayscale(100%);
+                @include transition(.3s);
+            }
+            .grid-1-3{
+                &:hover{
+                    img{
+                        -webkit-filter:none;
+                        filter:none;
+                    }
+                }
             }
         }
     }

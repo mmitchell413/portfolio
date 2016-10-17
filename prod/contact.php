@@ -44,11 +44,13 @@
                             <input type="email" id="email" name="email" />
                             <label for="message">Message</label>
                             <textarea id="message" name="message" ></textarea>
-                            <div class="grid-1-2">
-                                <button type="submit" class="btn btn-primary full-width" name="submit">Submit</button>
-                            </div>
-                            <div class="grid-1-2">
-                                <button type="reset" class="btn btn-ghost btn-cancel full-width" name="cancel">Cancel</button>
+                            <div class="med-text">
+                                <div class="grid-1-2">
+                                    <button type="submit" class="btn btn-primary full-width" name="submit">Submit</button>
+                                </div>
+                                <div class="grid-1-2">
+                                    <button type="reset" class="btn btn-ghost btn-cancel full-width" name="cancel">Cancel</button>
+                                </div>
                             </div>
                         </div>
                     </form>

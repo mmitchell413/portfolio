@@ -12,21 +12,30 @@
                         <div class="grid tech">
                             <div class="grid-1-3">
                                 <img src="img/tech-logos/html.svg">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac rutrum ante, id tincidunt justo. Sed rhoncus, felis at placerat rutrum, leo odio posuere massa, vitae vulputate magna sem eu tellus.</p>
                             </div>
                             <div class="grid-1-3">
                                 <img src="img/tech-logos/css.svg">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac rutrum ante, id tincidunt justo. Sed rhoncus, felis at placerat rutrum, leo odio posuere massa, vitae vulputate magna sem eu tellus.</p>
                             </div>
                             <div class="grid-1-3">
                                 <img src="img/tech-logos/javascript.svg">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac rutrum ante, id tincidunt justo. Sed rhoncus, felis at placerat rutrum, leo odio posuere massa, vitae vulputate magna sem eu tellus.</p>
                             </div>
+                        </div>
+                        <hr>
+                        <div class="grid tech">
                             <div class="grid-1-3">
                                 <img src="img/tech-logos/jquery.svg">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac rutrum ante, id tincidunt justo. Sed rhoncus, felis at placerat rutrum, leo odio posuere massa, vitae vulputate magna sem eu tellus.</p>
                             </div>
                             <div class="grid-1-3">
                                 <img src="img/tech-logos/angular.svg">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac rutrum ante, id tincidunt justo. Sed rhoncus, felis at placerat rutrum, leo odio posuere massa, vitae vulputate magna sem eu tellus.</p>
                             </div>  
                             <div class="grid-1-3">
                                 <img src="img/tech-logos/php.svg">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac rutrum ante, id tincidunt justo. Sed rhoncus, felis at placerat rutrum, leo odio posuere massa, vitae vulputate magna sem eu tellus.</p>
                             </div>
                         </div>
                         

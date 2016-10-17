@@ -11,6 +11,10 @@
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
          
         <!-- Meta Tags -->
         <meta charset="UTF-8"> 
