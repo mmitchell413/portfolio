@@ -478,11 +478,9 @@ $(document).ready(function(){
     
     // contact input label manipulation code
     $("input, textarea").focusin(function(){
-        console.log("hello");
         $("label[for='"+$(this).attr('id')+"']").addClass("label-focus");
     });
     $("input, textarea").focusout(function(){
-        console.log($("label[for='"+$(this).attr('id')+"']").val());
         if( !$(this).val() ){
             $("label[for='"+$(this).attr('id')+"']").removeClass("label-focus");
         } else {
