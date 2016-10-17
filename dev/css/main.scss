@@ -4,6 +4,7 @@
 @import "partials/reset";
 @import "partials/variables";
 @import "partials/typography";
+@import "partials/buttons";
 
 @mixin color(){
 	width:20px;
@@ -34,6 +35,7 @@ body{
 }
 h1,h2,h3,h4,h5,h6{
     margin: 1.5em 0 1em 0;
+    color:$secondary-color;
     @include font-bebas;
 }
 h1{
@@ -51,6 +53,13 @@ p{
     font-size:1.0em;
     line-height:2em;
     color:$granite;
+}
+hr{
+    margin:0 auto;
+    width:70%;
+    opacity:.5;
+    border:none;
+    border-bottom: 1px solid $secondary-color-light;
 }
 
 /* Typography */ 
@@ -91,12 +100,27 @@ p{
     margin:0 auto;
     overflow:visible;
 }
+.full-width{
+    width:100%;
+}
+.col-left, .col-right{
+    width:50%;
+    box-sizing:border-box;
+}
+.col-left{
+    padding:0 20px 0 0;
+    float:left;
+}
+.col-right{
+    padding: 0 0 0 20px;
+    float:right;
+}
 
 /* footer styles */
 footer{
-    padding:100px;
+    padding:50px;
     background-color: $dark-gray;
-    background-color: $dark-gray;
+    overflow:hidden;
     .footer__menu{
         float:left;
         width:75%;
@@ -137,63 +161,194 @@ footer{
 /* Main container styles */
 .container{
     position:relative;
+    overflow:visible;
+    padding:0 0 60px 0;
     top:50px;
     opacity:0;
     max-width:1200px;
     width:100%;
-    background-color:$white;
     margin:0 auto;
-    border-radius:5px;
-    .container--padding{
-        padding:40px 60px;
+    .container--padding{ 
+        padding:40px 60px; 
         width:100%;
     }
+    &#contact{
+        background:none;
+    }
+    &#container__about{
+        background:rgba(250,250,250,100);
+        max-width:100%;
+        .tech{
+            text-align:center;
+            padding-top:30px;
+            img{
+                width:100px;
+                -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+                filter: grayscale(100%);
+                @include transition(.3s);
+            }
+            .grid-1-3{
+                &:hover{
+                    img{
+                        -webkit-filter:none;
+                        filter:none;
+                    }
+                }
+            }
+        }
+    }
+    &#portfolio-intro{
+        margin-top:150px;
+        opacity:1;
+        background:none;
+        p{
+            color:$white;
+        }
+    }
+    &#portfolio-gmf,
+    &#portfolio-lokmor{
+        border-radius:0px;
+        background:none;
+        color:$white;
+        img{
+            width:100%;
+            max-width:1200px;
+            margin:0 auto;
+        }
+        h1{
+            color:$white;
+            text-align:left;
+            position:relative;
+            top:50px;
+            //@include rotate(-5.5);
+        }
+        p{
+            color:$white;
+            position:relative;
+            top:-75px;
+        }
+    }
+    &#portfolio-lokmor{
+        text-align:right;
+        h1{
+            //@include rotate(10);
+            top:0px;
+        }
+        p{
+            width:70%;
+            float:right;
+        }
+    }
+    &#portfolio-gmf{
+        text-align:center;
+        .btn-ghost:hover{
+            color:$gmf-blue;
+            text-align:center;
+            border-radius:40px;
+        }
+        p{
+            width:70%;
+            text-align:left;
+        }
+    }
 }
+
 .page{
     min-height:1000px;
     display:block;
     padding:100px 0;
+    &#portfolio{
+        padding-top:70px;
+        min-height:400px;
+        background-color:$green;
+    }
+    &#lokmor{
+        background-color:$lokmor-red
+    }
+    &#gmf{
+        background:$gmf-blue;
+        padding-top:0;
+    }
+    &#about,
+    &#contact{
+        background-size:cover;
+
+    }
 }
-.page#about,
-.page#contact{
-    background-size:cover;
-    
-}
+
+// Load smaller images for mobile and non-retina
 @media screen and (min-width: 1920px){
     .page#about,
     .page#contact{
-        background:url('../img/hero-bg-2880-1920.png') no-repeat fixed;
-        background-position: 0 -200px;
+        //background:url('../img/hero-bg-2880-1920.png') no-repeat fixed;
+        background-position: 0 0;
+        background-size:cover;
     }
 }
 @media screen and (max-width: 1920px){
     .page#about,
     .page#contact{
-        background:url('../img/hero-bg-1920-1280.png') no-repeat fixed;
+        //background:url('../img/hero-bg-1920-1280.png') no-repeat fixed;
         background-position: 0 -200px;
+        background-size:cover;
     }
 }
 @media screen and (max-width: 1280px){
     .page#about,
     .page#contact{
-        background:url('../img/hero-bg-1024-683.png') no-repeat fixed;
-        background-position: 0 -200px;
+        //background:url('../img/hero-bg-1024-683.png') no-repeat fixed;
+        background-position: 0 0px;
+        background-size:cover;
+    }
+}
+
+// Scroll down arrow styles
+.arrow-down{
+    position:fixed;
+    width:100px;
+    bottom:30px;
+    left:50%;
+    margin-left:-50px;
+    text-align:center;
+    animation-name:arrow-down;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    svg{
+        width:50px;
+    }
+    p{
+        @include font-bebas;
+        color:$secondary-color;
+        font-size:.8em;
+        margin:0;
+    }
+}
+@keyframes arrow-down{
+    0%{
+        bottom:30px;
+    }
+    50%{
+        bottom:35px;
+    }
+    100%{
+        bottom:30px;
     }
 }
 
 /* Heading styles */
 .heading{
     text-align:center;
-    margin: 120px 0 200px 0;
+    margin: 150px 0 160px 0;
     img{
         width:200px;
         border-radius:100px;
-        //border:5px solid $white;
+        //border:5px solid $tertiary-color;
+        opacity:0.0;
     }
     h1{
         font-size:2.2em; 
         font-family: 'Source Code Pro';
-        color:$white;
+        color:$secondary-color;
         text-shadow: 2px 2px 1px rgba(0,0,0,.0);
         margin:.5em 0 0 0;
     }
@@ -214,9 +369,11 @@ footer{
     height: 70px;
     position:fixed;
     background-color:none;
-    color:$white;
     z-index:2;
     @include transition(all, .2s);
+    &.top-nav__portfolio{
+        background:$white;
+    }
     .logo{
         float:left;
         svg{
@@ -224,7 +381,7 @@ footer{
             width:50px;
             height:50px;
             margin:10px 10px;
-            stroke:$white;  
+            stroke:$secondary-color;  
         }
         .logo-hover{
             @include transition(all, .3s);
@@ -259,7 +416,7 @@ footer{
         ul{
             float:right;
             display:flex;
-            width:600px;
+            width:500px;
             height:70px;
             line-height:70px;
             margin:0;
@@ -272,10 +429,10 @@ footer{
                 flex-grow:1;
                 a{
                     text-decoration:none;
-                    color:$white;
+                    color:$secondary-color;
                     display:block;
                     width:100%;
-                    text-align:center;
+                    text-align:center; 
                     @include transition(all, .3s);
                     .top-nav__menu-highlight{
                         position:relative;
@@ -299,19 +456,19 @@ footer{
 }
 .top-nav__scrolled{
     background-color:$white;
-    color:$black;
+    color:$secondary-color;
     box-shadow: 0 20px 20px rgba(0,0,0,.05);
     border-bottom:none;
     .logo{
         svg{
-            stroke:$black;
+            stroke:$secondary-color;
         }
     }
     .top-nav__menu{
         ul{
             li{
                 a{
-                    color:$black;
+                    color:$secondary-color;
                 }
             }
         }
@@ -320,49 +477,102 @@ footer{
 
 /* Input Styles */
 
+label{
+    color: $secondary-color-light;
+    position:relative;
+    top:52px;
+    font-size:.8em;
+    font-weight:700;
+    @include transition(.3s);
+}
+.label-focus{
+    top:25px;
+    font-size:.6em;
+    color:$primary-color;
+}
+.label-focus-filled{
+    color:$secondary-color-light;
+}
 input, textarea{
     @include font-open;
     @include transition(".3s");
     outline:none;
-    color:$granite;
+    background:none;
+    color:$secondary-color;
     margin: 0 0 40px 0;
     &[type=text], &[type=password], &[type=email]{
-        padding:15px 15px 15px 30px;
+        padding:30px 15px 10px 0px;
         font-size:1.0em;
+        font-weight:bold;
         width:100%;
-        border:1px solid $light-gray;
-        border-radius:2px;
+        border:none;
+        border-bottom:1px solid $secondary-color;
+       
         &:focus{
-            border: 1px solid $primary-color;
+            border-bottom: 1px solid $primary-color;
         }
     }
     &:focus{
         color:$primary-color;
     }
-    &::-webkit-input-placeholder {
-        color: $light-gray;
-    }
-    &:-moz-placeholder { /* Firefox 18- */
-       color: $light-gray;  
-    }
-    &::-moz-placeholder {  /* Firefox 19+ */
-       color: $light-gray;  
-    }
-    &:-ms-input-placeholder {  
-       color: $light-gray;  
-    }
 }
 textarea{
-    padding:15px 15px 15px 30px;
+    padding:30px 15px 15px 0px;
     resize:none;
     height:200px;
-        font-size:1.0em;
-        width:100%;
-        border:1px solid $light-gray;
-        border-radius:2px;
-        &:focus{
-            border: 1px solid $primary-color;
-        }
+    overflow:visible;
+    font-size:1.0em;
+    font-weight:bold;
+    width:100%;
+    border:none;
+    border-bottom:1px solid $secondary-color;
+    &:focus{
+        border-bottom: 1px solid $primary-color;
+            &::-webkit-input-placeholder{
+                top:-30px;
+                font-size:.8em;
+                color:$primary-color;
+            }
+            &::-moz-placeholder{
+                top:-30px;
+                font-size:.8em;
+                color:$primary-color;
+            }
+            &:-ms-input-placeholder{
+                top:-30px;
+                font-size:.8em;
+                color:$primary-color;
+            }
+            &:-moz-placeholder{
+                top:-30px;
+                font-size:.8em;
+                color:$primary-color;
+            }
+    }
+    &::-webkit-input-placeholder {
+        color: $secondary-color-light;
+        position:relative;
+        top:0;
+        @include transition(.3s);
+    }
+    &:-moz-placeholder {  /*Firefox 18- */
+       color: $secondary-color-light;  
+        position:relative;
+        top:0;
+        @include transition(.3s);
+    }
+    &::-moz-placeholder {   /*Firefox 19+*/ 
+       color: $secondary-color-light; 
+        position:relative;
+        top:0;
+        @include transition(.3s);
+    }
+    &:-ms-input-placeholder {  
+       color: $secondary-color-light;  
+        position:relative;
+        top:0;
+        @include transition(.3s);
+    }
 }
 
 // typed.js styles
@@ -388,6 +598,7 @@ textarea{
     100% { opacity:1; }
 }
 
+// mobile styles begin
 @media screen and (max-width:1150px){
     .top-nav{
         height:auto;
