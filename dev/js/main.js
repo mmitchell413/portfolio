@@ -18,6 +18,17 @@ $(document).ready(function(){
                     top: "0"
                 }, 500);
             }
+            // animate delay in tech cards
+            if($(this).attr("id")==="container__about"){
+                if(height > (containerPosition[index] - (screenOffset+400))){
+                    $("#container__about .grid-1-3").each(function(foo){
+                       setTimeout(function(){$("#container__about .grid-1-3#"+foo).animate({
+                          opacity:1.0,
+                          top: "0"
+                       }, 800, "easeInExpo")}, 400*foo);
+                    });
+                }
+            }
         });
         //var containerPosition = $(".container").offset().top;
         
