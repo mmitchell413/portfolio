@@ -19,9 +19,6 @@
 ?>
 
 <?php include 'header.php' ?>
-        <script>
-
-        </script>
 
         <div class="page" id="contact">
             <div class="heading">
@@ -45,10 +42,10 @@
                             <textarea id="message" name="message" ></textarea>
                             <div class="med-text">
                                 <div class="grid-1-2">
-                                    <button type="submit" class="btn btn-primary full-width" name="submit">Submit</button>
+                                    <input type="submit" class="btn btn-primary full-width" name="submit"></input>
                                 </div>
                                 <div class="grid-1-2">
-                                    <button type="reset" class="btn btn-ghost btn-cancel full-width" name="cancel">Cancel</button>
+                                    <input type="reset" class="btn btn-ghost btn-cancel full-width" name="cancel"></input>
                                 </div>
                             </div>
                         </div>
