@@ -1,6 +1,10 @@
 @font-face {
-    font-family: 'BebasNeue';
-    src: url("fonts/adam.otf");
+    font-family: 'Rubik';
+    src: url("fonts/Rubik-Regular.ttf");
+}
+@font-face{
+    font-family: "RubikMedium";
+    src: url("fonts/Rubik-Medium.ttf");
 }
 @font-face {
     font-family: 'Open';
@@ -11,7 +15,10 @@
     font-family: "Open", sans-serif;
 }
 @mixin font-bebas(){
-    font-family: "BebasNeue", sans-serif;
+    font-family: "Rubik", sans-serif;
+}
+@mixin font-rubikmedium(){
+    font-family: "RubikMedium", sans-serif;
 }
 
 .red-highlight{

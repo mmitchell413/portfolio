@@ -44,6 +44,7 @@ h1{
 }
 h2{
     font-size:1.4em;
+    @include font-rubikmedium;
 }
 h3{
     font-size:1.2em;
@@ -175,7 +176,7 @@ footer{
     &#contact{
         background:none;
     }
-    &#container__about{
+    &#container__tech{
         //background:rgba(250,250,250,100);
         max-width:100%;
         top:0px;
@@ -185,9 +186,9 @@ footer{
             overflow:visible;
             img{
                 width:75px;
-                -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-                filter: grayscale(100%);
-                @include transition(.3s);
+                //-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+                //filter: grayscale(100%);
+                //@include transition(.3s);
             }
             .grid-1-3{
                 opacity:0.0;
@@ -199,19 +200,20 @@ footer{
                 }
                 &:hover{
                     img{
-                        -webkit-filter:none;
-                        filter:none;
+                        //-webkit-filter:none;
+                        //filter:none;
                     }
                 }
             }
         }
-        .grid-1-3{                    
-            &:nth-child(2n){
-                border-radius: 40px 0 40px 0;
-            }
-            &:nth-child(2n+1){
-                border-radius: 0 40px 0 40px;
-            }
+        .grid-1-3{ 
+            border-radius:10px;
+//            &:nth-child(2n){
+//                border-radius: 40px 0 40px 0;
+//            }
+//            &:nth-child(2n+1){
+//                border-radius: 0 40px 0 40px;
+//            }
         }
     }
     &#portfolio-intro{
@@ -285,6 +287,9 @@ footer{
     &#gmf{
         background:$gmf-blue;
         padding-top:0;
+    }
+    &#about{
+        //position:relative;
     }
     &#about,
     &#contact{
@@ -364,7 +369,9 @@ footer{
     }
     h1{
         font-size:2.2em; 
-        font-family: 'Source Code Pro';
+        //font-family: 'Source Code Pro';
+        @include font-bebas;
+        letter-spacing:2px;
         color:$secondary-color;
         text-shadow: 2px 2px 1px rgba(0,0,0,.0);
         margin:.5em 0 0 0;
@@ -497,6 +504,7 @@ footer{
 label{
     color: $secondary-color-light;
     position:relative;
+    cursor:text;
     top:52px;
     font-size:.8em;
     font-weight:700;
@@ -623,6 +631,35 @@ textarea{
             .menu{
                  margin-top:0;
                 margin: 0em 0 .2em;
+            }
+        }
+    }
+    .grid{
+        .grid-1-3{
+            flex-basis:45%;
+        }
+    } 
+    .container{
+        .container--padding{
+            padding:0 20px;
+        } 
+    }
+}
+@media screen and (max-width:800px){
+    .grid{
+        .grid-1-3{
+            flex-basis:100%;
+        }
+    }
+    .tech{
+        .grid-1-3{
+            img{
+                display:inline-block;
+            }
+            p{
+                display:inline-block;
+                margin:0 0 0 20px;
+                width:auto;
             }
         }
     }
