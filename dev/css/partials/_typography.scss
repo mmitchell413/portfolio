@@ -6,6 +6,10 @@
     font-family: "RubikMedium";
     src: url("fonts/Rubik-Medium.ttf");
 }
+@font-face{
+    font-family: "RubikLight";
+    src: url("fonts/Rubik-Light.ttf");
+}
 @font-face {
     font-family: 'Open';
     src: url("fonts/OpenSans-Regular.ttf");
@@ -19,6 +23,9 @@
 }
 @mixin font-rubikmedium(){
     font-family: "RubikMedium", sans-serif;
+}
+@mixin font-rubiklight(){
+    font-family: "RubikLight", sans-serif;
 }
 
 .red-highlight{

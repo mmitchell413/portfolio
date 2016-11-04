@@ -19,7 +19,6 @@
 ?>
 
 <?php include 'header.php' ?>
-
         <script>
 
         </script>
@@ -60,7 +59,7 @@
         
         <div class="arrow-down">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="50px" height="30px" viewBox="0 0 500 300" enable-background="new 0 0 500 300" xml:space="preserve">
+             width="30px" height="20px" viewBox="0 0 500 300" enable-background="new 0 0 500 300" xml:space="preserve">
         <polyline fill="none" stroke="#92808b" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
             52.203,57 250,254.975 448.5,57 "/>
         </svg>
