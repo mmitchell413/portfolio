@@ -75,7 +75,6 @@ $(document).ready(function(){
     $('input[type="submit"]').prop('disabled', true);
     $('input[type="text"], input[type="email"], textarea').keyup(function(){
         if(emailVal && fnVal && lnVal && mesVal){
-            console.log("All inputs valid");
             $('input[type="submit"]').prop('disabled', false);
         }
     });
@@ -98,7 +97,7 @@ $(document).ready(function(){
     });
     // validate last name input
     $('input[name="firstName"]').keyup(function(){
-        if($(this).val() != ''){
+        if($(this).val() != ''){ 
             fnVal = true;
         }else{
             fnVal = false;
@@ -119,3 +118,9 @@ $(document).ready(function(){
         return re.test(email);
     }
 }); 
+
+    // submit email function / calls contact-submit.php file
+    function contactSubmit(){
+        console.log("Contact submitting");
+        $.post("contact-submit.php");
+    }

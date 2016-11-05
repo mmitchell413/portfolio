@@ -3,7 +3,6 @@
                 <ul class="footer__menu">
                     <li><a href="index.php">About</a></li>
                     <li><a href="portfolio.php">Portfolio</a></li>
-                    <li><a href="blog/">Blog</a></li>
                     <li><a href="contact.php">Contact</a></li>
                 </ul>
                 <ul class="social-media">
