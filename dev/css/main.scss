@@ -44,6 +44,7 @@ h1{
 }
 h2{
     font-size:1.4em;
+    @include font-rubikmedium;
 }
 h3{
     font-size:1.2em;
@@ -118,6 +119,7 @@ hr{
 
 /* footer styles */
 footer{
+    @include font-rubiklight;
     padding:50px;
     background-color: $dark-gray;
     overflow:hidden;
@@ -175,26 +177,45 @@ footer{
     &#contact{
         background:none;
     }
-    &#container__about{
-        background:rgba(250,250,250,100);
+    &#container__tech{
+        //background:rgba(250,250,250,100);
         max-width:100%;
+        top:0px;
         .tech{
             text-align:center;
             padding-top:30px;
+            overflow:visible;
             img{
-                width:100px;
-                -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-                filter: grayscale(100%);
-                @include transition(.3s);
+                width:75px;
+                height:75px;
+                //-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+                //filter: grayscale(100%);
+                //@include transition(.3s);
             }
             .grid-1-3{
+                opacity:0.0;
+                position:relative;
+                top:100px;
+                div{
+                    background:$white; 
+                    padding:30px;
+                }
                 &:hover{
                     img{
-                        -webkit-filter:none;
-                        filter:none;
+                        //-webkit-filter:none;
+                        //filter:none;
                     }
                 }
             }
+        }
+        .grid-1-3{ 
+            border-radius:10px;
+//            &:nth-child(2n){
+//                border-radius: 40px 0 40px 0;
+//            }
+//            &:nth-child(2n+1){
+//                border-radius: 0 40px 0 40px;
+//            }
         }
     }
     &#portfolio-intro{
@@ -269,6 +290,9 @@ footer{
         background:$gmf-blue;
         padding-top:0;
     }
+    &#about{
+        //position:relative;
+    }
     &#about,
     &#contact{
         background-size:cover;
@@ -305,22 +329,29 @@ footer{
 // Scroll down arrow styles
 .arrow-down{
     position:fixed;
-    width:100px;
+    width:70px;
+    height:70px;
+    border-radius:35px;
+    background:$white;
     bottom:30px;
     left:50%;
-    margin-left:-50px;
+    margin-left:-35px;
     text-align:center;
     animation-name:arrow-down;
     animation-duration:1s;
     animation-iteration-count: infinite;
     svg{
         width:50px;
+        top:17px;
+        position:relative;
     }
     p{
         @include font-bebas;
         color:$secondary-color;
         font-size:.8em;
         margin:0;
+        position:relative;
+        top:7px;
     }
 }
 @keyframes arrow-down{
@@ -347,7 +378,9 @@ footer{
     }
     h1{
         font-size:2.2em; 
-        font-family: 'Source Code Pro';
+        //font-family: 'Source Code Pro';
+        @include font-bebas;
+        letter-spacing:2px;
         color:$secondary-color;
         text-shadow: 2px 2px 1px rgba(0,0,0,.0);
         margin:.5em 0 0 0;
@@ -457,7 +490,7 @@ footer{
 .top-nav__scrolled{
     background-color:$white;
     color:$secondary-color;
-    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+    box-shadow: 0 3px 3px rgba(0,0,0,.05);
     border-bottom:none;
     .logo{
         svg{
@@ -480,6 +513,7 @@ footer{
 label{
     color: $secondary-color-light;
     position:relative;
+    cursor:text;
     top:52px;
     font-size:.8em;
     font-weight:700;
@@ -606,6 +640,76 @@ textarea{
             .menu{
                  margin-top:0;
                 margin: 0em 0 .2em;
+            }
+        }
+    }
+    .grid{
+        .grid-1-3{
+            flex-basis:45%;
+        }
+    } 
+    .container{
+        .container--padding{
+            padding:0 20px;
+        } 
+    }
+}
+@media screen and (max-width:800px){
+    .grid{
+        .grid-1-3{
+            flex-basis:100%;
+        }
+    }
+    .tech{
+        .grid-1-3{
+            img{
+                display:inline-block;
+            }
+            p{
+                display:inline-block;
+                margin:0 0 0 20px;
+                width:auto;
+            }
+        }
+    }
+    .med-text{
+        padding:0;
+    }
+    footer{
+        .footer__menu, .social-media{
+            width:100%;
+        }
+        .social-media{
+            text-align:center;
+            padding-top:20px;
+            li{
+                float:none;
+                padding-right:15px;
+                padding-left:0;
+            }
+        }
+        .footer__menu{
+            text-align:center;
+            padding-bottom:20px;
+            border-bottom:1px solid #858585;
+            li{
+                padding: 0 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    .logo{
+        display:none;
+    }
+    .top-nav{
+        .top-nav__menu{
+            width:100%;
+            ul{
+                width:100%;
+                li{
+                    flex-basis:33.33333%;
+                }
             }
         }
     }

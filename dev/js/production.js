@@ -453,6 +453,20 @@ $(document).ready(function(){
                     top: "0"
                 }, 500);
             }
+//            if(height > ($("footer").offset().top + screenOffset)){
+//                
+//            }
+            // animate delay in tech cards
+            if($(this).attr("id")==="container__tech"){
+                if(height > (containerPosition[index] - (screenOffset+400))){
+                    $("#container__tech .grid-1-3").each(function(foo){
+                       setTimeout(function(){$("#container__tech .grid-1-3#"+foo).animate({
+                          opacity:1.0,
+                          top: "0"
+                       }, 800, "easeInExpo")}, 600*foo);
+                    });
+                }
+            }
         });
         //var containerPosition = $(".container").offset().top;
         
@@ -476,7 +490,7 @@ $(document).ready(function(){
         $(".heading img").animate({opacity:1.0}, 1500);
     }, 10500);
     
-    // contact input label manipulation code
+    // contact input label animation code
     $("input, textarea").focusin(function(){
         $("label[for='"+$(this).attr('id')+"']").addClass("label-focus");
     });
@@ -489,4 +503,54 @@ $(document).ready(function(){
     });
     
     console.log("Hello there! I see you are taking a look at my code. If you have any comments or suggestions, feel free to drop me a line.");
+    
+    
+    // contact form checking
+    var emailVal, fnVal, lnVal, mesVal = false;
+    $('input[type="submit"]').prop('disabled', true);
+    $('input[type="text"], input[type="email"], textarea').keyup(function(){
+        if(emailVal && fnVal && lnVal && mesVal){
+            console.log("All inputs valid");
+            $('input[type="submit"]').prop('disabled', false);
+        }
+    });
+    // validate email input field
+    $('input[type="email"]').keyup(function(){
+        console.log($(this).val());
+        if (validateEmail($(this).val())){
+            emailVal = true;
+        }else{
+            emailVal = false;
+        }
+    });
+    // validate last name input
+    $('input[name="lastName"]').keyup(function(){
+        if($(this).val() != ''){
+            lnVal = true;
+        }else{
+            lnVal = false;
+        }
+    });
+    // validate last name input
+    $('input[name="firstName"]').keyup(function(){
+        if($(this).val() != ''){
+            fnVal = true;
+        }else{
+            fnVal = false;
+        }
+    });
+    // validate last name input
+    $('textarea[name="message"]').keyup(function(){
+        if($(this).val() != ''){
+            mesVal = true;
+        }else{
+            mesVal = false;
+        }
+    });
+    
+    // function to validate email using regex
+    function validateEmail(email){
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
 }); 
