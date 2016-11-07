@@ -1,17 +1,17 @@
 module.exports = function(grunt) {
 
-    // 1. All configuration goes here 
+    // 1. All configuration goes here
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
         copy:{
             main:{
                 files: [
-                    {expand: true, cwd: 'dev/', src: ['*.php', 'img/*', 'css/fonts/*'], dest: 'prod/'},
+                    {expand: true, cwd: 'dev/', src: ['*.php', 'img/**', 'css/fonts/*'], dest: 'prod/'},
                 ]
             }
         },
-        
+
         concat: {
             // 2. Configuration for concatinating files goes here.
             devDist: {
@@ -20,16 +20,16 @@ module.exports = function(grunt) {
                     'dev/js/main.js'  // This specific file
                 ],
                 dest: 'dev/js/production.js',
-            }, 
+            },
             prodDist: {
                 src: [
                     'dev/js/libs/*.js',
                     'dev/js/main.js'
-                ], 
+                ],
                 dest: 'prod/js/production.js'
             }
         },
-        
+
         imagemin: {
             dynamic: {
                 files: [{
@@ -40,21 +40,7 @@ module.exports = function(grunt) {
                 }]
             }
         },
-        
-        postcss: {
-            options: {
-                map: true,
-                processors: [
-                    require('autoprefixer')({
-                        browsers: ['last 2 versions']
-                    })
-                ]
-            },
-            dist: {
-                src: 'css/*.css'
-            }
-        },
-        
+
         sass: {
             dist: {
                 options: {
@@ -64,9 +50,23 @@ module.exports = function(grunt) {
                     'prod/css/main.css': 'dev/css/main.scss',
                     'dev/css/main.css': 'dev/css/main.scss'
                 }
-            } 
+            }
         },
-        
+
+            postcss: {
+                options: {
+                    map: true,
+                    processors: [
+                        require('autoprefixer')({
+                            browsers: ['last 2 versions']
+                        })
+                    ]
+                },
+                dist: {
+                    src: 'prod/css/*.css'
+                }
+            },
+
           uglify: {
             my_target: {
               files: {
@@ -74,7 +74,7 @@ module.exports = function(grunt) {
               }
             }
           },
-        
+
         watch: {
             scripts: {
                 files: ['dev/js/*.js'],
@@ -91,7 +91,7 @@ module.exports = function(grunt) {
                 }
             },
             minify: {
-                files:  ['dev/js/*.js'], 
+                files:  ['dev/js/*.js'],
                 tasks: ['uglify'],
                 options: {
                     spawn:false,
@@ -101,7 +101,7 @@ module.exports = function(grunt) {
                 files: ['dev/*.php', 'dev/img/*'],
                 tasks: ['copy'],
                 options: {
-                    spawn: false,   
+                    spawn: false,
                 }
             }
         }
@@ -115,8 +115,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    
+
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['postcss:dist', 'concat', 'sass', 'imagemin', 'uglify', 'copy']);
+    grunt.registerTask('default', ['concat', 'sass', 'postcss:dist', 'imagemin', 'uglify', 'copy']);
 
 };
