@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5,h6{
 }
 h1{
     font-size:1.8em;
-    
+
 }
 h2{
     font-size:1.4em;
@@ -63,7 +63,7 @@ hr{
     border-bottom: 1px solid $secondary-color-light;
 }
 
-/* Typography */ 
+/* Typography */
 
 
 
@@ -85,7 +85,7 @@ hr{
 }
 .color div{
 	@include color;
-	@include transition(all, .3s); 
+	@include transition(all, .3s);
 }
 .color div:hover{
 	-webkit-transform: scale(1.5);
@@ -157,7 +157,7 @@ footer{
             }
         }
     }
-} 
+}
 
 
 /* Main container styles */
@@ -170,8 +170,8 @@ footer{
     max-width:1200px;
     width:100%;
     margin:0 auto;
-    .container--padding{ 
-        padding:40px 60px; 
+    .container--padding{
+        padding:40px 60px;
         width:100%;
     }
     &#contact{
@@ -196,8 +196,9 @@ footer{
                 opacity:0.0;
                 position:relative;
                 top:100px;
+								height:100%;
                 div{
-                    background:$white; 
+                    background:$white;
                     padding:30px;
                 }
                 &:hover{
@@ -208,7 +209,7 @@ footer{
                 }
             }
         }
-        .grid-1-3{ 
+        .grid-1-3{
             border-radius:10px;
 //            &:nth-child(2n){
 //                border-radius: 40px 0 40px 0;
@@ -377,7 +378,7 @@ footer{
         opacity:0.0;
     }
     h1{
-        font-size:2.2em; 
+        font-size:2.2em;
         //font-family: 'Source Code Pro';
         @include font-bebas;
         letter-spacing:2px;
@@ -414,7 +415,7 @@ footer{
             width:50px;
             height:50px;
             margin:10px 10px;
-            stroke:$secondary-color;  
+            stroke:$secondary-color;
         }
         .logo-hover{
             @include transition(all, .3s);
@@ -465,7 +466,7 @@ footer{
                     color:$secondary-color;
                     display:block;
                     width:100%;
-                    text-align:center; 
+                    text-align:center;
                     @include transition(all, .3s);
                     .top-nav__menu-highlight{
                         position:relative;
@@ -541,7 +542,7 @@ input, textarea{
         width:100%;
         border:none;
         border-bottom:1px solid $secondary-color;
-       
+
         &:focus{
             border-bottom: 1px solid $primary-color;
         }
@@ -590,19 +591,19 @@ textarea{
         @include transition(.3s);
     }
     &:-moz-placeholder {  /*Firefox 18- */
-       color: $secondary-color-light;  
+       color: $secondary-color-light;
         position:relative;
         top:0;
         @include transition(.3s);
     }
-    &::-moz-placeholder {   /*Firefox 19+*/ 
-       color: $secondary-color-light; 
+    &::-moz-placeholder {   /*Firefox 19+*/
+       color: $secondary-color-light;
         position:relative;
         top:0;
         @include transition(.3s);
     }
-    &:-ms-input-placeholder {  
-       color: $secondary-color-light;  
+    &:-ms-input-placeholder {
+       color: $secondary-color-light;
         position:relative;
         top:0;
         @include transition(.3s);
@@ -647,11 +648,11 @@ textarea{
         .grid-1-3{
             flex-basis:45%;
         }
-    } 
+    }
     .container{
         .container--padding{
             padding:0 20px;
-        } 
+        }
     }
 }
 @media screen and (max-width:800px){

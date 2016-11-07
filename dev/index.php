@@ -29,7 +29,7 @@
                             <div class="grid-1-3" id="2">
                                 <div>
                                     <img src="img/tech-logos/javascript.svg">
-                                    <p>Fluent in Javascript for both front-end and back-end functionality</p>
+                                    <p>Fluent in Javascript for both front-end and back-end functionality for the web</p>
                                 </div>
                             </div>
                             <!-- jquery grid -->
@@ -45,7 +45,7 @@
                                     <img src="img/tech-logos/angular.svg">
                                     <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
                                 </div>
-                            </div>  
+                            </div>
                             <!-- php grid -->
                             <div class="grid-1-3" id="5">
                                 <div>
@@ -54,14 +54,9 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        
-<!--
-                        
--->
                     </div>
                 </div>
-            </div>  
+            </div>
             <div class="container" id="container__about">
                 <div class="container--padding">
                     <div class="faux-column">
@@ -85,5 +80,5 @@
         </svg>
             <p>Scroll</p>
         </div>
-        
+
 <?php include 'footer.php' ?>
