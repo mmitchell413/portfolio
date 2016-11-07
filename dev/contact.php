@@ -25,7 +25,7 @@
                                     <input type="submit" class="btn btn-primary full-width" name="submit" />
                                 </div>
                                 <div class="grid-1-2">
-                                    <input type="reset" class="btn btn-ghost btn-cancel full-width" name="cancel" />
+                                    <input type="reset" class="btn btn-ghost btn-cancel full-width" name="cancel" onclick="contactFormReset()" />
                                 </div>
                             </div>
                         </div>
@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="arrow-down">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="30px" height="20px" viewBox="0 0 500 300" enable-background="new 0 0 500 300" xml:space="preserve">
