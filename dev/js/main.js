@@ -11,20 +11,24 @@ $(document).ready(function(){
         $(".container").each(function(index){
             //get top position of container at index
             containerPosition[index] = $(this).offset().top;
-            if(height > (containerPosition[index] - screenOffset) && height < ($('footer').offset().top - 1000)){
+
+            if(height < ($('footer').offset().top - 1000)){
+              console.log('half transparent');
                 $(".arrow-down").animate({
                   opacity:.5
                 }, 500);
+            }else if(height > ($('footer').offset().top - 1000)){
+              console.log('full transparent');
+                $('.arrow-down').hide();
+            }
+
+            if(height > (containerPosition[index] - screenOffset)){
                 $(".container").eq(index).animate({
                     opacity: 1.0,
                     top: "0"
                 }, 500);
             }
-            console.log($('footer').offset().top - 1000);
-            console.log(height);
-            if(height > ($('footer').offset().top - 1000)){
-                $(".arrow-down").fadeOut();
-            }
+
 //            if(height > ($("footer").offset().top + screenOffset)){
 //
 //            }
