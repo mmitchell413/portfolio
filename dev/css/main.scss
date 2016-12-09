@@ -55,6 +55,9 @@ p{
     line-height:2em;
     color:$granite;
 }
+a{
+	cursor:pointer;
+}
 hr{
     margin:0 auto;
     width:70%;
@@ -123,15 +126,40 @@ footer{
     padding:50px;
     background-color: $dark-gray;
     overflow:hidden;
+		.left{
+			float:left;
+			width:75%;
+			p{
+				font-size:.8em;
+				line-height:1.2em;
+				margin:0;
+				a{
+					color:$light-gray;
+					text-decoration:none;
+					&:hover{
+						color:$primary-color;
+					}
+				}
+			}
+		}
+		.right{
+			float:right;
+			width:25%;
+		}
+		@media screen and (max-width: $tablet){
+			.left,
+			.right{
+				width:100%;
+			}
+		}
     .footer__menu{
-        float:left;
-        width:75%;
+			margin: 0 0 20px 0;
         li{
             display:inline-block;
             padding-right:60px;
             a{
                 text-decoration:none;
-                color:$granite;
+                color:$light-gray;
                 @include transition(color, .3s);
             }
             a:hover{
@@ -140,14 +168,12 @@ footer{
         }
     }
     .social-media{
-        float:right;
-        width:25%;
         li{
             float:right;
             display:inline-block;
             padding-left:15px;
             svg{
-                fill:$granite;
+                fill:$light-gray;
                 width:20px;
                 height:20px;
                 @include transition(all, .3s);
@@ -210,7 +236,9 @@ footer{
             }
         }
         .grid-1-3{
-            border-radius:10px;
+            border-radius:4px;
+						box-shadow:2px 2px 1px rgba(0,0,0,.05);
+						//border: 1px solid $off-white;
 //            &:nth-child(2n){
 //                border-radius: 40px 0 40px 0;
 //            }
