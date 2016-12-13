@@ -29,7 +29,7 @@ body{
   left:0;
 	font-weight:300;
   font-size:1.2em;
-  background-color:#eeeeee;
+  background-color:$bg-color;
 	box-sizing:border-box;
   @include font-open;
 }
@@ -202,6 +202,16 @@ footer{
     }
     &#contact{
         background:none;
+				.heading{
+					.social-media{
+						li{
+							display:inline-block;
+							width:50px;
+							height:50px;
+							margin:0 5px;
+						}
+					}
+				}
     }
     &#container__tech{
         //background:rgba(250,250,250,100);
@@ -323,6 +333,29 @@ footer{
     &#contact{
         background-size:cover;
 
+    }
+		&#contact{
+        background:none;
+				.heading{
+					.social-media{
+						margin-top:20px;
+						li{
+							display:inline-block;
+							margin:0 5px;
+							svg{
+								fill:$light-gray;
+								stroke:$light-gray;
+								width:25px;
+								height:25px;
+								@include transition(.3s);
+								&:hover{
+									fill:$primary-color;
+									stroke:$primary-color;
+								}
+							}
+						}
+					}
+				}
     }
 }
 
