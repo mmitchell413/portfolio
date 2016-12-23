@@ -20,6 +20,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.004);
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

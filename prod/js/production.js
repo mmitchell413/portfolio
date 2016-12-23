@@ -448,12 +448,10 @@ $(document).ready(function(){
             containerPosition[index] = $(this).offset().top;
 
             if(height < ($('footer').offset().top - 1000)){
-              console.log('half transparent');
                 $(".arrow-down").animate({
                   opacity:.5
                 }, 500);
             }else if(height > ($('footer').offset().top - 1000)){
-              console.log('full transparent');
                 $('.arrow-down').hide();
             }
 
