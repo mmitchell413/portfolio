@@ -26,6 +26,20 @@
     <div class="page" id="misc">
         <div class="container" id="portfolio-misc">
             <h1>Other Projects</h1>
+            <div class="grid grid-portfolio">
+                <div class="grid-1-3">
+                    <img src="img/portfolio/design-cloud-thumb.jpg">
+                </div>
+                <div class="grid-1-3">
+                    <img src="img/portfolio/incsspire-thumb.jpg">
+                </div>
+                <div class="grid-1-3">
+                    <img src="img/portfolio/port-mockup-thumb.jpg">
+                </div>
+                <div class="grid-1-3">
+                    <img src="img/portfolio/porter-thumb.jpg">
+                </div>
+            </div>
         </div>
     </div>
 
