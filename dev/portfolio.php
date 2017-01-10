@@ -9,8 +9,8 @@
     <div class="page" id="gmf">
         <div class="container" id="portfolio-gmf">
             <h1>GM Financial</h1>
-            <img src="img/portfolio/gmf-home.jpg" alt="GM Financial Homepage" />
             <p>The GM Financial redesign was a great experience and provided a lot of knowledge. We worked for three months to completely revitalize all five consumer facing sites with the company. The project required a quick turnaround and impecable team communication to pull off.</p>
+            <img src="img/portfolio/gmf-home.jpg" alt="GM Financial Homepage" />
             <a class="btn btn-ghost" href="#" disabled>Case Study Coming Soon</a>
         </div>
     </div>

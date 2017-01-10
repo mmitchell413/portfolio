@@ -263,7 +263,6 @@ footer{
         }
     }
     &#portfolio-intro{
-        margin-top:150px;
         opacity:1;
         background:none;
         p{
@@ -302,15 +301,18 @@ footer{
     }
     &#portfolio-gmf{
         text-align:center;
-        padding-top:300px;
+        padding-top:200px;
         .btn-ghost:hover{
             color:$gmf-blue;
             text-align:center;
             border-radius:40px;
         }
         p{
-            width:70%;
             text-align:left;
+        }
+        img{
+            display:block;
+            margin:50px 0;
         }
     }
     &#portfolio-misc{
