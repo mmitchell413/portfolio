@@ -69,7 +69,7 @@
                             <input type="email" id="email" name="email" />
                             <label for="message">Message</label>
                             <textarea id="message" name="message" ></textarea>
-                            <div class="med-text">
+                            <div class="med-text grid">
                                 <div class="grid-1-2">
                                     <input type="submit" class="btn btn-primary full-width" name="submit" />
                                 </div>
