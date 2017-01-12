@@ -75,6 +75,7 @@
                 <div class="top-nav__menu">
                         <ul>
                             <li><a href="index.php" class="menu__link" id="about">About<div class="top-nav__menu-highlight"></div></a></li>
+                            <li><a href="skills.php" class="menu__link" id="skills">Skills<div class="top-nav__menu-highlight"></div></a></li>
                             <li><a href="portfolio.php" class="menu__link" id="portfolio">Portfolio<div class="top-nav__menu-highlight"></div></a></li>
                             <li><a href="contact.php" class="menu__link" id="contact">Contact<div class="top-nav__menu-highlight"></div></a></li>
                         </ul>

@@ -7,7 +7,6 @@
                 <br>
             </div>
             <div class="container" id="container__tech">
-                <div class="container--padding">
                     <div class="faux-column">
                         <h2>What I can do for you</h2>
                         <div class="grid tech">
@@ -43,7 +42,7 @@
                             <div class="grid-1-3" id="4">
                                 <div>
                                     <img src="img/tech-logos/angular.svg">
-                                    <p>Familiarity with one of the fastest growing Javascript libraries on the market: Angular.js</p>
+                                    <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
                                 </div>
                             </div>
                             <!-- php grid -->
@@ -53,7 +52,6 @@
                                     <p>Firm grasp on the widely used back-end technology that powers countless sites</p>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>

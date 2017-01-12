@@ -52,7 +52,7 @@ h3{
 p{
     margin:1em 0;
     font-size:1.0em;
-    line-height:2em;
+    line-height:1.6em;
     color:$granite;
 }
 a{
@@ -204,20 +204,17 @@ footer{
 
 /* Main container styles */
 .container{
+		background-color:$bg-color;
     position:relative;
     overflow:visible;
-    padding:60px 0;
+    margin:60px auto;
+		padding: 50px;
+		border-radius: 5px;
     top:50px;
     opacity:0;
     max-width:1200px;
     width:100%;
-    margin:0 auto;
-    .container--padding{
-        padding:40px 60px;
-        width:100%;
-    }
     &#contact{
-        background:none;
 				.heading{
 					.social-media{
 						li{
@@ -230,8 +227,7 @@ footer{
 				}
     }
     &#container__tech{
-        background:$bg-color-alt;
-        max-width:100%;
+        background:$bg-color;
         top:0px;
         .tech{
             text-align:center;
@@ -252,6 +248,10 @@ footer{
                 div{
                     background:$white;
                     padding:30px;
+										p{
+											font-size:.8em;
+									    line-height:1.4em;
+										}
                 }
                 &:hover{
                     img{
@@ -345,7 +345,6 @@ footer{
 .page{
     min-height:1000px;
     display:block;
-    padding:0 0 100px 0;
     &#portfolio{
         padding-top:70px;
         min-height:400px;
@@ -377,8 +376,8 @@ footer{
 							display:inline-block;
 							margin:0 5px;
 							svg{
-								fill:$light-gray;
-								stroke:$light-gray;
+								fill:$secondary-color;
+								stroke:$secondary-color;
 								width:25px;
 								height:25px;
 								@include transition(.3s);
@@ -397,7 +396,7 @@ footer{
 @media screen and (min-width: 1920px){
     .page#about,
     .page#contact{
-        //background:url('../img/hero-bg-2880-1920.png') no-repeat fixed;
+      	background:url('../img/hero-bg-2880-1920.png') no-repeat fixed;
         background-position: 0 0;
         background-size:cover;
     }
@@ -405,7 +404,7 @@ footer{
 @media screen and (max-width: 1920px){
     .page#about,
     .page#contact{
-        //background:url('../img/hero-bg-1920-1280.png') no-repeat fixed;
+        background:url('../img/hero-bg-1920-1280.png') no-repeat fixed;
         background-position: 0 -200px;
         background-size:cover;
     }
@@ -413,7 +412,7 @@ footer{
 @media screen and (max-width: 1280px){
     .page#about,
     .page#contact{
-        //background:url('../img/hero-bg-1024-683.png') no-repeat fixed;
+        background:url('../img/hero-bg-1024-683.png') no-repeat fixed;
         background-position: 0 0px;
         background-size:cover;
     }
@@ -442,6 +441,7 @@ footer{
         @include font-bebas;
         color:$secondary-color;
         font-size:.8em;
+				line-height:2em;
         margin:0;
         position:relative;
         top:7px;
@@ -542,7 +542,7 @@ footer{
         ul{
             float:right;
             display:flex;
-            width:500px;
+            width:600px;
             height:70px;
             line-height:70px;
             margin:0;
