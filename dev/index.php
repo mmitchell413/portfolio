@@ -32,26 +32,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tech">
-                            <div class="col" id='3'>
-                              <div>
-                                  <img src="img/tech-logos/jquery.svg">
-                                  <p>Deep understanding of the most-popular Javascript library available</p>
-                              </div>
-                            </div>
-                            <div class="col" id='4'>
-                              <div>
-                                  <img src="img/tech-logos/angular.svg">
-                                  <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
-                              </div>
-                            </div>
-                            <div class="col" id='5'>
-                              <div>
-                                  <img src="img/tech-logos/php.svg">
-                                  <p>Firm grasp on the widely used back-end technology that powers countless sites</p>
-                              </div>
-                            </div>
-                        </div>
+                        <a class="btn btn-primary" href="skills.php">View all skills</a>
                     </div>
                 </div>
             <div class="container" id="container__about">
