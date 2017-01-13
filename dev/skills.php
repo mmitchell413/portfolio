@@ -27,8 +27,6 @@
                                     <p>Fluent in Javascript for both front-end and back-end functionality for the web</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tech">
                             <div class="col" id='3'>
                               <div>
                                   <img src="img/tech-logos/jquery.svg">
@@ -45,6 +43,54 @@
                               <div>
                                   <img src="img/tech-logos/php.svg">
                                   <p>Firm grasp on the widely used back-end technology that powers countless sites</p>
+                              </div>
+                            </div>
+                            <div class="col" id='3'>
+                              <div>
+                                  <img src="img/tech-logos/sass.svg">
+                                  <p>Deep understanding of the most-popular Javascript library available</p>
+                              </div>
+                            </div>
+                            <div class="col" id='4'>
+                              <div>
+                                  <img src="img/tech-logos/less.svg">
+                                  <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
+                              </div>
+                            </div>
+                            <div class="col" id='5'>
+                              <div>
+                                  <img src="img/tech-logos/python.svg">
+                                  <p>Firm grasp on the widely used back-end technology that powers countless sites</p>
+                              </div>
+                            </div>
+                            <div class="col" id='3'>
+                              <div>
+                                  <img src="img/tech-logos/git.svg">
+                                  <p>Deep understanding of the most-popular Javascript library available</p>
+                              </div>
+                            </div>
+                            <div class="col" id='4'>
+                              <div>
+                                  <img src="img/tech-logos/mysql.svg">
+                                  <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
+                              </div>
+                            </div>
+                            <div class="col" id='4'>
+                              <div>
+                                  <img src="img/tech-logos/java.svg">
+                                  <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
+                              </div>
+                            </div>
+                            <div class="col" id='4'>
+                              <div>
+                                  <img src="img/tech-logos/photoshop.svg">
+                                  <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
+                              </div>
+                            </div>
+                            <div class="col" id='4'>
+                              <div>
+                                  <img src="img/tech-logos/illustrator.svg">
+                                  <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
                               </div>
                             </div>
                         </div>
