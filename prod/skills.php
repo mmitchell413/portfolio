@@ -93,6 +93,12 @@
                                   <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
                               </div>
                             </div>
+                            <div class="col" id='4'>
+                              <div>
+                                  <img src="img/tech-logos/nodejs.svg">
+                                  <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
+                              </div>
+                            </div>
                         </div>
                 </div>
             </div>
