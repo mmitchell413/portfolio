@@ -20,6 +20,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
 
+        <!-- Recaptcha script -->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
         <!-- Google Tag Manager -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MT5WSX"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

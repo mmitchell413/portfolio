@@ -48,7 +48,7 @@
                             <div class="col" id='3'>
                               <div>
                                   <img src="img/tech-logos/sass.svg">
-                                  <p>Deep understanding of the most-popular Javascript library available</p>
+                                  <p>Utilize CSS pre-processors to keep code readable and maintanable</p>
                               </div>
                             </div>
                             <div class="col" id='4'>
@@ -66,13 +66,13 @@
                             <div class="col" id='3'>
                               <div>
                                   <img src="img/tech-logos/git.svg">
-                                  <p>Deep understanding of the most-popular Javascript library available</p>
+                                  <p>Two years of experience using the most widespread version control system</p>
                               </div>
                             </div>
                             <div class="col" id='4'>
                               <div>
                                   <img src="img/tech-logos/mysql.svg">
-                                  <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
+                                  <p>Familiarity with SQL and its tie-ins to popular CMSs such as Wordpress</p>
                               </div>
                             </div>
                             <div class="col" id='4'>
@@ -84,7 +84,7 @@
                             <div class="col" id='4'>
                               <div>
                                   <img src="img/tech-logos/photoshop.svg">
-                                  <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
+                                  <p>Almost a decade of experience using Photoshop for both graphic and web design</p>
                               </div>
                             </div>
                             <div class="col" id='4'>
@@ -96,6 +96,12 @@
                             <div class="col" id='4'>
                               <div>
                                   <img src="img/tech-logos/nodejs.svg">
+                                  <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
+                              </div>
+                            </div>
+                            <div class="col" id='4'>
+                              <div>
+                                  <img src="img/tech-logos/grunt.svg">
                                   <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
                               </div>
                             </div>

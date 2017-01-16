@@ -2,18 +2,33 @@
 
     <div class="page" id="gmf">
         <div class="container" id="portfolio-gmf">
+          <div class="tech">
             <h1>The Stack</h1>
-            <h2>HTML5</h2>
-            <p>We used the latest and greatest of HTML5 to markup this project</p>
-            <h2>CSS3</h2>
-            <p>Cutting-edge, custom written CSS framework, including a responsive grid</p>
-            <h2>jQuery</h2>
-            <p>Utilized the jQuery 2.1.0 library as well as custom written solutions</p>
-            <h2>TFS</h2>
-            <p></p>
-            
+              <!-- HTML Grid -->
+              <div class="col" id="0">
+                  <div>
+                      <img src="img/tech-logos/html.svg">
+                      <p>Utilize the strictest HTML5 and WCAG guidelines to markup sites for accessibility</p>
+                  </div>
+              </div>
+              <!-- CSS Grid -->
+              <div class="col" id="1">
+                  <div>
+                      <img src="img/tech-logos/css.svg">
+                      <p>Extensive knowledge of CSS3 and all its capabilities to create pixel-perfect designs</p>
+                  </div>
+              </div>
+              <!-- Javascript grid -->
+              <div class="col" id="2">
+                  <div>
+                      <img src="img/tech-logos/javascript.svg">
+                      <p>Fluent in Javascript for both front-end and back-end functionality for the web</p>
+                  </div>
+              </div>
+          </div>
+
             <h1>The Challenge</h1>
-            
+
         </div>
     </div>
 

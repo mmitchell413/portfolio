@@ -511,7 +511,7 @@ $(document).ready(function(){
         }
     });
 
-    console.log("Hello there! I see you are taking a look at my code. If you have any comments or suggestions, feel free to drop me a line.");
+    console.log("Hello there! I see you are taking a look at my code. If you have any comments or suggestions, feel free to drop me a line: http://www.mattmitchell.org/contact.php");
 
 
     // contact form checking
@@ -524,7 +524,6 @@ $(document).ready(function(){
     });
     // validate email input field
     $('input[type="email"]').keyup(function(){
-        console.log($(this).val());
         if (validateEmail($(this).val())){
             emailVal = true;
         }else{

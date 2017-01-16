@@ -43,19 +43,40 @@
   C90.957,20.247,94.08,16.29,95.551,11.574z"/>
 </svg></a></li>
 
-                    <li><a target="_blank" href="https://www.facebook.com/matt.mitchell2"><svg class="svg__facebook" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-<path id="Facebook_1_" d="M98.199,92.797c0,2.926-2.373,5.298-5.299,5.298H68.438V60.918h12.479l1.867-14.488H68.438
-  v-9.25c0-4.194,1.164-7.053,7.181-7.053l7.672-0.003V17.166c-1.326-0.177-5.881-0.571-11.181-0.571
-  c-11.061,0-18.635,6.751-18.635,19.151V46.43h-12.51v14.488h12.51v37.177H7.497c-2.927,0-5.298-2.372-5.298-5.298V7.394
-  c0-2.927,2.372-5.299,5.298-5.299H92.9c2.926,0,5.299,2.372,5.299,5.299V92.797z"/>
-</svg></a></li>
-
                 </ul>
             </div>
+            <?php
+                $to = "matt@mattmitchell.org";
+                $subject = "New contact message from mattmitchell.org";
+                if(isset($_POST['firstName'])){
+                  $firstName = $_POST['firstName'];
+                }
+                if(isset($_POST['lastName'])){
+                  $lastName = $_POST['lastName'];
+                }
+                if(isset($_POST['email'])){
+                  $from = $_POST['email'];
+                }
+                if(isset($_POST['message'])){
+                  $message = "First Name: " . $firstName . "<br>Last Name: " . $lastName . "<br>" . $_POST['message'];
+                  $headers = 'From: '.$from."\r\n".'Reply-To: '.$from."\r\n".'X-Mailer: PHP/' . phpversion();
+                }
+
+                if(isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['email']) && isset($_POST['message'])){
+                  if (mail($to, $subject, $message, $headers)){
+                      header("Location: contact-success.php");
+                      exit();
+                  }
+                  else{
+                      phpinfo();
+                      header("Location: contact-failed.php");
+                      exit();
+                  }
+                }
+            ?>
             <div class="container" id="contact">
                 <div class="container--padding">
-                    <form id="contact-form" name="contact-form" action="contact-submit.php" method="post">
+                    <form id="contact-form" name="contact-form" action="contact.php" method="post">
                         <div class="med-text grid">
                             <div class="grid-1-2">
                                 <label for="firstName">First Name</label>
@@ -69,6 +90,7 @@
                             <input type="email" id="email" name="email" />
                             <label for="message">Message</label>
                             <textarea id="message" name="message" ></textarea>
+                            <div class="g-recaptcha" data-sitekey="6LcA5xEUAAAAAILWmIZWbmc6ll3NYnb7hxuujp6t"></div>
                             <div class="med-text grid">
                                 <div class="grid-1-2">
                                     <input type="submit" class="btn btn-primary full-width" name="submit" />

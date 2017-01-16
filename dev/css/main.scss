@@ -36,11 +36,12 @@ body{
 h1,h2,h3,h4,h5,h6{
     margin: 1.5em 0 1em 0;
     color:$secondary-color;
+		clear:both;
     @include font-bebas;
 }
 h1{
     font-size:1.8em;
-
+		width:100%;
 }
 h2{
     font-size:1.4em;
@@ -207,7 +208,7 @@ footer{
 
 /* Main container styles */
 .container{
-		background-color:rgba(255,255,255,0.9);
+		background-color:rgba(255,255,255,0.8);
     position:relative;
     overflow:visible;
     margin:60px auto;
@@ -231,37 +232,6 @@ footer{
     }
     &#container__tech{
         top:0px;
-        .tech{
-						display:flex;
-						justify-content:space-between;
-						flex-basis:100%;
-						flex-wrap:wrap;
-            text-align:center;
-						background:transparent;
-            img{
-                width:75px;
-                height:75px;
-            }
-						.col{
-								flex-basis:30%;
-								border-radius:4px;
-								margin-bottom:30px;
-								box-shadow:2px 2px 1px rgba(0,0,0,.05);
-								background:$white;
-								padding:30px;
-								position:relative;
-								@media screen and (max-width:850px){
-									flex-basis: 45%;
-								}
-								@media screen and (max-width:500px){
-									flex-basis:100%;
-								}
-								p{
-									font-size:.8em;
-									line-height:1.4em;
-								}
-						}
-        }
     }
 		&#container__about{
 			.btn{
@@ -293,6 +263,16 @@ footer{
         p{
             color:$white;
         }
+				.tech{
+					.col{
+						p, img{
+							text-align:center;
+						}
+						p{
+							color:$granite;
+						}
+					}
+				}
     }
     &#portfolio-lokmor{
         text-align:right;
@@ -335,6 +315,38 @@ footer{
                 }
             }
     }
+		.tech{
+				display:flex;
+				justify-content:space-between;
+				flex-basis:100%;
+				flex-wrap:wrap;
+				text-align:center;
+				background:transparent;
+				img{
+						width:75px;
+						height:75px;
+				}
+				.col{
+						flex-basis:30%;
+						border-radius:4px;
+						margin-bottom:30px;
+						box-shadow:2px 2px 1px rgba(0,0,0,.05);
+						background:$white;
+						padding:30px;
+						position:relative;
+						@media screen and (max-width:850px){
+							flex-basis: 45%;
+						}
+						@media screen and (max-width:500px){
+							flex-basis:100%;
+						}
+						p{
+							color:$granite;
+							font-size:.8em;
+							line-height:1.4em;
+						}
+				}
+		}
 }
 
 .page{
@@ -816,7 +828,7 @@ textarea{
         }
     }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     .logo{
         display:none;
     }
@@ -826,7 +838,8 @@ textarea{
             ul{
                 width:100%;
                 li{
-                    flex-basis:33.33333%;
+									margin:0;
+                  flex-basis:25%;
                 }
             }
         }

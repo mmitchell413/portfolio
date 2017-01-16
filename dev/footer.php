@@ -3,6 +3,7 @@
                 <div class="left">
                   <ul class="footer__menu">
                       <li><a href="index.php">About</a></li>
+                      <li><a href="skills.php">Skills</a></li>
                       <li><a href="portfolio.php">Portfolio</a></li>
                       <li><a href="contact.php">Contact</a></li>
                   </ul>
@@ -49,14 +50,6 @@
   	c-1.589,0-3.161-0.094-4.699-0.277c8.717,5.721,19.073,9.064,30.191,9.064c36.231,0,56.038-30.769,56.038-57.458
   	c0-0.878-0.018-1.756-0.051-2.617c3.848-2.849,7.189-6.402,9.822-10.453c-3.527,1.606-7.326,2.693-11.311,3.178
   	C90.957,20.247,94.08,16.29,95.551,11.574z"/>
-  </svg></a></li>
-
-                      <li><a target="_blank" href="https://www.facebook.com/matt.mitchell2"><svg class="svg__facebook" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-  <path id="Facebook_1_" d="M98.199,92.797c0,2.926-2.373,5.298-5.299,5.298H68.438V60.918h12.479l1.867-14.488H68.438
-  	v-9.25c0-4.194,1.164-7.053,7.181-7.053l7.672-0.003V17.166c-1.326-0.177-5.881-0.571-11.181-0.571
-  	c-11.061,0-18.635,6.751-18.635,19.151V46.43h-12.51v14.488h12.51v37.177H7.497c-2.927,0-5.298-2.372-5.298-5.298V7.394
-  	c0-2.927,2.372-5.299,5.298-5.299H92.9c2.926,0,5.299,2.372,5.299,5.299V92.797z"/>
   </svg></a></li>
 
                   </ul>
