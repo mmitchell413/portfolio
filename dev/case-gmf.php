@@ -28,6 +28,18 @@
           </div>
 
             <h1>The Challenge</h1>
+            <p>The GM Financial site redesign offered a unique challenge. I was fresh out of college and
+              excited to undertake my first professional project. Within a month of being hired at GM Financial,
+              the two team members above me left for other job opportunities, leaving me as the most senior member
+              of the team, with only a month's experience.</p>
+            <p>As a greenhorn in the industry, with management and the other freshly hired developers looking for
+              leadership within the team, I decided to try my hand taking charge, despite my nervousness. Under
+              ordinary circumstances, the pressure of just leading the redesign of a site that gets over two million
+              visitors a month would be enough, but there was another constraint to the project: time.</p>
+            <p>There was a redesign of our MyAccount platform in the pipeline as well, being developed by a third-party
+              vendor. Their update was set to go live in two months, and we had have our redesign ready for production
+
+            <h1>Timeline</h1>
 
         </div>
     </div>
