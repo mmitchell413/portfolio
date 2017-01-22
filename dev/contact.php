@@ -45,37 +45,36 @@
 
                 </ul>
             </div>
-            <?php
-                $to = "matt@mattmitchell.org";
-                $subject = "New contact message from mattmitchell.org";
-                if(isset($_POST['firstName'])){
-                  $firstName = $_POST['firstName'];
-                }
-                if(isset($_POST['lastName'])){
-                  $lastName = $_POST['lastName'];
-                }
-                if(isset($_POST['email'])){
-                  $from = $_POST['email'];
-                }
-                if(isset($_POST['message'])){
-                  $message = "First Name: " . $firstName . "<br>Last Name: " . $lastName . "<br>" . $_POST['message'];
-                  $headers = 'From: '.$from."\r\n".'Reply-To: '.$from."\r\n".'X-Mailer: PHP/' . phpversion();
-                }
 
-                if(isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['email']) && isset($_POST['message'])){
-                  if (mail($to, $subject, $message, $headers)){
-                      header("Location: contact-success.php");
-                      exit();
-                  }
-                  else{
-                      phpinfo();
-                      header("Location: contact-failed.php");
-                      exit();
-                  }
-                }
-            ?>
             <div class="container" id="contact">
                 <div class="container--padding">
+                  <?php
+                      $to = "matt@mattmitchell.org";
+                      $subject = "New contact message from mattmitchell.org";
+                      if(isset($_POST['firstName'])){
+                        $firstName = $_POST['firstName'];
+                      }
+                      if(isset($_POST['lastName'])){
+                        $lastName = $_POST['lastName'];
+                      }
+                      if(isset($_POST['email'])){
+                        $from = $_POST['email'];
+                      }
+                      if(isset($_POST['message'])){
+                        $message = "First Name: " . $firstName . "<br>Last Name: " . $lastName . "<br>" . $_POST['message'];
+                        $headers = 'From: '.$from."\r\n".'Reply-To: '.$from."\r\n".'X-Mailer: PHP/' . phpversion();
+                      }
+
+                      if(isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['email']) && isset($_POST['message'])){
+                        if (mail($to, $subject, $message, $headers)){
+                          echo "<h1>Thank you for contacting me!</h1><p>I will respond to your message as soon as possible.</p>";
+                        }
+                        else{
+                            phpinfo();
+                            echo "<h1>Uh-oh!</h1><p>Something went wrong, please try submitting the form again.";
+                        }
+                      }
+                  ?>
                     <form id="contact-form" name="contact-form" action="contact.php" method="post">
                         <div class="med-text grid">
                             <div class="grid-1-2">
@@ -90,7 +89,6 @@
                             <input type="email" id="email" name="email" />
                             <label for="message">Message</label>
                             <textarea id="message" name="message" ></textarea>
-                            <div class="g-recaptcha" data-sitekey="6LcA5xEUAAAAAILWmIZWbmc6ll3NYnb7hxuujp6t"></div>
                             <div class="med-text grid">
                                 <div class="grid-1-2">
                                     <input type="submit" class="btn btn-primary full-width" name="submit" />

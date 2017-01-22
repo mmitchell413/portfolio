@@ -9,23 +9,23 @@
             <div class="container" id="container__tech">
                     <div class="faux-column">
                         <h2>What I can do for you</h2>
-                        <div class="tech">
+                        <div class="grid tech">
                             <!-- HTML Grid -->
-                            <div class="col" id="0">
+                            <div class="grid-1-3" id="0">
                                 <div>
                                     <img src="img/tech-logos/html.svg">
                                     <p>Utilize the strictest HTML5 and WCAG guidelines to markup sites for accessibility</p>
                                 </div>
                             </div>
                             <!-- CSS Grid -->
-                            <div class="col" id="1">
+                            <div class="grid-1-3" id="1">
                                 <div>
                                     <img src="img/tech-logos/css.svg">
                                     <p>Extensive knowledge of CSS3 and all its capabilities to create pixel-perfect designs</p>
                                 </div>
                             </div>
                             <!-- Javascript grid -->
-                            <div class="col" id="2">
+                            <div class="grid-1-3" id="2">
                                 <div>
                                     <img src="img/tech-logos/javascript.svg">
                                     <p>Fluent in Javascript for both front-end and back-end functionality for the web</p>
