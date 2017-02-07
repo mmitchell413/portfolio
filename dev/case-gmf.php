@@ -100,10 +100,17 @@
             this decision, since it would affect the timeline of the project completion.</p>
           <p>Our inherited codebase was fairly messy and unwieldy. Maintenance was an issue because of conflicting class
             styles and orphaned code. There was no naming convention in use, so classes were kind of haphazardly named. One
-            would be abbreviated and short (.blk-btn), and the next was basically a hyphenated sentence (.leadership-team-page-container-mod-extended).
+            would be abbreviated and short (<code>.blk-btn</code>), and the next was basically a hyphenated sentence (<code>.leadership-team-page-container-mod-extended</code>).
             There were also a number of odd classes mixed with markup that just simply made no sense, from either an SEO or maintainability standpoint
-            (h1.like-h3, h2.like-h1). With over 10,000 lines of CSS like this, needless to say it would take a fair bit of </p>
-          <p>The argument boiled down to time.
+            (<code>h1.like-h3, h2.like-h1</code>). With over 10,000 lines of CSS like this, needless to say it would take a fair bit of </p>
+          <p>The argument boiled down to time. Would we have enough time to start completely from scratch? We would need to keep the existing
+              HTML structure because it tied in to legacy back-end systems, so we'd have to keep class names and IDs for elements currently in use, lest we
+              break something without realizing it. Our hands were pretty tied in regards to the tools we had at our disposal. SASS/LESS were off the table,
+              since no software that could compile them was approved by NetSec, which severely increased the amount of time a complete rewrite would require.</p>
+          <p>Problems with a fresh start piled up, so we decided that we would revamp the current codebase to suit our needs, and clean out the archaic code after
+            the redesign went live.</p>
+          <p>Even with all the issues a complete rewrite would have imposed, I still would have preferred a fresh start had time allowed. We could have
+              engineered the CSS exactly the way we wanted it and have complete knowledge of the entire structure.</p>
         </div>
     </div>
 

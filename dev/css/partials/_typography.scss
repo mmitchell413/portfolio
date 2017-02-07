@@ -14,7 +14,6 @@
     font-family: 'Open';
     src: url("fonts/OpenSans-Regular.ttf");
 }
-
 @mixin font-open(){
     font-family: "Open", sans-serif;
 }
@@ -52,6 +51,17 @@ p{
 }
 a{
 	cursor:pointer;
+}
+code{
+  font-family:"Lucida Console", Monaco, monospace;
+  padding:0 6px;
+  border:1px solid $off-white;
+  display:inline-block;
+  font-size:.8em;
+  border-radius:4px;
+  margin: 0 3px;
+  background:$white;
+  color:$black;
 }
 .red-highlight{
     color:$tertiary-color;
