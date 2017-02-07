@@ -2,7 +2,35 @@
 
         <div class="page" id="contact">
             <div class="heading">
-                <h1>Let's <span class="red-highlight">chat</span></h1>
+              <?php
+                  $to = "matt@mattmitchell.org";
+                  $subject = "New contact message from mattmitchell.org";
+                  if(isset($_POST['firstName'])){
+                    $firstName = $_POST['firstName'];
+                  }
+                  if(isset($_POST['lastName'])){
+                    $lastName = $_POST['lastName'];
+                  }
+                  if(isset($_POST['email'])){
+                    $from = $_POST['email'];
+                  }
+                  if(isset($_POST['message'])){
+                    $message = "First Name: " . $firstName . "<br>Last Name: " . $lastName . "<br>" . $_POST['message'];
+                    $headers = 'From: '.$from."\r\n".'Reply-To: '.$from."\r\n".'X-Mailer: PHP/' . phpversion();
+                  }
+
+                  if(isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['email']) && isset($_POST['message'])){
+                    if (mail($to, $subject, $message, $headers)){
+                      echo "<h1>Thank you for <span class='red-highlight'>contacting me</span>!</h1><p class='header-message'>I will respond to your message as soon as possible.</p>";
+                    }
+                    else{
+                        echo "<h1><span class='red-highlight'>Uh-oh</span>!</h1><p class='header-message'>Something went wrong, please try submitting the form again.";
+                    }
+                  }else{
+                    echo "<h1>Let's <span class='red-highlight'>chat</span></h1>";
+                  }
+              ?>
+
                 <ul class="social-media">
                      <li><a target="_blank" href="https://www.linkedin.com/in/matthew-mitchell-40b10096?trk=nav_responsive_tab_profile_pic"><svg class="svg__linkedin" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
@@ -48,33 +76,7 @@
 
             <div class="container" id="contact">
                 <div class="container--padding">
-                  <?php
-                      $to = "matt@mattmitchell.org";
-                      $subject = "New contact message from mattmitchell.org";
-                      if(isset($_POST['firstName'])){
-                        $firstName = $_POST['firstName'];
-                      }
-                      if(isset($_POST['lastName'])){
-                        $lastName = $_POST['lastName'];
-                      }
-                      if(isset($_POST['email'])){
-                        $from = $_POST['email'];
-                      }
-                      if(isset($_POST['message'])){
-                        $message = "First Name: " . $firstName . "<br>Last Name: " . $lastName . "<br>" . $_POST['message'];
-                        $headers = 'From: '.$from."\r\n".'Reply-To: '.$from."\r\n".'X-Mailer: PHP/' . phpversion();
-                      }
 
-                      if(isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['email']) && isset($_POST['message'])){
-                        if (mail($to, $subject, $message, $headers)){
-                          echo "<h1>Thank you for contacting me!</h1><p>I will respond to your message as soon as possible.</p>";
-                        }
-                        else{
-                            phpinfo();
-                            echo "<h1>Uh-oh!</h1><p>Something went wrong, please try submitting the form again.";
-                        }
-                      }
-                  ?>
                     <form id="contact-form" name="contact-form" action="contact.php" method="post">
                         <div class="med-text grid">
                             <div class="grid-1-2">

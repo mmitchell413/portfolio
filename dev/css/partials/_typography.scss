@@ -27,7 +27,32 @@
 @mixin font-rubiklight(){
     font-family: "RubikLight", sans-serif;
 }
-
+h1,h2,h3,h4,h5,h6{
+    margin: 1.5em 0 1em 0;
+    color:$secondary-color;
+		clear:both;
+    @include font-bebas;
+}
+h1{
+    font-size:1.8em;
+		width:100%;
+}
+h2{
+    font-size:1.4em;
+    @include font-rubiklight;
+}
+h3{
+    font-size:1.2em;
+}
+p{
+    margin:1em 0;
+    font-size:1.0em;
+    line-height:1.6em;
+    color:$granite;
+}
+a{
+	cursor:pointer;
+}
 .red-highlight{
     color:$tertiary-color;
 }

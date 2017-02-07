@@ -1,0 +1,90 @@
+/* footer styles */
+footer{
+    @include font-rubiklight;
+    padding:40px 50px 30px 50px;
+    background-color: $dark-gray;
+    overflow:hidden;
+		.left{
+			float:left;
+			width:75%;
+			p{
+				font-size:.8em;
+				margin:10px 0;
+				line-height:1.2em;
+				a{
+					color:$light-gray;
+					text-decoration:none;
+					&:hover{
+						color:$primary-color;
+					}
+				}
+			}
+		}
+		.right{
+			float:right;
+			width:25%;
+		}
+		@media screen and (max-width: $tablet){
+			.left,
+			.right{
+				width:100%;
+			}
+          .footer__menu, .social-media{
+              width:100%;
+          }
+          .social-media{
+              text-align:center;
+              padding-top:20px;
+              li{
+                  float:none;
+                  margin-right:15px;
+                  padding-left:0;
+              }
+          }
+          .footer__menu{
+              text-align:center;
+              padding-bottom:20px;
+              border-bottom:1px solid #858585;
+              li{
+                margin:0 0;
+                padding: 5px 5px;
+              }
+          }
+      }
+    .footer__menu{
+			margin: 0 0 20px 0;
+        li{
+            font-size:.7em;
+            display:inline-block;
+            margin-right:15px;
+            border-radius:5px;
+            background-color:$footer-light;
+            @include transition(color, .3s);
+            a{
+                text-decoration:none;
+                color:$light-gray;
+                display:block;
+                padding:5px 15px;
+            }
+            &:hover{
+                background-color:$footer-hover;
+            }
+        }
+    }
+    .social-media{
+        li{
+            float:right;
+            display:inline-block;
+            padding-left:15px;
+            svg{
+                fill:$footer-hover;
+                width:20px;
+                height:20px;
+                @include transition(all, .3s);
+                &:hover{
+                    fill:$primary-color;
+                }
+            }
+        }
+    }
+}

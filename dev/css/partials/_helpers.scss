@@ -1,0 +1,23 @@
+.right{float:right;}
+.left{float:left;}
+.faux-column{
+    max-width:1200px;
+    width:100%;
+    margin:0 auto;
+    overflow:visible;
+}
+.full-width{
+    width:100%;
+}
+.col-left, .col-right{
+    width:50%;
+    box-sizing:border-box;
+}
+.col-left{
+    padding:0 20px 0 0;
+    float:left;
+}
+.col-right{
+    padding: 0 0 0 20px;
+    float:right;
+}
