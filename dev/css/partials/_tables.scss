@@ -1,0 +1,16 @@
+table{
+  border-spacing:0px;
+  border-collapse:collapse;
+  border:1px solid $light-gray;
+  border-radius:4px;
+  tr{
+    background:$bg-color;
+    color:$granite;
+    &:nth-child(odd){
+      background: $white;
+    }
+    td{
+      padding:10px;
+    }
+  }
+}
