@@ -14,7 +14,6 @@
     font-family: 'Open';
     src: url("fonts/OpenSans-Regular.ttf");
 }
-
 @mixin font-open(){
     font-family: "Open", sans-serif;
 }
@@ -35,6 +34,7 @@ h1,h2,h3,h4,h5,h6{
 }
 h1{
     font-size:1.8em;
+    letter-spacing:2px;
 		width:100%;
 }
 h2{
@@ -49,9 +49,25 @@ p{
     font-size:1.0em;
     line-height:1.6em;
     color:$granite;
+    letter-spacing:.5px;
 }
 a{
 	cursor:pointer;
+}
+pre{
+  text-align:left;
+  font-family:"Lucida Console", Monaco, monospace;
+  line-height:1.4em;
+  border:1px solid $off-white;
+  display:block;
+  width:auto;
+  font-size:.8em;
+  border-radius:4px;
+  margin: 1.5em 0;
+  background:$white;
+  color:$black;
+  word-wrap:break-word;
+  white-space:pre-wrap;
 }
 .red-highlight{
     color:$tertiary-color;

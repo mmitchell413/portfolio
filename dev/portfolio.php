@@ -11,7 +11,7 @@
             <h1>GM Financial</h1>
             <p>The GM Financial redesign was a great experience and provided a lot of knowledge. We worked for three months to completely revitalize all five consumer facing sites with the company. The project required a quick turnaround and impecable team communication to pull off.</p>
             <img src="img/portfolio/gmf-home.jpg" alt="GM Financial Homepage" />
-            <a class="btn btn-ghost" href="case-gmf.php" disabled>Case Study</a>
+            <a class="btn btn-primary" href="case-gmf.php" disabled>Case Study</a>
         </div>
     </div>
 
