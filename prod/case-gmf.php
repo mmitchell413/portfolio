@@ -160,10 +160,20 @@
             The most important part is that clients across the business were very pleased with the result and we got a ton of positive feedback when it launched. Upper management recognized
             the hard work we put in and praised the redesign multiple times in team meetings.</p>
           <p>This project was the toughest and most challenging professional experience I've had to date, but it was also the most rewarding. Take a look at the results.</p>
-
+          <div class="lightbox grid">
+            <div class="grid-1-3">
+              <a href='img/portfolio/rightnotes-small.jpg' data-rel='lightcase:gmf' title="Right Notes Landing Page. <a href='img/portfolio/rightnotes-full.jpg' target='_blank'>View full image</a>"><img src='img/portfolio/rightnotes-small.jpg' /></a>
+            </div>
+            <div class="grid-1-3">
+              <a href='img/portfolio/gmf-home.jpg' data-rel='lightcase:gmf'  title="GM Financial Home Page. <a href='img/portfolio/gmf-home.jpg' target='_blank'>View full image</a>"><img src='img/portfolio/gmf-home.jpg' /></a>
+            </div>
+            <div class="grid-1-3">
+              <a href='img/portfolio/oca-small.jpg' data-rel='lightcase:gmf'  title="Online Credit Application. <a href='img/portfolio/oca-small.jpg' target='_blank'>View full image</a>"><img src='img/portfolio/oca-small.jpg' /></a>
+            </div>
+          </div>
         </div>
     </div>
-    
+
     <div class="arrow-down">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="30px" height="20px" viewBox="0 0 500 300" enable-background="new 0 0 500 300" xml:space="preserve">
