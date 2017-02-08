@@ -54,17 +54,20 @@ p{
 a{
 	cursor:pointer;
 }
-code{
+pre{
+  text-align:left;
   font-family:"Lucida Console", Monaco, monospace;
-  padding:6px 12px;
+  line-height:1.4em;
   border:1px solid $off-white;
   display:block;
   width:auto;
   font-size:.8em;
   border-radius:4px;
-  margin: 1.5em 3px;
+  margin: 1.5em 0;
   background:$white;
   color:$black;
+  word-wrap:break-word;
+  white-space:pre-wrap;
 }
 .red-highlight{
     color:$tertiary-color;

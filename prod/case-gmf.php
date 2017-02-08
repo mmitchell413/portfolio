@@ -109,9 +109,13 @@
             this decision, since it would affect the timeline of the project completion.</p>
           <p>Our inherited codebase was fairly messy and unwieldy. Maintenance was an issue because of conflicting class
             styles and orphaned code. There was no naming convention in use, so classes were kind of haphazardly named. One
-            would be abbreviated and short: <code>.blk-btn</code> and the next was basically a hyphenated sentence: <code>.leadership-team-page-container-mod-extended</code>
-            There were also a number of odd classes mixed with markup that just simply made no sense, from either an SEO or maintainability standpoint:
-            <code>h1.like-h3, h2.like-h1</code> With over 10,000 lines of CSS like this, needless to say it would take a fair bit of effort to clean up.</p>
+            would be abbreviated and short: </p>
+            <pre><code class="css">.blk-btn</code></pre>
+            <p>and the next was basically a hyphenated sentence: </p>
+            <pre><code class="css">.leadership-team-page-container-mod-extended</code></pre>
+            <p>There were also a number of odd classes mixed with markup that just simply made no sense, from either an SEO or maintainability standpoint:</p>
+            <pre><code class="css">h1.like-h3, h2.like-h1</code></pre>
+            <p>With over 10,000 lines of CSS like this, needless to say it would take a fair bit of effort to clean up.</p>
           <p>The argument boiled down to time. We would need to keep the existing
               HTML structure because it tied in to legacy back-end systems, so we'd have to keep class names and IDs for elements currently in use, lest we
               break something without realizing it. Our hands were pretty tied in regards to the tools we had at our disposal. SASS/LESS were off the table,
@@ -123,10 +127,43 @@
         </div>
         <div class="container portfolio-gmf">
           <h1>CSS Structure</h1>
-          
+          <p>We decided to modularize our CSS as much as possible, in order to make it transferable from one site to another as much as possible. Obviously, there were some
+            aspects of the design that this couldn't apply to, but we worked with what we had at our disposal.<p>
+          <p>For example, a newsroom article might look something like this: </p>
+          <pre><code class="html">&lt;div class='newsroom-article'&gt;
+  &lt;h2&gt;
+    Article Heading
+  &lt;/h2&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lacus et ipsum pharetra rhoncus vel sit amet ex. Pellentesque eu lorem pretium, ullamcorper ligula eu, rutrum neque.
+  &lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          <p>And then the corresponding CSS: </p>
+          <pre><code class="css">.newsroom-article h1{
+  font-size:1.4em;
+  color: #FE68BE;
+}
+
+.newsroom-article p{
+  line-height:1.2em;
+}</code></pre>
+          <p>Most of the styles for elements would be inherited from global styles and then any that we needed to change for that component would be overridden in the container div.
+            Structuring it this way allowed us to ensure that no component's styles would clash with another. It also guarenteed that we could easily port components over to the other
+            properties, which would be a huge time saver once development began on those.<p>
+          <p>We opted not to use a naming convention for our classes like BEM, in order to keep the HTML clean and readable, as well as keep the existing class names that were necessary for
+            some back-end services. <p>
+        </div>
+
+        <div class="container portfolio-gmf">
+          <h1>The Result</h1>
+          <p>Two months of hard work, overtime, and weekends resulted in a final product that I can say I'm proud to have been a part of. It's not perfect, but then again nothing is.
+            The most important part is that clients across the business were very pleased with the result and we got a ton of positive feedback when it launched. Upper management recognized
+            the hard work we put in and praised the redesign multiple times in team meetings.</p>
+          <p>This project was the toughest and most challenging professional experience I've had to date, but it was also the most rewarding. Take a look at the results.</p>
+
         </div>
     </div>
-
+    
     <div class="arrow-down">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="30px" height="20px" viewBox="0 0 500 300" enable-background="new 0 0 500 300" xml:space="preserve">
