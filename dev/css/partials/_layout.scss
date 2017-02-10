@@ -8,12 +8,9 @@
 		padding: 50px;
 		border-radius: 5px;
     top:50px;
-    opacity:0;
+    opacity:1.0;
     max-width:1200px;
     width:100%;
-		&:first-of-type{
-			opacity:1.0;
-		}
     &#contact{
 				.heading{
 					.social-media{
@@ -261,6 +258,10 @@
 					}
 				}
     }
+}
+
+.page > .container ~ .container{
+	opacity:0;
 }
 
 /* Alert styles */
