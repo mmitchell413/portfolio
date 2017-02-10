@@ -29,28 +29,28 @@
             <h2>Mockups</h2>
             <div class="grid grid-portfolio">
                 <div class="grid-1-3">
-                    <img src="img/portfolio/design-cloud-thumb.jpg">
+                    <a href="img/portfolio/design-cloud-full.jpg" data-rel='lightcase:mockups' title="Design Cloud Mockup"><img src="img/portfolio/design-cloud-thumb.jpg"></a>
                 </div>
                 <div class="grid-1-3">
-                    <img src="img/portfolio/incsspire-thumb.jpg">
+                    <a href="img/portfolio/incsspire-full.jpg" data-rel='lightcase:mockups' title="In{css}pire Mockup"><img src="img/portfolio/incsspire-thumb.jpg"></a>
                 </div>
                 <div class="grid-1-3">
-                    <img src="img/portfolio/port-mockup-thumb.jpg">
+                    <a href="img/portfolio/portfolio-mockup-full.jpg" data-rel='lightcase:mockups' title="Musician Portfolio Site Mockup"><img src="img/portfolio/port-mockup-thumb.jpg"></a>
                 </div>
                 <div class="grid-1-3">
-                    <img src="img/portfolio/porter-thumb.jpg">
+                    <a href="img/portfolio/porter-thumb.jpg" data-rel='lightcase:mockups' title="Porter Site Rapid Design"><img src="img/portfolio/porter-thumb.jpg"></a>
                 </div>
                 <div class="grid-1-3">
-                    <img src="img/portfolio/webmojo-thumb.jpg">
+                    <a href="img/portfolio/webmojo-full.jpg" data-rel='lightcase:mockups' title="Webmojo Mockup"><img src="img/portfolio/webmojo-thumb.jpg"></a>
                 </div>
             </div>
             <h2>Illustrations</h2>
             <div class="grid grid-portfolio">
               <div class="grid-1-3">
-                <img src="img/portfolio/jj-thumb.jpg">
+                <a href="img/portfolio/jj-full.jpg" data-rel='lightcase:illustrations' title="JJ Watt Illustration"><img src="img/portfolio/jj-thumb.jpg"></a>
               </div>
               <div class="grid-1-3">
-                <img src="img/portfolio/usa-crest-thumb.jpg">
+                <a href="img/portfolio/usa-crest-full.jpg" data-rel='lightcase:illustrations' title="USA Men's National Team Crest Design"><img src="img/portfolio/usa-crest-thumb.jpg"></a>
               </div>
             </div>
         </div>

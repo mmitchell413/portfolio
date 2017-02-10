@@ -128,7 +128,7 @@ $(document).ready(function(){
 
     // init lightcase on <a data-rel='lightcase'>
     $('a[data-rel^=lightcase]').lightcase({
-      showTitle: true,
+
     });
 });
 

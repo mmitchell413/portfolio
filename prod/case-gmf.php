@@ -89,7 +89,10 @@
               </div>
               <div class='row'>
                 <div><p>Week 4-5</p></div>
-                <div></div>
+                <div><p>The last weeks before QA testing began was devoted to porting over styles and components to the other properties.
+                This process ended up being more complicated than expected, becaues each sites original code was different from the other.
+                The HTML structure was different and class names were different, which ended up breaking a lot of things that were ported over.
+                Thankfully, the modularized structure of the CSS we had been developing made it a fairly easy fix. </p></div>
               </div>
               <div class='row'>
                 <div><p>Week 6-8</p></div>
@@ -172,7 +175,7 @@
             </div>
           </div>
         </div>
-    </div>
+    </div> 
 
     <div class="arrow-down">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
