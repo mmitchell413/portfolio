@@ -285,24 +285,26 @@
     .page#about,
     .page#contact{
       	background:url('../img/hero-bg-2880-1920.png') no-repeat fixed;
-        background-position: 0 -150px;
-        background-size:cover;
+				background-position: center center;
+				background-repeat:  no-repeat;
+				background-attachment: fixed;
+				background-size:  cover;
     }
 }
 @media screen and (max-width: $desktop-retina){
     .page#about,
     .page#contact{
         background:url('../img/hero-bg-1920-1280.png') no-repeat fixed;
-        background-position: 0;
-        background-size:cover;
+				background-position: center center;
+				background-repeat:  no-repeat;
+				background-attachment: fixed;
+				background-size:  cover;
     }
 }
 @media screen and (max-width: $tablet){
     .page#about,
     .page#contact{
-        background:url('../img/hero-bg-1024-683.png') no-repeat fixed;
-        background-position: 0;
-        background-size:cover;
+        background:$bg-color;
     }
 }
 
