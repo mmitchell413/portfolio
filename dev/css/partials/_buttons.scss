@@ -3,12 +3,14 @@
     @include box-sizing("border-box");
     font-weight:700;
     font-size:1.0em;
-    text-decoration:none; 
+    text-decoration:none;
     letter-spacing:2px;
     cursor:pointer;
     padding:20px 50px;
     border-radius: 5px;
     border:none;
+    display:inline-block;
+    margin:20px 0;
     &.btn-primary{
         background-color:$primary-color;
         color:$white;
@@ -37,5 +39,16 @@
     }
     &.btn-cancel{
         border-color:$tertiary-color;
+    }
+    &:disabled{
+      background-color:$light-gray;
+      border: 2px solid $light-gray;
+      &:hover{
+        background-color:$light-gray;
+        border: 2px solid $light-gray;
+      }
+    }
+    @media screen and (max-width: $tablet){
+      margin: 20px auto;
     }
 }

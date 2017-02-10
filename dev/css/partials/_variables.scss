@@ -4,8 +4,8 @@ $black: #000000;
 $white:#ffffff;
 
 //Palette Colors
-$primary-color: #2e99bf;//#e73939;
-$primary-color-hover: #47b3d9;
+$primary-color: #4897CC;//#e73939;
+$primary-color-hover: #5A8FB2;
 $secondary-color: #5f525a;
 $secondary-color-light:#92808b;
 $tertiary-color: #ff7473;
@@ -13,14 +13,29 @@ $dark-primary-color: #34314c;
 
 //Grays
 $dark-gray: #2f3034;
-$granite: #858585;
+$granite: #656565;
 $light-gray: #b3b3b3;
+$off-white: #d9d9d9;
+$bg-color: #f8f8f8;
+$bg-color-alt: #e5e5e5;
 
 //Blues
-$gmf-blue: #399ce7;
+$gmf-blue: #3d7097;
 
 //Reds
 $lokmor-red: #ff5e77;
 
 //Greens
 $green: #47d962;
+
+//Footer
+$footer-main: #2f3034;
+$footer-light: #3d3f44;
+$footer-hover: #4a4c52;
+
+
+//Breakpoints
+$desktop-retina: 1600px;
+$desktop: 1200px;
+$tablet: 800px;
+$phone: 600px;

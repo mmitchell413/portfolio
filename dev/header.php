@@ -7,19 +7,22 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-        
+
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-        
+
         <!-- Favicon -->
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-         
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
         <!-- Meta Tags -->
-        <meta charset="UTF-8"> 
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
-        
+
+        <!-- Recaptcha script -->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
         <!-- Google Tag Manager -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MT5WSX"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -30,9 +33,9 @@
         })(window,document,'script','dataLayer','GTM-MT5WSX');</script>
         <!-- End Google Tag Manager -->
     </head>
-    
+
     <body>
-        <div class="<?php 
+        <div class="<?php
                     $current_page = basename($_SERVER['PHP_SELF']);
                     if($current_page == "portfolio.php" || $current_page == "case-gmf.php"){
                         echo "top-nav top-nav__portfolio";
@@ -40,6 +43,11 @@
                         echo "top-nav";
                     }
                 ?>">
+                <?php $current_page = basename($_SERVER['PHP_SELF']);
+                  if($current_page == "portfolio.php" || $current_page == "case-gmf.php"){
+                      echo "<div class='alert'><p>Portfolio is still under construction. Updates are being made.</p></div>";
+                  }
+                ?>
             <div class="faux-column">
                 <div class="logo">
                     <a href="index.php">
@@ -63,16 +71,17 @@
                             M262.5,349V220.327c0,0,0.707-84.274,84.398-84.274c83.689,0,83.602,83.479,83.602,83.479V349"/>
                     </g>
                     </svg>
-                    
+
                         </a>
                 </div>
-                
+
                 <div class="top-nav__menu">
                         <ul>
                             <li><a href="index.php" class="menu__link" id="about">About<div class="top-nav__menu-highlight"></div></a></li>
+                            <li><a href="skills.php" class="menu__link" id="skills">Skills<div class="top-nav__menu-highlight"></div></a></li>
                             <li><a href="portfolio.php" class="menu__link" id="portfolio">Portfolio<div class="top-nav__menu-highlight"></div></a></li>
                             <li><a href="contact.php" class="menu__link" id="contact">Contact<div class="top-nav__menu-highlight"></div></a></li>
                         </ul>
                 </div>
-            </div>    
+            </div>
         </div>
