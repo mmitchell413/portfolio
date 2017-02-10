@@ -12,13 +12,13 @@ $(document).ready(function(){
             //get top position of container at index
             containerPosition[index] = $(this).offset().top;
 
-            if(height < ($('footer').offset().top - 1000)){
-                $(".arrow-down").animate({
-                  opacity:.5
-                }, 500);
-            }else if(height > ($('footer').offset().top - 1000)){
-                $('.arrow-down').hide();
-            }
+            // if(height < ($('footer').offset().top - 1000)){
+            //     $(".arrow-down").animate({
+            //       opacity:.5
+            //     }, 500);
+            // }else if(height > ($('footer').offset().top - 1000)){
+            //     $('.arrow-down').hide();
+            // }
 
             if(height > (containerPosition[index] - screenOffset)){
                 $(".container").eq(index).animate({
