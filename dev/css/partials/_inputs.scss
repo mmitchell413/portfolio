@@ -25,6 +25,9 @@ input, textarea{
     background:none;
     color:$secondary-color;
     margin: 0 0 40px 0;
+    @media screen and (max-width:$tablet){
+      margin: 0 0 20px 0;
+    }
     &[type=text], &[type=password], &[type=email]{
         padding:30px 15px 10px 0px;
         font-size:1.0em;

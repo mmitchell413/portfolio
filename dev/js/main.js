@@ -12,13 +12,13 @@ $(document).ready(function(){
             //get top position of container at index
             containerPosition[index] = $(this).offset().top;
 
-            if(height < ($('footer').offset().top - 1000)){
-                $(".arrow-down").animate({
-                  opacity:.5
-                }, 500);
-            }else if(height > ($('footer').offset().top - 1000)){
-                $('.arrow-down').hide();
-            }
+            // if(height < ($('footer').offset().top - 1000)){
+            //     $(".arrow-down").animate({
+            //       opacity:.5
+            //     }, 500);
+            // }else if(height > ($('footer').offset().top - 1000)){
+            //     $('.arrow-down').hide();
+            // }
 
             if(height > (containerPosition[index] - screenOffset)){
                 $(".container").eq(index).animate({
@@ -125,6 +125,11 @@ $(document).ready(function(){
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(email);
     }
+
+    // init lightcase on <a data-rel='lightcase'>
+    $('a[data-rel^=lightcase]').lightcase({
+
+    });
 });
 
     // function to reset contact form labels and disable submit button when reset button is pressed
