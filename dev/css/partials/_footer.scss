@@ -37,7 +37,6 @@ footer{
               padding-top:20px;
               li{
                   float:none;
-                  margin-right:15px;
                   padding-left:0;
               }
           }
@@ -59,12 +58,19 @@ footer{
             margin-right:15px;
             border-radius:5px;
             background-color:$footer-light;
+            @media screen and (max-width: $phone){
+              padding:5px;
+              margin: 0 0 4px 0;
+              width:45%;
+              box-sizing:content-box;
+            }
             @include transition(color, .3s);
             a{
                 text-decoration:none;
                 color:$light-gray;
                 display:block;
-                padding:5px 15px;
+                padding:12px 15px 10px 15px;
+                letter-spacing:1px;
             }
             &:hover{
                 background-color:$footer-hover;
@@ -75,7 +81,7 @@ footer{
         li{
             float:right;
             display:inline-block;
-            padding-left:15px;
+            margin-right:15px;
             svg{
                 fill:$footer-hover;
                 width:20px;

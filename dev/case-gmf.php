@@ -89,7 +89,10 @@
               </div>
               <div class='row'>
                 <div><p>Week 4-5</p></div>
-                <div></div>
+                <div><p>The last weeks before QA testing began was devoted to porting over styles and components to the other properties.
+                This process ended up being more complicated than expected, becaues each sites original code was different from the other.
+                The HTML structure was different and class names were different, which ended up breaking a lot of things that were ported over.
+                Thankfully, the modularized structure of the CSS we had been developing made it a fairly easy fix. </p></div>
               </div>
               <div class='row'>
                 <div><p>Week 6-8</p></div>
@@ -160,17 +163,27 @@
             The most important part is that clients across the business were very pleased with the result and we got a ton of positive feedback when it launched. Upper management recognized
             the hard work we put in and praised the redesign multiple times in team meetings.</p>
           <p>This project was the toughest and most challenging professional experience I've had to date, but it was also the most rewarding. Take a look at the results.</p>
-
+          <div class="lightbox grid">
+            <div class="grid-1-3">
+              <a href='img/portfolio/rightnotes-small.jpg' data-rel='lightcase:gmf' title="Right Notes Landing Page. <a href='img/portfolio/rightnotes-full.jpg' target='_blank'>View full image</a>"><img src='img/portfolio/rightnotes-small.jpg' /></a>
+            </div>
+            <div class="grid-1-3">
+              <a href='img/portfolio/gmf-home.jpg' data-rel='lightcase:gmf'  title="GM Financial Home Page. <a href='img/portfolio/gmf-home.jpg' target='_blank'>View full image</a>"><img src='img/portfolio/gmf-home.jpg' /></a>
+            </div>
+            <div class="grid-1-3">
+              <a href='img/portfolio/oca-small.jpg' data-rel='lightcase:gmf'  title="Online Credit Application. <a href='img/portfolio/oca-small.jpg' target='_blank'>View full image</a>"><img src='img/portfolio/oca-small.jpg' /></a>
+            </div>
+          </div>
         </div>
     </div>
-    
-    <div class="arrow-down">
+
+    <!-- <div class="arrow-down">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="30px" height="20px" viewBox="0 0 500 300" enable-background="new 0 0 500 300" xml:space="preserve">
         <polyline fill="none" stroke="#92808b" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
             52.203,57 250,254.975 448.5,57 "/>
       </svg>
       <p>Scroll</p>
-    </div>
+    </div> -->
 
 <?php include "footer.php" ?>

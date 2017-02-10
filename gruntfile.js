@@ -8,6 +8,8 @@ module.exports = function(grunt) {
             main:{
                 files: [
                     {expand: true, cwd: 'dev/', src: ['*.php', 'img/**', 'css/fonts/*'], dest: 'prod/'},
+                    {expand: true, cwd: 'dev/', src: ['fonts/**'], dest: 'prod/'},
+                    {expand: true, cwd: 'dev/', src: ['favicon.ico'], dest: 'prod/'},
                 ]
             }
         },
