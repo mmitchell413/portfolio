@@ -50,7 +50,8 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'prod/css/main.css': 'dev/css/main.scss',
-                    'dev/css/main.css': 'dev/css/main.scss'
+                    'dev/css/main.css': 'dev/css/main.scss',
+                    'dev/blog/wp-content/themes/matt/style.css': 'dev/css/main.scss'
                 }
             }
         },
