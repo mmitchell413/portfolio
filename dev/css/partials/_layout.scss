@@ -11,6 +11,12 @@
     opacity:1.0;
     max-width:1200px;
     width:100%;
+		&.blog{
+			width:75%;
+			float:right;
+			margin: 30px;
+			box-sizing:content-box;
+		}
     &#contact{
 				.heading{
 					.social-media{

@@ -1,65 +1,49 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
+<?php include 'functions.php' ?>
 
-?>
-
-		</div><!-- #content -->
-
-		<footer>
-				<div class="faux-column">
-						<div class="left">
-							<ul class="footer__menu">
-									<li><a href="index.php">About</a></li>
-									<li><a href="skills.php">Skills</a></li>
-									<li><a href="portfolio.php">Portfolio</a></li>
-									<li><a href="contact.php">Contact</a></li>
-							</ul>
-							<p>Have a suggestion for the site? Please <a href="contact.php">contact me</a> and let me know!</p>
-							<p>All properties showcased on this site are trademarks of their respective owners.</p>
-							<p>Site design and code &copy; 2016 Matt Mitchell</p>
-						</div>
-						<div class="right">
-							<ul class="social-media">
-									 <li><a target="_blank" href="https://www.linkedin.com/in/matthew-mitchell-40b10096?trk=nav_responsive_tab_profile_pic"><svg class="svg__linkedin" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
- width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<footer>
+    <div class="faux-column">
+        <div class="left">
+          <ul class="footer__menu">
+              <li><a href=<?php echo $HOME_URL; ?>>About</a></li>
+              <li><a href=<?php echo $SKILLS_URL; ?>>Skills</a></li>
+              <li><a href=<?php echo $PORTFOLIO_URL; ?>>Portfolio</a></li>
+              <li><a href=<?php echo $CONTACT_URL; ?>>Contact</a></li>
+          </ul>
+          <p>Have a suggestion for the site? Please <a href="contact.php">contact me</a> and let me know!</p>
+          <p>All properties showcased on this site are trademarks of their respective owners.</p>
+          <p>Site design and code &copy; 2016 Matt Mitchell</p>
+        </div>
+        <div class="right">
+          <ul class="social-media">
+               <li><a target="_blank" href="https://www.linkedin.com/in/matthew-mitchell-40b10096?trk=nav_responsive_tab_profile_pic"><svg class="svg__linkedin" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 <g id="LinkedIn_1_">
 <rect x="8.418" y="35.749" width="17.151" height="54.346"/>
 <path d="M72.432,35.227c-9.826,0-15.981,5.322-17.121,9.052V35.75H36.042c0.248,4.528,0,54.346,0,54.346h19.269
-	v-29.41c0-1.634-0.078-3.268,0.418-4.44c1.326-3.269,4.172-6.659,9.289-6.659c6.688,0,9.731,5.025,9.731,12.387v28.122h19.449
-	V59.877C94.199,43.044,84.621,35.227,72.432,35.227z"/>
+v-29.41c0-1.634-0.078-3.268,0.418-4.44c1.326-3.269,4.172-6.659,9.289-6.659c6.688,0,9.731,5.025,9.731,12.387v28.122h19.449
+V59.877C94.199,43.044,84.621,35.227,72.432,35.227z"/>
 <path d="M16.676,10.095c-6.334,0-10.478,4.068-10.478,9.437c0,5.266,4.025,9.42,10.234,9.42h0.124
-	c6.447,0,10.462-4.169,10.462-9.436C26.895,14.152,23.004,10.095,16.676,10.095z"/>
+c6.447,0,10.462-4.169,10.462-9.436C26.895,14.152,23.004,10.095,16.676,10.095z"/>
 </g>
 </svg></a></li>
-									<li><a target="_blank" href="https://github.com/mmitchell413"><svg class="svg__github" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
- width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+              <li><a target="_blank" href="https://github.com/mmitchell413"><svg class="svg__github" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 <g>
 <path d="M50.196,3.095c-26.506,0-47.997,21.574-47.997,48.193c0,21.288,13.752,39.351,32.829,45.724
-	c2.399,0.443,3.275-1.045,3.275-2.322c0-1.145-0.042-4.174-0.065-8.194c-13.354,2.913-16.171-6.46-16.171-6.46
-	c-2.181-5.566-5.327-7.049-5.327-7.049c-4.359-2.99,0.329-2.93,0.329-2.93c4.815,0.34,7.351,4.967,7.351,4.967
-	c4.284,7.362,11.235,5.236,13.972,4.002c0.435-3.114,1.676-5.237,3.047-6.442c-10.658-1.217-21.863-5.349-21.863-23.814
-	c0-5.262,1.869-9.563,4.941-12.934c-0.496-1.22-2.143-6.117,0.468-12.752c0,0,4.032-1.295,13.199,4.939
-	c3.831-1.069,7.936-1.603,12.019-1.623c4.078,0.021,8.184,0.554,12.018,1.623c9.161-6.234,13.186-4.939,13.186-4.939
-	c2.619,6.635,0.973,11.532,0.477,12.752c3.078,3.371,4.936,7.672,4.936,12.934c0,18.511-11.223,22.586-21.914,23.778
-	c1.722,1.488,3.259,4.428,3.259,8.926c0,6.441-0.062,11.637-0.062,13.219c0,1.289,0.863,2.789,3.301,2.315
-	c19.06-6.385,32.8-24.436,32.8-45.718C98.199,24.669,76.707,3.095,50.196,3.095z"/>
+c2.399,0.443,3.275-1.045,3.275-2.322c0-1.145-0.042-4.174-0.065-8.194c-13.354,2.913-16.171-6.46-16.171-6.46
+c-2.181-5.566-5.327-7.049-5.327-7.049c-4.359-2.99,0.329-2.93,0.329-2.93c4.815,0.34,7.351,4.967,7.351,4.967
+c4.284,7.362,11.235,5.236,13.972,4.002c0.435-3.114,1.676-5.237,3.047-6.442c-10.658-1.217-21.863-5.349-21.863-23.814
+c0-5.262,1.869-9.563,4.941-12.934c-0.496-1.22-2.143-6.117,0.468-12.752c0,0,4.032-1.295,13.199,4.939
+c3.831-1.069,7.936-1.603,12.019-1.623c4.078,0.021,8.184,0.554,12.018,1.623c9.161-6.234,13.186-4.939,13.186-4.939
+c2.619,6.635,0.973,11.532,0.477,12.752c3.078,3.371,4.936,7.672,4.936,12.934c0,18.511-11.223,22.586-21.914,23.778
+c1.722,1.488,3.259,4.428,3.259,8.926c0,6.441-0.062,11.637-0.062,13.219c0,1.289,0.863,2.789,3.301,2.315
+c19.06-6.385,32.8-24.436,32.8-45.718C98.199,24.669,76.707,3.095,50.196,3.095z"/>
 </g>
 </svg></a></li>
 
 
-									<li><a target="_blank" href="http://www.twitter.com/mmitchell413"><svg class="svg__twitter" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
- width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+              <li><a target="_blank" href="http://www.twitter.com/mmitchell413"><svg class="svg__twitter" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 <path id="Twitter_1_" d="M95.551,11.574c-3.811,2.312-8.02,3.993-12.516,4.895
 c-3.584-3.924-8.705-6.374-14.375-6.374c-10.869,0-19.687,9.043-19.687,20.195c0,1.583,0.169,3.121,0.507,4.6
 c-16.369-0.844-30.879-8.875-40.599-21.108c-1.696,2.993-2.665,6.465-2.665,10.164c0,7.003,3.477,13.187,8.762,16.809
@@ -70,18 +54,16 @@ c0-0.878-0.018-1.756-0.051-2.617c3.848-2.849,7.189-6.402,9.822-10.453c-3.527,1.6
 C90.957,20.247,94.08,16.29,95.551,11.574z"/>
 </svg></a></li>
 
-							</ul>
-						</div>
-				</div>
-		</footer>
-	</div><!-- .site-content-contain -->
-</div><!-- #page -->
+          </ul>
+        </div>
+    </div>
+</footer>
 <?php wp_footer(); ?>
-
 </body>
+
 <!-- Javascript Libraries -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script src="js/production.js"></script>
+<script src=<?php echo $JS_URL; ?>></script>
 <script>hljs.initHighlightingOnLoad();</script>
 </html>
