@@ -7,17 +7,11 @@
         <br>
     </div>
     <?php
-      get_template_part( 'template-parts/side-nav/side', 'front-page' );
+      get_template_part( 'template-parts/side-nav/side', 'single-post' );
     ?>
     <div class="container">
       <?php
-      if ( have_posts() ) :
-  			while ( have_posts() ) : the_post();
-  				get_template_part( 'template-parts/page/content', 'front-page' );
-  			endwhile;
-      endif;
-      get_template_part( 'template-parts/page/content', 'front-page-posts' );
-      //$title = isset($post->post_title) ? $post->post_title : '';
+      get_template_part( 'template-parts/post/content', 'single-post' );
       ?>
     </div>
   </div>
