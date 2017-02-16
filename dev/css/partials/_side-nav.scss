@@ -1,0 +1,16 @@
+.side-nav{
+  ul{
+    &:first-of-type{
+      h2{
+        margin-top:0px;
+      }
+    }
+    li{
+      display:block;
+      margin: 5px 0;
+      a{
+
+      }
+    }
+  }
+}

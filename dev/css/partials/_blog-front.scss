@@ -1,0 +1,34 @@
+.blog{
+  .page{
+    margin:0 auto;
+    max-width:1200px;
+    width:100%;
+    .side-nav{
+      width:25%;
+      float:left;
+      margin:0;
+      box-sizing:border-box;
+    }
+    .container{
+      margin:0;
+      float:right;
+      width:75%;
+      box-sizing:border-box;
+      .front-page{
+        .post{
+          @include container_style();
+          h2{
+            margin:0px;
+            a{
+
+            }
+          }
+          date{
+            font-size:.6em;
+            color:$light-gray;
+          }
+        }
+      }
+    }
+  }
+}

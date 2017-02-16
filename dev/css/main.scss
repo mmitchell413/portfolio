@@ -26,6 +26,8 @@ Text Domain: matt
 @import "partials/highlight";
 @import "partials/lightcase";
 @import "partials/sidenav";
+@import "partials/blog-front";
+@import "partials/side-nav";
 
 @mixin color(){
 	width:20px;

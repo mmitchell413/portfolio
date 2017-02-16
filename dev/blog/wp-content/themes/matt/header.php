@@ -2,8 +2,7 @@
 
 <html>
     <head>
-
-        <?php include 'functions.php' ?>
+      <?php include 'functions.php' ?>
         <title><?php wp_title(); ?></title>
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 

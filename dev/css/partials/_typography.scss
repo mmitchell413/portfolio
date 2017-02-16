@@ -53,6 +53,14 @@ p{
 }
 a{
 	cursor:pointer;
+  color:$primary-color;
+  text-decoration: none;
+  &:hover{
+    color:$primary-color-hover;
+  }
+  &:active{
+
+  }
 }
 pre{
   text-align:left;
