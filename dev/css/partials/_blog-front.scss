@@ -18,7 +18,7 @@
       float:right;
       width:75%;
       box-sizing:border-box;
-      .front-page{
+      .front-page, .category{
         .post{
           @include container_style();
           h2{

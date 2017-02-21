@@ -1,26 +1,11 @@
-<?php
-/**
- * Template part for displaying pages on front page
- *
- * @package WordPress
- * @subpackage Matt
- * @since 1.0
- * @version 1.0
- */
-
-?>
-
-<article class="front-page">
+<article class="category" id=<?php single_cat_title( '', false ); ?> >
   <div>
     <div class="grid">
     	<?php
       $args = array(
-          'post_status' => 'publish',
           'post_type' => 'post',
-          'offest' => 0,
-          'showposts' => 10,
-          'orderby' => 'post_date'
-        );
+          'category_name' => single_cat_title('', false)
+      );
 
       $post_query = new WP_Query($args);
       if($post_query->have_posts() ) {

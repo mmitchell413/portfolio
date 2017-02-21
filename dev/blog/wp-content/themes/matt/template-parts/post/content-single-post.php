@@ -12,7 +12,7 @@
 
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <div class="post grid-1-2">
-        <h4>Posted <date><?php the_date(); ?></date> at <time><?php the_time(); ?> by <?php the_author(); ?> </h4>
+        <h4>Posted <date><?php the_date(); ?></date> at <time><?php the_time(); ?></time> by <span><?php the_author(); ?></span> </h4>
         <p><?php the_content(); ?></p>
       </div>
     <?php endwhile; ?>
