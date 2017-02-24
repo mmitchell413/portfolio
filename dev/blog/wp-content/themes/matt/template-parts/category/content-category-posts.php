@@ -17,7 +17,7 @@
           ?>
           <div class="post grid-1-2">
             <h2><a href=<?php the_permalink(); ?>><?php the_title(); ?></a></h2>
-            <date><?php the_date(); ?></date>
+            <date><?php echo apply_filters( 'the_date', get_the_date(), get_option( 'date_format' ), '', '' ); ?></date>
             <p class='excerpt'><?php the_excerpt(); ?></p>
           </div>
           <?php
@@ -33,6 +33,9 @@
   <nav class="prev-next-posts">
     <div class="prev-posts-link">
       <?php echo get_next_posts_link( 'Previous', $post_query->max_num_pages ); // display older posts link ?>
+    </div>
+    <div class="page-num">
+      <?php echo "<p>" . $paged . "</p>" ?>
     </div>
     <div class="next-posts-link">
       <?php echo get_previous_posts_link( 'Next' ); // display newer posts link ?>

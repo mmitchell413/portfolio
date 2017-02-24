@@ -35,7 +35,7 @@
     } ?>
 
     <?php
-    //for use in the loop, list 5 post titles related to first tag on current post
+    //for use in the loop, list 2 post titles related to first tag on current post
     $tags = wp_get_post_tags($post->ID);
     if ($tags) {
       $first_tag = $tags[0]->term_id;

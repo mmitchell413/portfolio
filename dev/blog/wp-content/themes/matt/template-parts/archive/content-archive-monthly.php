@@ -16,7 +16,7 @@
           ?>
           <div class="post grid-1-2">
             <h2><a href=<?php the_permalink(); ?>><?php the_title(); ?></a></h2>
-            <date><?php the_date(); ?></date>
+            <date><?php echo apply_filters( 'the_date', get_the_date(), get_option( 'date_format' ), '', '' ); ?></date>
             <p class='excerpt'><?php the_excerpt(); ?></p>
           </div>
           <?php

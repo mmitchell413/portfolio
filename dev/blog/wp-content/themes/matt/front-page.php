@@ -3,7 +3,7 @@
 <div class="blog">
   <div class="page">
     <div class="heading">
-        <h1>Hi, I'm <span class="red-highlight">Matt</span></h1>
+        <h1><?php bloginfo( 'name' ); ?></h1>
         <br>
     </div>
     <div class="container">
