@@ -7,17 +7,21 @@
       color:$granite;
     }
   }
+  .related{
+    width:100%;
+  }
   .tags{
     a{
       background:$bg-color;
-      border:1px solid $off-white;
+      color: $granite;
+      // border:1px solid $off-white;
       border-radius:8px;
-      padding:8px;
+      padding:12px;
       display:inline-block;
       font-size:.8em;
       @include transition(.2s);
       &:hover{
-        border:1px solid $primary-color-hover;
+        color:$primary-color-hover;
       }
     }
   }

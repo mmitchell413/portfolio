@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Twenty Seventeen functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ * Matt functions and definitions
  *
  * @package WordPress
  * @subpackage Matt

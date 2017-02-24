@@ -14,12 +14,12 @@
   <div>
     <div class="grid">
     	<?php
+
       $args = array(
+          'posts_per_page' => 10,
           'post_status' => 'publish',
           'post_type' => 'post',
-          'offest' => 0,
-          'showposts' => 10,
-          'orderby' => 'post_date'
+          'offest' => 0
         );
 
       $post_query = new WP_Query($args);
@@ -30,7 +30,7 @@
           <div class="post grid-1-2">
             <h2><a href=<?php the_permalink(); ?>><?php the_title(); ?></a></h2>
             <date><?php the_date(); ?></date>
-            <p><?php the_excerpt(); ?></p>
+            <p class='excerpt'><?php the_excerpt(); ?></p>
           </div>
           <?php
         }
@@ -39,5 +39,4 @@
 
 		</div><!-- .wrap -->
 	</div><!-- .panel-content -->
-
 </article><!-- #post-## -->

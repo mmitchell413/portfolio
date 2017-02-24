@@ -16,12 +16,7 @@
       <?php wp_list_cats(); ?>
   	</li>
   </ul>
-  <ul id="archives"><?php _e('<h4>Archives</h4>'); ?>
-    <li>
-      <?php wp_get_archives('type=monthly'); ?>
-    </li>
-  </ul>
-  <ul id="related"><?php _e('<h4>Related Posts</h4>'); ?>
+
     <?php
     //for use in the loop, list 5 post titles related to first tag on current post
     $tags = wp_get_post_tags($post->ID);
@@ -32,7 +27,8 @@
         'post__not_in' => array($post->ID),
         'posts_per_page'=>5,
         'caller_get_posts'=>1
-      );
+      );?>
+      <ul id="related"><?php _e('<h4>Related Posts</h4>');
       $my_query = new WP_Query($args);
       if( $my_query->have_posts() ) {
         while ($my_query->have_posts()) : $my_query->the_post(); ?>
@@ -43,5 +39,10 @@
       wp_reset_query();
       }
     ?>
-  </ul>
+    </ul>
+    <ul id="archives"><?php _e('<h4>Archives</h4>'); ?>
+      <li>
+        <?php wp_get_archives('type=monthly'); ?>
+      </li>
+    </ul>
 </aside>
