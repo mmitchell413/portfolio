@@ -4,6 +4,7 @@
   <div class="page">
     <div class="heading">
         <h1><?php bloginfo( 'name' ); ?></h1>
+        <h2><?php bloginfo( 'description' ); ?></h2>
         <br>
     </div>
     <div class="container">
