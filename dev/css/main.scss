@@ -1,3 +1,16 @@
+/*
+Theme Name: Matt
+Theme URI:
+Author: Matt Mitchell
+Author URI: http://mattmitchell.org/
+Description: Theme used for Matt Mitchell's personal blog
+License: GNU General Public License v2 or later
+License URI:
+Tags: blue
+Text Domain: matt
+
+*/
+
 @import "partials/reset";
 @import "partials/variables";
 @import "partials/typography";
@@ -12,6 +25,10 @@
 @import "partials/tables";
 @import "partials/highlight";
 @import "partials/lightcase";
+@import "partials/sidenav";
+@import "partials/blog-front";
+@import "partials/blog-post";
+@import "partials/side-nav";
 
 @mixin color(){
 	width:20px;
@@ -36,7 +53,7 @@ body{
   left:0;
 	font-weight:300;
   font-size:1.2em;
-  background-color:$bg-color;
+  background-color:$bg-color-alt;
 	box-sizing:border-box;
   @include font-open;
 }
