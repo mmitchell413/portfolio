@@ -1,5 +1,4 @@
 <article class="category" id=<?php single_cat_title( '', false ); ?> >
-  <div>
     <div class="grid">
     	<?php
       $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
@@ -36,19 +35,11 @@
       ?>
 
 		</div><!-- .wrap -->
-	</div><!-- .panel-content -->
-
+    <?php if ($post_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
+        <div class="paginate-links">
+          <?php
+            echo paginate_links($post_query);
+          ?>
+        </div>
+    <?php } ?>
 </article><!-- #post-## -->
-<?php if ($post_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
-  <nav class="prev-next-posts">
-    <div class="prev-posts-link">
-      <?php echo get_next_posts_link( 'Previous', $post_query->max_num_pages ); // display older posts link ?>
-    </div>
-    <div class="page-num">
-      <?php echo "<p>" . $paged . "</p>" ?>
-    </div>
-    <div class="next-posts-link">
-      <?php echo get_previous_posts_link( 'Next' ); // display newer posts link ?>
-    </div>
-  </nav>
-<?php } ?>

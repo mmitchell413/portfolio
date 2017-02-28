@@ -11,7 +11,6 @@
 ?>
 
 <article class="front-page">
-  <div>
     <div class="grid">
     	<?php
 
@@ -48,5 +47,4 @@
       ?>
 
 		</div><!-- .wrap -->
-	</div><!-- .panel-content -->
 </article><!-- #post-## -->

@@ -11,7 +11,8 @@
 ?>
 
 <aside class="side-nav">
-  <ul id="categories"><?php _e('<h4>Categories</h4>'); ?>
+  <ul id="categories">
+    <?php _e('<h4>Categories</h4>'); ?>
   	<li>
       <?php wp_list_cats(); ?>
   	</li>

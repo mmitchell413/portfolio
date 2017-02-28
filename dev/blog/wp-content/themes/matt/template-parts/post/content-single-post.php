@@ -12,7 +12,8 @@
 
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <div>
-        <h4>Posted <date><?php the_date(); ?></date> at <time><?php the_time(); ?></time> by <span><?php the_author(); ?></span> </h4>
+        <h4 class="post-info">Posted <date><?php the_date(); ?></date> at <time><?php the_time(); ?></time> by <span><?php the_author(); ?></span> </h4>
+        <?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
         <p><?php the_content(); ?></p>
       </div>
     <?php endwhile; ?>

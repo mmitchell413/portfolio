@@ -11,7 +11,6 @@
       <?php
         get_template_part( 'template-parts/side-nav/side', 'front-page' );
       ?>
-      <div>
         <?php
         if ( have_posts() ) :
     			while ( have_posts() ) : the_post();
@@ -21,7 +20,6 @@
         get_template_part( 'template-parts/page/content', 'front-page-posts' );
         //$title = isset($post->post_title) ? $post->post_title : '';
         ?>
-      </div>
     </div>
   </div>
 </div>

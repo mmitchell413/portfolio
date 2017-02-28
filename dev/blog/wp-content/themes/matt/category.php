@@ -10,9 +10,9 @@
       <?php
         get_template_part( 'template-parts/side-nav/side', 'front-page' );
       ?>
-      <div>
-        <?php get_template_part( 'template-parts/category/content', 'category-posts'); ?>
-      </div>
+      <?php
+        get_template_part( 'template-parts/category/content', 'category-posts');
+      ?>
     </div>
   </div>
 </div>

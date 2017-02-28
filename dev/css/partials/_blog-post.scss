@@ -1,27 +1,36 @@
 .blog-post{
-  h4{
+  .post-info{
     font-size:.8em;
-    text-align:right;
+    margin-bottom:40px;
     color:$light-gray;
+    display:inline-block;
     date, time, span{
       color:$granite;
     }
+  }
+  .avatar{
+    border-radius:16px;
+    position:relative;
+    top: 10px;
+    left:10px;
   }
   .related{
     width:100%;
   }
   .tags{
-    a{  
+    overflow:visible;
+    a{
       background:$white;
       color: $granite;
-      // border:1px solid $off-white;
       border-radius:8px;
       padding:12px;
       display:inline-block;
       font-size:.8em;
+      box-shadow:2px 2px 1px rgba(0,0,0,.05);
       @include transition(.2s);
       &:hover{
         color:$primary-color-hover;
+        box-shadow:2px 2px 1px rgba(90, 143, 178, .4);
       }
     }
   }

@@ -21,7 +21,6 @@ get_header(); ?>
       <?php
         get_template_part( 'template-parts/side-nav/side', 'front-page' );
       ?>
-      <div>
         <?php
           if(is_date()){
             get_template_part( 'template-parts/archive/content', 'archive-monthly' );
@@ -31,7 +30,6 @@ get_header(); ?>
             get_template_part( 'template-parts/archive/content', 'archive');
           }
         ?>
-      </div>
     </div>
   </div>
 </div>

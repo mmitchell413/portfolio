@@ -1,8 +1,13 @@
 .side-nav{
+  width:25%;
+  float:left;
+  margin:0;
+  box-sizing:border-box;
   ul{
     h4{
       margin: 30px 0 3px 0;
       color:$granite;
+      font-size:1.1em !important;
     }
     &:first-of-type{
       h4{
@@ -16,5 +21,9 @@
         font-size:.8em;
       }
     }
+  }
+  @media screen and (max-width:$tablet){
+    width:100%;
+    float:none;
   }
 }
