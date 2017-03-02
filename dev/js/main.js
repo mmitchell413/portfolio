@@ -119,6 +119,11 @@ $(document).ready(function(){
     $('a[data-rel^=lightcase]').lightcase({
 
     });
+
+    $('#nav-icon3').click(function(){
+      $(this).toggleClass('open');
+    });
+
 });
 
     // function to reset contact form labels and disable submit button when reset button is pressed
