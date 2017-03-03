@@ -2357,12 +2357,11 @@ $(document).ready(function(){
     }
 
     // init lightcase on <a data-rel='lightcase'>
-    $('a[data-rel^=lightcase]').lightcase({
+    $('a[data-rel^=lightcase]').lightcase({});
 
-    });
-
-    $('#nav-icon3').click(function(){
-      $(this).toggleClass('open');
+    $('#nav-icon').click(function(){
+      console.log($(this).toggleClass('open'));
+      $(".top-nav__menu ul").toggleClass('open-menu');
     });
 
 });

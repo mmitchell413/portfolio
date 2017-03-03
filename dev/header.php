@@ -76,7 +76,7 @@
                           </a>
                   </div>
 
-                  <div id="nav-icon3">
+                  <div id="nav-icon">
                     <span></span>
                     <span></span>
                     <span></span>
