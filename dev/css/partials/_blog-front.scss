@@ -65,7 +65,7 @@
           }
         }
       }
-      .front-page, .category, .blog-post{
+      .front-page, .category, .blog-post, .archive{
         .post{
           @include container_style();
           padding:0px;

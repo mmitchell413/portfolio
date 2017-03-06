@@ -3,7 +3,7 @@
     width:100%;
     //height: 70px;
     position:fixed;
-    background-color:none;
+    background-color:$bg-color;
     z-index:2;
     @include transition(all, .2s);
     &.top-nav__portfolio{
@@ -70,6 +70,18 @@
               box-shadow: 0 3px 3px rgba(0,0,0,.05);
               &.open-menu{
                 left:0%;
+              }
+              ul{
+                position:relative;
+                top:0px;
+                box-shadow:none;
+                border-top:0px;
+                li{
+                  padding: 0 0 0 10px;
+                  &:first-child{
+                    border-top:0px;
+                  }
+                }
               }
             }
 
