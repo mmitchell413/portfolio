@@ -18,7 +18,7 @@
           'posts_per_page' => 10,
           'post_status' => 'publish',
           'post_type' => 'post',
-          'offest' => 0
+          'offset' => 0
         );
 
       $post_query = new WP_Query($args);

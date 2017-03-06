@@ -52,9 +52,9 @@
       <?php
         $post_query = new WP_Query($args);
         if($post_query->have_posts() ) {
-          _e('<h3 class="related">Related Posts</h3>');
+          _e('<h3 class="related">Related Posts</h3>');?>
           <div class="grid">
-          while($post_query->have_posts() ) {
+          <?php while($post_query->have_posts() ) {
             $post_query->the_post();
             $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post_query->ID ), 'matt-featured-image' );
             $post_thumbnail_id = get_post_thumbnail_id( $post_query->ID );

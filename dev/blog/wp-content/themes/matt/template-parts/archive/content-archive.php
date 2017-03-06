@@ -1,4 +1,4 @@
-<article class="category" id=<?php single_cat_title( '', false ); ?> >
+<article class="category" id='archive'>
   <div>
     <div class="grid">
       <div id="container">
