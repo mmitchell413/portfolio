@@ -57,42 +57,18 @@
             line-height:70px;
             margin:0;
             @include transition(all, .3s);
-            @media screen and (max-width: $tablet){
-              position:fixed;
-              //z-index: 99999;
-              left:100%;
-              top:76px;
-              display:block;
-              height:auto;
-              width:100%;
-              line-height:40px;
-              background:$white;
-              box-shadow: 0 3px 3px rgba(0,0,0,.05);
-              &.open-menu{
-                left:0%;
-              }
-              ul{
-                position:relative;
-                top:0px;
-                box-shadow:none;
-                border-top:0px;
-                li{
-                  padding: 0 0 0 10px;
-                  &:first-child{
-                    border-top:0px;
-                  }
-                }
-              }
-            }
+
 
             li{
-
                 @include font-bebas;
                 margin:0 10px;
                 font-size:1.0em;
                 display:inline-flex;
                 flex-wrap:wrap;
                 flex-grow:1;
+                &.blog-sub-menu{
+                  display:none;
+                }
                 a{
                     text-decoration:none;
                     color:$secondary-color;
@@ -135,6 +111,38 @@
                     padding-left: 20px;
                   }
                 }
+            }
+            @media screen and (max-width: $tablet){
+              position:fixed;
+              //z-index: 99999;
+              left:100%;
+              top:76px;
+              display:block;
+              height:auto;
+              width:100%;
+              line-height:40px;
+              background:$white;
+              box-shadow: 0 3px 3px rgba(0,0,0,.05);
+              &.open-menu{
+                left:0%;
+              }
+              li.blog-sub-menu{
+                display:block;
+                //top:0px;
+
+                ul{
+                  position:relative;
+                  top:0px;
+                  box-shadow:none;
+                  border-top:0px;
+                  li{
+                    padding: 0 0 0 10px;
+                    &:first-child{
+                      border-top:0px;
+                    }
+                  }
+                }
+              }
             }
         }
         @media screen and (max-width:$tablet){

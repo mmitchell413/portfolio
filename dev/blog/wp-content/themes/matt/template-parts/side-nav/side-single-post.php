@@ -29,18 +29,20 @@
         'posts_per_page'=>5,
         'caller_get_posts'=>1
       );?>
-      <ul id="related"><?php _e('<h4>Related Posts</h4>');
+      <?php
       $my_query = new WP_Query($args);
       if( $my_query->have_posts() ) {
+        _e('<ul id="related"><h4>Related Posts</h4>');
         while ($my_query->have_posts()) : $my_query->the_post(); ?>
           <li><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
         <?php
       endwhile;
+      _e('</ul>');
       }
       wp_reset_query();
       }
     ?>
-    </ul>
+
     <ul id="archives"><?php _e('<h4>Archives</h4>'); ?>
       <li>
         <?php wp_get_archives('type=monthly'); ?>

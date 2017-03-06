@@ -90,8 +90,8 @@
                             <li><a href=<?php echo $SKILLS_URL; ?> class="menu__link" id="skills">Skills<div class="top-nav__menu-highlight"></div></a></li>
                             <li><a href=<?php echo $PORTFOLIO_URL; ?> class="menu__link" id="portfolio">Portfolio<div class="top-nav__menu-highlight"></div></a></li>
                             <li><a href=<?php echo $BLOG_URL; ?> class="menu__link" id="blog">Blog<div class="top-nav__menu-highlight"></div></a></li>
-                            <li>
-                              <ul class="blog-sub-menu">
+                            <li class="blog-sub-menu">
+                              <ul>
                                 <li><a href="#">Recent Posts</a></li>
                                 <li><a href="#">Categories</a></li>
                                 <li><a href="#">Archives</a></li>

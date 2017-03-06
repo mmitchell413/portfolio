@@ -10,6 +10,7 @@ module.exports = function(grunt) {
                     {expand: true, cwd: 'dev/', src: ['*.php', 'img/**', 'css/fonts/*'], dest: 'prod/'},
                     {expand: true, cwd: 'dev/', src: ['fonts/**'], dest: 'prod/'},
                     {expand: true, cwd: 'dev/', src: ['favicon.ico'], dest: 'prod/'},
+                    {expand: true, cwd: 'dev/', src: ['blog/**'], dest: 'prod/'},
                 ]
             }
         },
@@ -102,7 +103,7 @@ module.exports = function(grunt) {
                 }
             },
             copyfiles: {
-                files: ['dev/*.php', 'dev/img/*'],
+                files: ['dev/*.php', 'dev/img/*', 'dev/blog/*'],
                 tasks: ['copy'],
                 options: {
                     spawn: false,
