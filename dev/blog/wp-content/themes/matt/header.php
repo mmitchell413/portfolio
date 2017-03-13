@@ -91,10 +91,16 @@
                             <li><a href=<?php echo $PORTFOLIO_URL; ?> class="menu__link" id="portfolio">Portfolio<div class="top-nav__menu-highlight"></div></a></li>
                             <li><a href=<?php echo $BLOG_URL; ?> class="menu__link" id="blog">Blog<div class="top-nav__menu-highlight"></div></a></li>
                             <li class="blog-sub-menu">
+                              <?php
+                              $archive_page = get_post(46);
+                              $recent_page = get_post(48);
+                              $categories_page = get_post(51);
+                              ?>
+
                               <ul>
-                                <li><a href="#">Recent Posts</a></li>
-                                <li><a href="#">Categories</a></li>
-                                <li><a href="#">Archives</a></li>
+                                <li><a href="<?php echo get_permalink($recent_page->ID)?>">Recent Posts</a></li>
+                                <li><a href="<?php echo get_permalink($categories_page->ID)?>">Categories</a></li>
+                                <li><a href="<?php echo get_permalink($archive_page->ID)?>">Archives</a></li>
                               </ul>
                             </li>
                             <li><a href=<?php echo $CONTACT_URL; ?> class="menu__link" id="contact">Contact<div class="top-nav__menu-highlight"></div></a></li>

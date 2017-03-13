@@ -17,6 +17,9 @@
             height:50px;
             margin:10px;
             stroke:$secondary-color;
+            @media screen and (max-width: $tablet){
+              margin: 10px 15px;
+            }
         }
         .logo-hover{
             @include transition(all, .3s);
