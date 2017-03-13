@@ -1,4 +1,4 @@
-<article class="category" id=<?php single_cat_title( '', false ); ?> >
+<article id=<?php single_cat_title( '', false ); ?> >
     <div class="grid">
       <?php
       $categories = get_categories( array(

@@ -3,16 +3,16 @@
   float:left;
   margin:0;
   box-sizing:border-box;
+  & > h4{
+    &:nth-child(1){
+      margin-top:0;
+    }
+  }
   ul{
     h4{
       margin: 30px 0 3px 0;
       color:$granite;
       font-size:1.1em !important;
-    }
-    &:first-of-type{
-      h4{
-        margin-top:0px;
-      }
     }
     li{
       display:block;
