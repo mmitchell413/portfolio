@@ -7,7 +7,7 @@
           'post_type' => 'post',
           'post_status' => 'publish',
           'category_name' => single_cat_title('', false),
-          'paged' => $paged
+          'paged' => $paged,
       );
 
       $post_query = new WP_Query($args);

@@ -16,11 +16,11 @@
       $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
       $args = array(
           'posts_per_page' => 10,
-          'post_status' => 'publish',
           'post_type' => 'post',
-          'offset' => 0,
-          'paged' => $paged
-        );
+          'post_status' => 'publish',
+          'paged' => $paged,
+          'offset' => 0
+      );
 
       $post_query = new WP_Query($args);
       if($post_query->have_posts() ) {
