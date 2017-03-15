@@ -3,7 +3,7 @@
     width:100%;
     //height: 70px;
     position:fixed;
-    background-color:$bg-color;
+    background-color:transparent;
     z-index:2;
     @include transition(all, .2s);
     &.top-nav__portfolio{
