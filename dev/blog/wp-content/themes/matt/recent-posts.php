@@ -16,10 +16,9 @@ get_header(); ?>
       <?php
         get_template_part( 'template-parts/side-nav/side', 'front-page' );
       ?>
-        <?php
-
-            get_template_part( 'template-parts/post/content', 'recent-posts');
-        ?>
+      <?php
+        get_template_part( 'template-parts/post/content', 'recent-posts');
+      ?>
     </div>
   </div>
 </div>
