@@ -134,17 +134,22 @@
               box-shadow: 0 3px 3px rgba(0,0,0,.05);
               &.open-menu{
                 left:0%;
+                li{
+                  padding: 7px 0 4px 0;
+                }
               }
               li.blog-sub-menu{
                 display:block;
+                padding:0px;
+                overflow:hidden;
                 //top:0px;
-
                 ul{
                   position:relative;
                   top:0px;
                   box-shadow:none;
                   border-top:0px;
                   li{
+                    margin:0;
                     padding: 0 0 0 10px;
                     &:first-child{
                       border-top:0px;

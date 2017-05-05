@@ -392,24 +392,6 @@
     }
 }
 
-// list styles
-ul{
-	list-style:circle;
-	li{
-		display:block;
-		margin:10px 0;
-		ul{
-			list-style: disc;
-			li{
-				margin:5px 0;
-			}
-		}
-	}
-}
-ol{
-
-}
-
 // typed.js styles
 .typed-cursor{
     opacity: 1;
