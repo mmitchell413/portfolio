@@ -49,33 +49,39 @@
                   }
                 ?>
             <div class="faux-column">
-                <div class="logo">
-                    <a href="index.php">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         width="542px" height="542px" viewBox="0 0 542 542" enable-background="new 0 0 542 542" xml:space="preserve">
-                    <g>
-                        <defs>
-                            <rect id="SVGID_1_" width="542" height="542"/>
-                        </defs>
-                        <clipPath id="SVGID_2_">
-                            <use xlink:href="#SVGID_1_"  overflow="visible"/>
-                        </clipPath>
-
-                            <path class="logo-hover" clip-path="url(#SVGID_2_)" fill="none" stroke-width="45" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-                            M95.5,349V220.327c0,0,0.207-84.274,83.898-84.274c83.69,0,83.102,83.479,83.102,83.479V349"/>
-
-                            <path clip-path="url(#SVGID_2_)" fill="none" stroke-width="45" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-                            M179.5,220v129c0,0-0.5,81.333,81.333,81.333C342.667,430.333,346.5,349,346.5,349V220"/>
-
-                            <path class="logo-hover" clip-path="url(#SVGID_2_)" fill="none" stroke-width="45" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-                            M262.5,349V220.327c0,0,0.707-84.274,84.398-84.274c83.689,0,83.602,83.479,83.602,83.479V349"/>
-                    </g>
-                    </svg>
-
-                        </a>
-                </div>
-
                 <div class="top-nav__menu">
+                  <div class="logo">
+                      <a href="index.php">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           width="542px" height="542px" viewBox="0 0 542 542" enable-background="new 0 0 542 542" xml:space="preserve">
+                      <g>
+                          <defs>
+                              <rect id="SVGID_1_" width="542" height="542"/>
+                          </defs>
+                          <clipPath id="SVGID_2_">
+                              <use xlink:href="#SVGID_1_"  overflow="visible"/>
+                          </clipPath>
+
+                              <path class="logo-hover" clip-path="url(#SVGID_2_)" fill="none" stroke-width="45" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                              M95.5,349V220.327c0,0,0.207-84.274,83.898-84.274c83.69,0,83.102,83.479,83.102,83.479V349"/>
+
+                              <path clip-path="url(#SVGID_2_)" fill="none" stroke-width="45" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                              M179.5,220v129c0,0-0.5,81.333,81.333,81.333C342.667,430.333,346.5,349,346.5,349V220"/>
+
+                              <path class="logo-hover" clip-path="url(#SVGID_2_)" fill="none" stroke-width="45" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                              M262.5,349V220.327c0,0,0.707-84.274,84.398-84.274c83.689,0,83.602,83.479,83.602,83.479V349"/>
+                      </g>
+                      </svg>
+
+                          </a>
+                  </div>
+
+                  <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
                         <ul>
                             <li><a href="index.php" class="menu__link" id="about">About<div class="top-nav__menu-highlight"></div></a></li>
                             <li><a href="skills.php" class="menu__link" id="skills">Skills<div class="top-nav__menu-highlight"></div></a></li>

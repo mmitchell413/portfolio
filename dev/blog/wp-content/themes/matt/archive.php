@@ -8,12 +8,15 @@ get_header(); ?>
   <div class="page">
     <div class="heading">
         <h1>
-          <?php if(is_date()){
-              $month = get_the_time('M');
-              $year = get_the_time('Y');
-              echo $month . ' ' . $year;
-            }
-            ?>
+          <?php
+          if(is_date()){
+            $month = get_the_date('M');
+            $year = get_the_date('Y');
+            _e($month . ' ' . $year);
+          }else{
+            _e('Archive');
+          }
+          ?>
         </h1>
     </div>
 
@@ -24,8 +27,6 @@ get_header(); ?>
         <?php
           if(is_date()){
             get_template_part( 'template-parts/archive/content', 'archive-monthly' );
-          }else if(is_cat()){
-            get_template_part( 'template-parts/category/content', 'category-posts' );
           }else{
             get_template_part( 'template-parts/archive/content', 'archive');
           }

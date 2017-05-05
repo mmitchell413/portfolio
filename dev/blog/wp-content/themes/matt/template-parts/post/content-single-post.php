@@ -14,6 +14,7 @@
       <div>
         <h4 class="post-info">Posted <date><?php the_date(); ?></date> at <time><?php the_time(); ?></time> by <span><?php the_author(); ?></span> </h4>
         <?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
+        <hr>
         <p><?php the_content(); ?></p>
       </div>
     <?php endwhile; ?>
@@ -46,12 +47,14 @@
         'posts_per_page'=>2,
         'caller_get_posts'=>1
       );?>
-      <?php _e('<h3 class="related">Related Posts</h3>');?>
-      <div class="grid">
+      <hr/>
+
       <?php
         $post_query = new WP_Query($args);
         if($post_query->have_posts() ) {
-          while($post_query->have_posts() ) {
+          _e('<h3 class="related">Related Posts</h3>');?>
+          <div class="grid">
+          <?php while($post_query->have_posts() ) {
             $post_query->the_post();
             $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post_query->ID ), 'matt-featured-image' );
             $post_thumbnail_id = get_post_thumbnail_id( $post_query->ID );

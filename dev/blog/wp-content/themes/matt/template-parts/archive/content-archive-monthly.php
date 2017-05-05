@@ -1,11 +1,19 @@
-<article class="category" id=<?php single_cat_title( '', false ); ?> >
+<article class="archive" id=<?php single_cat_title( '', false ); ?> >
     <div class="grid">
     	<?php
       $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+      $month = get_the_time('m');
+      $year = get_the_time('Y');
       $args = array(
           'post_type' => 'post',
           'posts_per_page' => 10,
-          'paged' => $paged
+          'paged' => $paged,
+          'date_query' => array(
+        		array(
+        			'year'  => $year,
+        			'month' => $month,
+        		),
+        	),
       );
 
       $post_query = new WP_Query($args);
@@ -16,12 +24,12 @@
           $post_thumbnail_id = get_post_thumbnail_id( $post_query->ID );
           $thumbnail_attributes = wp_get_attachment_image_src( get_post_thumbnail_id( $post_query->ID ), 'matt-featured-image' );
           // Calculate aspect ratio: h / w * 100%.
-      		$ratio = $thumbnail_attributes[2] / $thumbnail_attributes[1] * 100;
-      		?>
+          //$ratio = $thumbnail_attributes[2] / $thumbnail_attributes[1] * 100;
+          ?>
           <div class="post grid-1-2">
             <div class="panel-image" style="background-color:#4897CC; <?php if($thumbnail[0] != ""){ ?>background: url(<?php echo esc_url( $thumbnail[0] ); ?>)<?php } ?>; background-size:cover; background-repeat:no-repeat; background-position:0 25%;">
-        			<div class="panel-image-prop" style="padding-top: <?php echo esc_attr( $ratio ); ?>%"></div>
-        		</div><!-- .panel-image -->
+              <div class="panel-image-prop" style="padding-top: <?php //echo esc_attr( $ratio ); ?>%"></div>
+            </div><!-- .panel-image -->
             <div class="post-info">
               <h2><a href=<?php the_permalink(); ?>><?php the_title(); ?></a></h2>
               <date><?php echo apply_filters( 'the_date', get_the_date(), get_option( 'date_format' ), '', '' ); ?></date>

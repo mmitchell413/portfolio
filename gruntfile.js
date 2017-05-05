@@ -10,6 +10,7 @@ module.exports = function(grunt) {
                     {expand: true, cwd: 'dev/', src: ['*.php', 'img/**', 'css/fonts/*'], dest: 'prod/'},
                     {expand: true, cwd: 'dev/', src: ['fonts/**'], dest: 'prod/'},
                     {expand: true, cwd: 'dev/', src: ['favicon.ico'], dest: 'prod/'},
+                    {expand: true, cwd: 'dev/', src: ['blog/**'], dest: 'prod/'},
                 ]
             }
         },
@@ -19,7 +20,8 @@ module.exports = function(grunt) {
             devDist: {
                 src: [
                     'dev/js/libs/*.js', // All JS in the libs folder
-                    'dev/js/main.js'  // This specific file
+                    'dev/js/main.js',
+                    'dev/js/top-nav.js'
                 ],
                 dest: 'dev/js/production.js',
             },
@@ -101,7 +103,7 @@ module.exports = function(grunt) {
                 }
             },
             copyfiles: {
-                files: ['dev/*.php', 'dev/img/*'],
+                files: ['dev/*.php', 'dev/img/*', 'dev/blog/*'],
                 tasks: ['copy'],
                 options: {
                     spawn: false,

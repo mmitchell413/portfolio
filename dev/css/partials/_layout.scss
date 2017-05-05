@@ -381,6 +381,7 @@
         //font-family: 'Source Code Pro';
         @include font-bebas;
         letter-spacing:2px;
+				line-height:2.4em;
         color:$secondary-color;
         text-shadow: 2px 2px 1px rgba(0,0,0,.0);
         margin:.5em 0 0 0;
@@ -390,7 +391,6 @@
         font-weight:700;
     }
 }
-
 
 // typed.js styles
 .typed-cursor{

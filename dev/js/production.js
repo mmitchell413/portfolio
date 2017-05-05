@@ -2357,9 +2357,13 @@ $(document).ready(function(){
     }
 
     // init lightcase on <a data-rel='lightcase'>
-    $('a[data-rel^=lightcase]').lightcase({
+    $('a[data-rel^=lightcase]').lightcase({});
 
+    $('#nav-icon').click(function(){
+      console.log($(this).toggleClass('open'));
+      $(".top-nav__menu ul").toggleClass('open-menu');
     });
+
 });
 
     // function to reset contact form labels and disable submit button when reset button is pressed
@@ -2368,3 +2372,9 @@ $(document).ready(function(){
         $('#contact-form label').removeClass("label-focus");
         $('input[type="submit"]').prop('disabled', true);
     }
+
+$(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
+});
