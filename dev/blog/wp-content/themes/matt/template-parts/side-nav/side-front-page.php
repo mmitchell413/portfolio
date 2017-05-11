@@ -11,9 +11,9 @@
 ?>
 
 <?php
-$archive_page = get_post(46);
-$recent_page = get_post(48);
-$categories_page = get_post(51);
+$archive_page = get_post(337);
+$recent_page = get_post(333);
+$categories_page = get_post(335);
 ?>
 
 <aside class="side-nav">

@@ -8,7 +8,7 @@
  * @since 1.0
  */
 
-$SITE_ROOT = "http://localhost/portfolio/dev";
+$SITE_ROOT = "http://mattmitchell.org";
 $STYLESHEET_URL = $SITE_ROOT . "/css/main.css";
 $JS_URL = $SITE_ROOT . "/js/production.js";
 $HOME_URL = $SITE_ROOT . "/index.php";
