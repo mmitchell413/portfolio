@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Matt Mitchell - Home</title>
+        <title>Matt Mitchell</title>
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/main.css" type="text/css">
