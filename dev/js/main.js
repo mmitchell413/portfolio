@@ -30,17 +30,6 @@ $(document).ready(function(){
 //            if(height > ($("footer").offset().top + screenOffset)){
 //
 //            }
-            // animate delay in tech cards
-            if($(this).attr("id")==="container__tech"){
-                if(height > (containerPosition[index] - (screenOffset+400))){
-                    $("#container__tech .grid-1-3").each(function(foo){
-                       setTimeout(function(){$("#container__tech .grid-1-3#"+foo).animate({
-                          opacity:1.0,
-                          top: "0"
-                       }, 800, "easeInExpo")}, 600*foo);
-                    });
-                }
-            }
         });
         //var containerPosition = $(".container").offset().top;
 
@@ -127,9 +116,13 @@ $(document).ready(function(){
     }
 
     // init lightcase on <a data-rel='lightcase'>
-    $('a[data-rel^=lightcase]').lightcase({
+    $('a[data-rel^=lightcase]').lightcase({});
 
+    $('#nav-icon').click(function(){
+      console.log($(this).toggleClass('open'));
+      $(".top-nav__menu ul").toggleClass('open-menu');
     });
+
 });
 
     // function to reset contact form labels and disable submit button when reset button is pressed

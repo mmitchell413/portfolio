@@ -1,0 +1,20 @@
+#archive{
+  .grid{
+    & > div{
+      margin-top:10px;
+    }
+  }
+  #searchform{
+    & > div{
+      width:100%;
+    }
+    // input[type=text]{
+    //   width:75%;
+    // }
+    #searchsubmit{
+      @extend .btn;
+      @extend .btn-primary;
+      float:right;
+    }
+  }
+}
