@@ -20,21 +20,18 @@
         <div class="container portfolio-gmf">
           <h1>The Stack</h1>
           <div class="grid tech">
-              <!-- HTML Grid -->
               <div class="grid-1-3" id="0">
                   <div>
                       <img src="img/tech-logos/html.svg">
                       <p>Utilized HTML5 and followed WCAG guidelines to markup sites for accessibility for our Canada properties</p>
                   </div>
               </div>
-              <!-- CSS Grid -->
               <div class="grid-1-3" id="1">
                   <div>
                       <img src="img/tech-logos/css.svg">
                       <p>Approximately 10,000 lines of CSS code were written or modified during the course of the project</p>
                   </div>
               </div>
-              <!-- Javascript grid -->
               <div class="grid-1-3" id="2">
                   <div>
                       <img src="img/tech-logos/javascript.svg">
@@ -182,14 +179,5 @@
           </div>
         </div>
     </div>
-
-    <!-- <div class="arrow-down">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        width="30px" height="20px" viewBox="0 0 500 300" enable-background="new 0 0 500 300" xml:space="preserve">
-        <polyline fill="none" stroke="#92808b" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-            52.203,57 250,254.975 448.5,57 "/>
-      </svg>
-      <p>Scroll</p>
-    </div> -->
 
 <?php include "footer.php" ?>
