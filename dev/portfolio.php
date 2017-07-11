@@ -22,6 +22,9 @@
             <h1>Other Projects</h1>
             <h2>Mockups</h2>
             <div class="grid grid-portfolio">
+              <div class="grid-1-3">
+                  <a href="img/portfolio/burn-full.jpg" data-rel='lightcase:mockups' title="Burn Mockup"><img src="img/portfolio/burn-thumb.jpg"></a>
+              </div>
                 <div class="grid-1-3">
                     <a href="img/portfolio/design-cloud-full.jpg" data-rel='lightcase:mockups' title="Design Cloud Mockup"><img src="img/portfolio/design-cloud-thumb.jpg"></a>
                 </div>

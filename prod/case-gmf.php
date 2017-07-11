@@ -20,21 +20,18 @@
         <div class="container portfolio-gmf">
           <h1>The Stack</h1>
           <div class="grid tech">
-              <!-- HTML Grid -->
               <div class="grid-1-3" id="0">
                   <div>
                       <img src="img/tech-logos/html.svg">
                       <p>Utilized HTML5 and followed WCAG guidelines to markup sites for accessibility for our Canada properties</p>
                   </div>
               </div>
-              <!-- CSS Grid -->
               <div class="grid-1-3" id="1">
                   <div>
                       <img src="img/tech-logos/css.svg">
                       <p>Approximately 10,000 lines of CSS code were written or modified during the course of the project</p>
                   </div>
               </div>
-              <!-- Javascript grid -->
               <div class="grid-1-3" id="2">
                   <div>
                       <img src="img/tech-logos/javascript.svg">
@@ -107,17 +104,21 @@
         </div>
         <div class="container portfolio-gmf">
           <h1>Rebuild or Revamp?</h1>
-          <p>The toughest decision we had to make as a team was to either start fresh with a completely clean
-            codebase or to build and refine the one we had inherited. A lot of time and consideration went into
-            this decision, since it would affect the timeline of the project completion.</p>
-          <p>Our inherited codebase was fairly messy and unwieldy. Maintenance was an issue because of conflicting class
-            styles and orphaned code. There was no naming convention in use, so classes were kind of haphazardly named. One
-            would be abbreviated and short: </p>
-            <pre><code class="css">.blk-btn</code></pre>
-            <p>and the next was basically a hyphenated sentence: </p>
-            <pre><code class="css">.leadership-team-page-container-mod-extended</code></pre>
-            <p>There were also a number of odd classes mixed with markup that just simply made no sense, from either an SEO or maintainability standpoint:</p>
-            <pre><code class="css">h1.like-h3, h2.like-h1</code></pre>
+          <div class="grid">
+            <div class="grid-1-2">
+              <p>The toughest decision we had to make as a team was to either start fresh with a completely clean
+              codebase or to build and refine the one we had inherited. A lot of time and consideration went into
+              this decision, since it would affect the timeline of the project completion.</p>
+            <p>Our inherited codebase was fairly messy and unwieldy. Maintenance was an issue because of conflicting class
+              styles and orphaned code. There was no naming convention in use, so classes were kind of haphazardly named. One
+              would be abbreviated and short: </p>
+              <pre><code class="css">.blk-btn</code></pre>
+              <p>and the next was basically a hyphenated sentence: </p>
+              <pre><code class="css">.leadership-team-page-container-mod-extended</code></pre>
+              <p>There were also a number of odd classes mixed with markup that just simply made no sense, from either an SEO or maintainability standpoint:</p>
+              <pre><code class="css">h1.like-h3, h2.like-h1</code></pre>
+            </div>
+            <div class="grid-1-2">
             <p>With over 10,000 lines of CSS like this, needless to say it would take a fair bit of effort to clean up.</p>
           <p>The argument boiled down to time. We would need to keep the existing
               HTML structure because it tied in to legacy back-end systems, so we'd have to keep class names and IDs for elements currently in use, lest we
@@ -127,6 +128,8 @@
             the redesign went live.</p>
           <p>Even with all the issues a complete rewrite would have imposed, I still would have preferred a fresh start had time allowed. We could have
               engineered the CSS exactly the way we wanted it and have complete knowledge of the entire structure.</p>
+            </div>
+          </div>
         </div>
         <div class="container portfolio-gmf">
           <h1>CSS Structure</h1>
@@ -176,14 +179,5 @@
           </div>
         </div>
     </div>
-
-    <!-- <div class="arrow-down">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        width="30px" height="20px" viewBox="0 0 500 300" enable-background="new 0 0 500 300" xml:space="preserve">
-        <polyline fill="none" stroke="#92808b" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-            52.203,57 250,254.975 448.5,57 "/>
-      </svg>
-      <p>Scroll</p>
-    </div> -->
 
 <?php include "footer.php" ?>
