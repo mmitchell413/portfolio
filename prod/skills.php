@@ -10,109 +10,138 @@
                             <div class="grid-1-3" id="0">
                                 <div>
                                     <img src="img/tech-logos/html.svg">
-                                    <p>Utilize the strictest HTML5 and WCAG guidelines to markup sites for accessibility</p>
+                                    <h3>HTML5</h3>
                                 </div>
+                                <p>Utilize the strictest HTML5 and WCAG guidelines to markup sites for accessibility</p>
                             </div>
                             <!-- CSS Grid -->
                             <div class="grid-1-3" id="1">
                                 <div>
                                     <img src="img/tech-logos/css.svg">
-                                    <p>Extensive knowledge of CSS3 and all its capabilities to create pixel-perfect designs</p>
+                                    <h3>CSS3</h3>
                                 </div>
+                                <p>Extensive knowledge of CSS3 and all its capabilities to create pixel-perfect designs</p>
                             </div>
                             <!-- Javascript grid -->
                             <div class="grid-1-3" id="2">
                                 <div>
                                     <img src="img/tech-logos/javascript.svg">
-                                    <p>Fluent in Javascript for both front-end and back-end functionality for the web</p>
+                                    <h3>Javascript</h3>
                                 </div>
+                                <p>Fluent in Javascript for both front-end and back-end functionality for the web</p>
                             </div>
                             <div class="grid-1-3" id='3'>
                               <div>
                                   <img src="img/tech-logos/jquery.svg">
-                                  <p>Deep understanding of the most-popular Javascript library in the world</p>
+                                  <h3>jQuery</h3>
                               </div>
+                              <p>Deep understanding of the most-popular Javascript library in the world</p>
+
                             </div>
                             <div class="grid-1-3" id='4'>
                               <div>
                                   <img src="img/tech-logos/angular.svg">
-                                  <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
+                                  <h3>Angular.js</h3>
                               </div>
+                              <p>Familiarity with one of the fastest growing Javascript libraries on the market</p>
+
                             </div>
                             <div class="grid-1-3" id='4'>
                               <div>
                                   <img src="img/tech-logos/react.svg">
-                                  <p>Experienced with the up-and-coming React Javascript library</p>
+                                  <h3>React.js</h3>
                               </div>
+                              <p>Experienced with the up-and-coming React Javascript library</p>
+
                             </div>
                             <div class="grid-1-3" id='5'>
                               <div>
                                   <img src="img/tech-logos/php.svg">
-                                  <p>Firm grasp on the widely used back-end technology that powers countless sites</p>
+                                  <h3>PHP</h3>
                               </div>
+                              <p>Firm grasp on the widely used back-end technology that powers countless sites</p>
+
                             </div>
                             <div class="grid-1-3" id='3'>
                               <div>
                                   <img src="img/tech-logos/sass.svg">
-                                  <p>Utilize CSS pre-processors to keep code readable, maintanable and quick to develop</p>
+                                  <h3>SASS</h3>
                               </div>
+                              <p>Utilize CSS pre-processors to keep code readable, maintanable and quick to develop</p>
+
                             </div>
                             <div class="grid-1-3" id='4'>
                               <div>
                                   <img src="img/tech-logos/less.svg">
-                                  <p>Utilize CSS pre-processors to keep code readable and maintanable</p>
+                                  <h3>LESS</h3>
                               </div>
+                              <p>Utilize CSS pre-processors to keep code readable and maintanable</p>
+
                             </div>
                             <div class="grid-1-3" id='3'>
                               <div>
                                   <img src="img/tech-logos/git.svg">
-                                  <p>Two years of experience using the most widespread version control system on the web</p>
+                                  <h3>Git</h3>
                               </div>
+                              <p>Two years of experience using the most widespread version control system on the web</p>
+
                             </div>
                             <div class="grid-1-3" id='4'>
                               <div>
                                   <img src="img/tech-logos/nodejs.svg">
-                                  <p>NodeJS makes organizing projects a breeze and handles importing various necessary frameworks</p>
+                                  <h3>NodeJS</h3>
                               </div>
+                              <p>NodeJS makes organizing projects a breeze and handles importing various necessary frameworks</p>
+
                             </div>
                             <div class="grid-1-3" id='4'>
                               <div>
                                   <img src="img/tech-logos/grunt.svg">
-                                  <p>Utilize common Javascript task runner Grunt to automate processes and speed up development</p>
+                                  <h3>Grunt</h3>
                               </div>
+                              <p>Utilize common Javascript task runner Grunt to automate processes and speed up development</p>
+
                             </div>
                             <div class="grid-1-3" id='4'>
                               <div>
                                   <img src="img/tech-logos/photoshop.svg">
-                                  <p>Almost a decade of experience using Photoshop for both graphic and web design</p>
+                                  <h3>Photoshop</h3>
                               </div>
+                              <p>Almost a decade of experience using Photoshop for both graphic, web, and UI design</p>
+
                             </div>
                             <div class="grid-1-3" id='4'>
                               <div>
                                   <img src="img/tech-logos/illustrator.svg">
-                                  <p>Three years of experience with Illustrator for graphic and web design</p>
+                                  <h3>Illustrator</h3>
                               </div>
+                              <p>Three years of experience with Illustrator for graphic and web design</p>
+
                             </div>
                             <div class="grid-1-3" id='4'>
                               <div>
                                   <img src="img/tech-logos/mysql.svg">
-                                  <p>Familiarity with SQL and its tie-ins to popular CMSs such as Wordpress</p>
+                                  <h3>MySQL</h3>
                               </div>
+                              <p>Familiarity with SQL and its tie-ins to popular CMSs such as Wordpress</p>
+
                             </div>
                             <div class="grid-1-3" id='5'>
                               <div>
                                   <img src="img/tech-logos/python.svg">
-                                  <p>Experience with basic Python coding for software development</p>
+                                  <h3>Python</h3>
                               </div>
+                              <p>Experience with basic Python coding for software development</p>
+
                             </div>
                             <div class="grid-1-3" id='4'>
                               <div>
                                   <img src="img/tech-logos/java.svg">
-                                  <p>Familiar with basic Java for software and back-end web development</p>
+                                  <h3>Java</h3>
                               </div>
+                              <p>Familiar with basic Java for software and back-end web development</p>
+
                             </div>
-
-
                         </div>
                 </div>
             </div>
