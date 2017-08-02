@@ -46,6 +46,20 @@
 				overflow:visible;
 				text-align:center;
 				.grid-1-3{
+					overflow:visible;
+					&:hover{
+						.tech-info{
+							display:block;
+							position:relative;
+						}
+						p, h3{
+							color:$font-color-light;
+						}
+						cursor:pointer;
+						background:$secondary-color;
+						width:100%;
+						@include transition(.3s);
+					}
 					div{
 						margin:0 auto;
 						float: initial;
@@ -54,7 +68,7 @@
 					}
 					img{
 						float:left;
-						margin-right:20px;
+						margin-right:10px;
 						width:50px;
 						height:50px;
 					}
@@ -70,6 +84,7 @@
 					}
 				}
     }
+
 		&#container__about{
 			.btn{
 				margin: 0 auto;
@@ -235,7 +250,14 @@
 				}
 		}
 }
-
+.skills-modal{
+	display:none;
+	width:100%;
+	height:100%;
+	top:0;
+	position:fixed;
+	background:$primary-color;
+}
 .page{
     display:block;
     &#portfolio{

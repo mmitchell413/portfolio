@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                 src: [
                     'dev/js/libs/*.js', // All JS in the libs folder
                     'dev/js/main.js',
-                    'dev/js/top-nav.js'
+                    'dev/js/top-nav.js',
                 ],
                 dest: 'dev/js/production.js',
             },
@@ -82,7 +82,7 @@ module.exports = function(grunt) {
 
         watch: {
             scripts: {
-                files: ['dev/js/*.js'],
+                files: ['dev/js/*.js', 'dev/js/libs/*.js'],
                 tasks: ['concat'],
                 options: {
                     spawn: false,
@@ -96,7 +96,7 @@ module.exports = function(grunt) {
                 }
             },
             minify: {
-                files:  ['dev/js/*.js'],
+                files:  ['dev/js/*.js', 'dev/js/libs/*.js'],
                 tasks: ['uglify'],
                 options: {
                     spawn:false,
