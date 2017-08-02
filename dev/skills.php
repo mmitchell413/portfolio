@@ -139,11 +139,7 @@
                                   <img src="img/tech-logos/java.svg">
                                   <h3>Java</h3>
                               </div>
-<<<<<<< HEAD
-=======
                               <p>Familiar with basic Java for software and back-end web development</p>
-
->>>>>>> origin/dev
                             </div>
                         </div>
                         <a href="contact.php" class="btn btn-primary">Contact Me</a>
