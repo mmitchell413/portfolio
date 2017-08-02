@@ -140,9 +140,9 @@
                                   <h3>Java</h3>
                               </div>
                               <p>Familiar with basic Java for software and back-end web development</p>
-
                             </div>
                         </div>
+                        <a href="contact.php" class="btn btn-primary">Contact Me</a>
                 </div>
             </div>
         </div>

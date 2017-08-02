@@ -43,11 +43,6 @@
                         echo "top-nav";
                     }
                 ?>">
-                <?php $current_page = basename($_SERVER['PHP_SELF']);
-                  if($current_page == "portfolio.php" || $current_page == "case-gmf.php"){
-                      echo "<div class='alert'><p>Portfolio is still under construction. Updates are being made.</p></div>";
-                  }
-                ?>
             <div class="faux-column">
                 <div class="top-nav__menu">
                   <div class="logo">
