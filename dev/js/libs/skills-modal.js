@@ -9,19 +9,28 @@ $(function(){
     xhr.send();
     var xml = xhr.responseXML;
     var clickedSkill;
-    console.log(xml);
+
+    clickedSkill = ($(xml).find('skill[id="'+clicked+'"]'));
+    console.log(clickedSkill);
 
     $(xml).find('skill[id="'+clicked+'"]')
     {
-      var name = $(this).children('name').text();
-      console.log(name);
-      var image = $(this).children('image').text();
-      var desc = $(this).children('desc').text();
-      var exp = $(this).children('exp').text();
-      var env = $(this).children('env').text();
+      var name = clickedSkill.find('name').text();
+      console.log($(clickedSkill));
+      var image = clickedSkill.find('image').text();
+      var desc = clickedSkill.find('desc').text();
+      var exp = clickedSkill.find('exp').text();
+      var env = clickedSkill.find('env').text();
       $('.skills-modal h1').html(name);
+      $('.skills-modal .skill-img').attr('src', image);
       $('.skills-modal .exp').html(exp);
-      $('.skills-modal').show();
+      $('.skills-modal .desc').html(desc);
+      $('.skills-modal .env').html(env);
+      $('.skills-modal').fadeIn();
     };
+  });
+  $('.skills-modal .close').on('click', function(e){
+    e.preventDefault();
+    $('.skills-modal').fadeOut();
   });
 });

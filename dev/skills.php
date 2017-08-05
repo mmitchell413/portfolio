@@ -148,8 +148,14 @@
         </div>
 
         <div class="skills-modal">
-          <h1></h1>
-          <p class="exp"></p>
+          <div class="container">
+            <div class="close"><a href="#">Close</a></div>
+            <h1></h1>
+            <img class='skill-img' src="#" alt=""/>
+            <p class="exp"></p>
+            <p class='desc'></p>
+            <p class='env'></p>
+          </div>
         </div>
 
         <!-- <div class="arrow-down">

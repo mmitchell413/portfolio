@@ -13,21 +13,30 @@
                             <!-- HTML Grid -->
                             <div class="grid-1-3" id="0">
                                 <div>
+                                  <div>
                                     <img src="img/tech-logos/html.svg">
+                                    <h3>HTML5</h3>
+                                  </div>
                                     <p>Utilize the strictest HTML5 and WCAG guidelines to markup sites for accessibility</p>
                                 </div>
                             </div>
                             <!-- CSS Grid -->
                             <div class="grid-1-3" id="1">
                                 <div>
+                                  <div>
                                     <img src="img/tech-logos/css.svg">
+                                    <h3>CSS3</h3>
+                                  </div>
                                     <p>Extensive knowledge of CSS3 and all its capabilities to create pixel-perfect designs</p>
                                 </div>
                             </div>
                             <!-- Javascript grid -->
                             <div class="grid-1-3" id="2">
                                 <div>
+                                  <div>
                                     <img src="img/tech-logos/javascript.svg">
+                                    <h3>Javascript</h3>
+                                  </div>
                                     <p>Fluent in Javascript for both front-end and back-end functionality for the web</p>
                                 </div>
                             </div>
