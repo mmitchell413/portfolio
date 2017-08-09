@@ -153,8 +153,9 @@
             <h1></h1>
             <img class='skill-img' src="#" alt=""/>
             <p class="exp"></p>
-            <p class='desc'></p>
             <p class='env'></p>
+            <p class='desc'></p>
+            <div class='projects'></div>
           </div>
         </div>
 

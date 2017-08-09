@@ -43,7 +43,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-prod/*
+prod
 *.css.map
 .sass-cache
 node_modules

@@ -11,21 +11,21 @@ $(function(){
     var clickedSkill;
 
     clickedSkill = ($(xml).find('skill[id="'+clicked+'"]'));
-    console.log(clickedSkill);
 
     $(xml).find('skill[id="'+clicked+'"]')
     {
       var name = clickedSkill.find('name').text();
-      console.log($(clickedSkill));
       var image = clickedSkill.find('image').text();
       var desc = clickedSkill.find('desc').text();
       var exp = clickedSkill.find('exp').text();
       var env = clickedSkill.find('env').text();
+      var projects = clickedSkill.find('projects').text();
       $('.skills-modal h1').html(name);
       $('.skills-modal .skill-img').attr('src', image);
-      $('.skills-modal .exp').html(exp);
+      $('.skills-modal .exp').html('<strong>Years of experience</strong>: ' + exp);
+      $('.skills-modal .env').html('<strong>Environment</strong>: ' + env);
       $('.skills-modal .desc').html(desc);
-      $('.skills-modal .env').html(env);
+      $('.skills-modal .projects').html('<p><strong>Projects: </strong></p>' + projects);
       $('.skills-modal').fadeIn();
     };
   });

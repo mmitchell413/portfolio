@@ -16,8 +16,13 @@
       color: $font-color-light;
     }
     .skill-img{
-      width:100px;
-      height:100px;
+      width:150px;
+      height:150px;
+      display:block;
+      margin:auto;
+    }
+    h1{
+      text-align:center;
     }
     .close{
       float:right;

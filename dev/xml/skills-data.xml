@@ -3,119 +3,136 @@
     <name>HTML5</name>
     <image>img/tech-logos/html.svg</image>
     <desc></desc>
-    <exp>10 years</exp>
+    <exp>12 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="css">
     <name>CSS3</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/css.svg</image>
     <desc>Testing CSS description</desc>
-    <exp>10 years</exp>
+    <exp>12 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="js">
     <name>Javascript</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/javascript.svg</image>
     <desc></desc>
     <exp>10 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="jquery">
     <name>jQuery</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/jquery.svg</image>
     <desc></desc>
     <exp>10 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="angular">
     <name>Angular</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/angular.svg</image>
     <desc></desc>
-    <exp>10 years</exp>
+    <exp>2 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="react">
     <name>React</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/react.svg</image>
     <desc></desc>
-    <exp>10 years</exp>
+    <exp>1 year</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="php">
     <name>PHP</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/php.svg</image>
     <desc></desc>
     <exp>10 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="sass">
     <name>SASS</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/sass.svg</image>
     <desc></desc>
-    <exp>10 years</exp>
+    <exp>2 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="less">
     <name>LESS</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/less.svg</image>
     <desc></desc>
-    <exp>10 years</exp>
+    <exp>2 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="git">
-    <name>GIT</name>
-    <image>img/tech-logos/html.svg</image>
+    <name>Git</name>
+    <image>img/tech-logos/git.svg</image>
     <desc></desc>
-    <exp>10 years</exp>
+    <exp>2 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="nodejs">
     <name>NodeJS</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/nodejs.svg</image>
     <desc></desc>
-    <exp>10 years</exp>
+    <exp>2 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="grunt">
     <name>Grunt</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/grunt.svg</image>
     <desc></desc>
-    <exp>10 years</exp>
+    <exp>1 year</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="photoshop">
     <name>Photoshop</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/photoshop.svg</image>
     <desc></desc>
     <exp>10 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="illustrator">
     <name>Illustrator</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/illustrator.svg</image>
     <desc></desc>
     <exp>10 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="mysql">
     <name>MySQL</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/mysql.svg</image>
     <desc></desc>
     <exp>10 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="python">
     <name>Python</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/python.svg</image>
     <desc></desc>
-    <exp>10 years</exp>
+    <exp>1 year</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
   <skill id="java">
     <name>Java</name>
-    <image>img/tech-logos/html.svg</image>
+    <image>img/tech-logos/java.svg</image>
     <desc></desc>
     <exp>10 years</exp>
     <env>Professional and personal projects</env>
+    <projects></projects>
   </skill>
 </skills>
