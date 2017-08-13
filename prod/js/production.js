@@ -1831,7 +1831,7 @@ $(function(){
       $('.skills-modal .exp').html('<strong>Years of experience</strong>: ' + exp);
       $('.skills-modal .env').html('<strong>Environment</strong>: ' + env);
       $('.skills-modal .desc').html(desc);
-      $('.skills-modal .projects').html('<p><strong>Projects: </strong></p>' + projects);
+      $('.skills-modal .projects').html('<p><strong>Projects: </strong>' + projects + '</p>');
       $('.skills-modal').fadeIn();
     };
   });

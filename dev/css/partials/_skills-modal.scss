@@ -9,9 +9,9 @@
   overflow:hidden;
   .container{
     width:50%;
-    height:70%;
+    height:auto;
     background:$primary-color;
-    margin: 10% 25%;
+    margin: 5% 25%;
     p, h1{
       color: $font-color-light;
     }

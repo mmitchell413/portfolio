@@ -2,23 +2,23 @@
   <skill id="html">
     <name>HTML5</name>
     <image>img/tech-logos/html.svg</image>
-    <desc></desc>
+    <desc>I'm not even sure what my first experience with HTML was. I was probably fiddling around with my browser in my teenage years and ran across the "View Page Source..." button. I've been writing it ever since. </desc>
     <exp>12 years</exp>
     <env>Professional and personal projects</env>
-    <projects></projects>
+    <projects>Fixy, GM Financial redesigns, Burn, VisualApp projects, various personal projects and side-projects</projects>
   </skill>
   <skill id="css">
     <name>CSS3</name>
     <image>img/tech-logos/css.svg</image>
-    <desc>Testing CSS description</desc>
+    <desc>Back in the days of MySpace, you could edit your profile's color and layouts with user input CSS. I started to get really good at it, and eventually, all my friends came to me for custom profiles. I was the coolest kid in school. </desc>
     <exp>12 years</exp>
     <env>Professional and personal projects</env>
-    <projects></projects>
+    <projects>Fixy, GM Financial redesigns, Burn, VisualApp projects, various personal projects and side-projects</projects>
   </skill>
   <skill id="js">
     <name>Javascript</name>
     <image>img/tech-logos/javascript.svg</image>
-    <desc></desc>
+    <desc>I started learning Javascript soon after learning HTML and CSS. I found that I was limited to what I could do with just those basic aspects. I didn't want to just display information, I wanted to be able to do something with that information. </desc>
     <exp>10 years</exp>
     <env>Professional and personal projects</env>
     <projects></projects>
@@ -26,8 +26,8 @@
   <skill id="jquery">
     <name>jQuery</name>
     <image>img/tech-logos/jquery.svg</image>
-    <desc></desc>
-    <exp>10 years</exp>
+    <desc>To be honest, the only reason I started learning jQuery was for the animations. Fading in and out elements of the DOM blew my mind. It took a while to come around to the rest of the functionality it offered. </desc>
+    <exp>9 years</exp>
     <env>Professional and personal projects</env>
     <projects></projects>
   </skill>
@@ -36,7 +36,7 @@
     <image>img/tech-logos/angular.svg</image>
     <desc></desc>
     <exp>2 years</exp>
-    <env>Professional and personal projects</env>
+    <env>Personal projects</env>
     <projects></projects>
   </skill>
   <skill id="react">
@@ -50,23 +50,23 @@
   <skill id="php">
     <name>PHP</name>
     <image>img/tech-logos/php.svg</image>
-    <desc></desc>
+    <desc>My first experience with PHP was in my high school independent study class. I focused on web development as a subject, and began to build a fully functional bulletin board. Naturally, PHP was the easiest and most accessible language to do the project in.</desc>
     <exp>10 years</exp>
     <env>Professional and personal projects</env>
-    <projects></projects>
+    <projects>Wordpress blogs, bulletin board project, portfolio site, Fixy, various personal projects</projects>
   </skill>
   <skill id="sass">
     <name>SASS</name>
     <image>img/tech-logos/sass.svg</image>
-    <desc></desc>
+    <desc>SASS is the next level of CSS. The CSS pre-processor boasts tons of useful features for developers that speed up the development process and make CSS a more enjoyable language to deal with. </desc>
     <exp>2 years</exp>
     <env>Professional and personal projects</env>
-    <projects></projects>
+    <projects>Fixy, GM Finacial AEM implementation, Burn</projects>
   </skill>
   <skill id="less">
     <name>LESS</name>
     <image>img/tech-logos/less.svg</image>
-    <desc></desc>
+    <desc>LESS is another CSS pre-processor that has a similar feature-set to SASS. Essentially, most of the nitty-gritty behind the pre-processors are identical and only vary in syntax. </desc>
     <exp>2 years</exp>
     <env>Professional and personal projects</env>
     <projects></projects>
@@ -74,7 +74,7 @@
   <skill id="git">
     <name>Git</name>
     <image>img/tech-logos/git.svg</image>
-    <desc></desc>
+    <desc>Git is the premiere source control software for the majority of developers across the world. It makes seamless version history and cross-team collaboration a breeze.</desc>
     <exp>2 years</exp>
     <env>Professional and personal projects</env>
     <projects></projects>

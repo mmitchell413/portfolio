@@ -152,9 +152,9 @@
             <div class="close"><a href="#">Close</a></div>
             <h1></h1>
             <img class='skill-img' src="#" alt=""/>
+            <p class='desc'></p>
             <p class="exp"></p>
             <p class='env'></p>
-            <p class='desc'></p>
             <div class='projects'></div>
           </div>
         </div>
